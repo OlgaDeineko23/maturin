@@ -15,6 +15,10 @@ h3 {
     width: 100% !important;
 }
 
+.no-padding{
+    padding: 0px !important;
+}
+
 /*HEADER*/
 .header-menu-top{
     margin-bottom: 1%;
@@ -23,6 +27,10 @@ h3 {
 
 .header-menu-top .nav-link{
     color: white;
+}
+
+a.nav-link{
+    font-size: 13px;
 }
 
 a.nav-link.active, a.nav-link:hover{
@@ -54,4 +62,150 @@ a.nav-link.active, a.nav-link:hover{
 .search-input::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
 }
+
+.header-icons{
+    height: 100%;
+    width: 100%;
+}
+
+.btn-icons{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: #666666;
+    width: 40%;
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+}
+
+.btn-icons-cart{
+    margin: 0!important;
+}
+
+.btn-icons-cart i{
+    font-size: 32px;
+    /*background-image: url("../images/cart-icon.png");*/
+}
+.btn-icons-list{
+    background-image: url("../images/list-icon.png");
+}
+
+.btn-icons-list-likes{
+    position: absolute;
+    font-size: 14px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.btn-icons-cart-count{
+    position: absolute;
+    font-size: 12px;
+    right: 25%;
+    top: 1%;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.header-menu-main .nav-link.active{
+    color: orangered;
+    text-decoration: none;
+}
+
+.header-menu-main .nav-link{
+    color: black;
+    font-weight: bold;
+}
+
+.carousel-caption{
+    top: 30%!important;
+    text-align: left !important;
+}
+
+.carousel-caption .carousel-caption-title{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+.carousel-caption .carousel-caption-description{
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+}
+
+.carousel-caption .carousel-caption-btn{
+    background-color: orangered !important;
+    color: white !important;
+    width: 25%;
+    border: none;
+    padding: .5rem 1rem;
+    margin-top: 3%;
+}
+
+.photo-right-section-top, .photo-right-section-bottom{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+}
+
+.photo-right-section-top{
+    height: 70%;
+    position: absolute;
+    top: 0;
+}
+
+.photo-right-section-bottom{
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+.photo-right-section-bottom img, .photo-right-section-top img{
+    width: 100%;
+}
+
+.photo-section-caption-top, .photo-section-caption-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 10%;
+    color: white;
+    text-decoration: underline;
+}
+
+.photo-section-caption-top{
+    top: 65%;
+}
+
+.photo-section-caption-bottom{
+    top: 35%;
+}
+
+.photo-section-caption i{
+    text-decoration: none!important;
+}
 /*HEADER*/
+/*BODY*/
+.section-2{
+    margin-top: 3%;
+}
+
+.section-2 h5{
+    font-weight: bold;
+}
+
+.section-2 img{
+   margin-bottom: 2%;
+}
+/*BODY*/
