@@ -1,225 +1,514 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Maturin</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Maturin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
-  <script src="https://use.fontawesome.com/874ad7ad81.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/874ad7ad81.js"></script>
+
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
 </head>
 <body>
 <div class="container-fluid">
-  <!--Header-->
-  <header>
-    <div class="row">
-      <nav class="navbar navbar-dark bg-dark full-width header-menu-top">
-        <ul class="nav justify-content-end full-width">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Vendre sur Marketablle</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">S’inscrire</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-               aria-expanded="false">Se connecter <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <!--<div class="dropdown-menu">-->
-            <!--<a class="dropdown-item" href="#">Action</a>-->
-            <!--<a class="dropdown-item" href="#">Another action</a>-->
-            <!--<a class="dropdown-item" href="#">Something else here</a>-->
-            <!--<div class="dropdown-divider"></div>-->
-            <!--<a class="dropdown-item" href="#">Separated link</a>-->
-            <!--</div>-->
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-               aria-expanded="false">QC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <!--<div class="dropdown-menu">-->
-            <!--<a class="dropdown-item" href="#">Action</a>-->
-            <!--<a class="dropdown-item" href="#">Another action</a>-->
-            <!--<a class="dropdown-item" href="#">Something else here</a>-->
-            <!--<div class="dropdown-divider"></div>-->
-            <!--<a class="dropdown-item" href="#">Separated link</a>-->
-            <!--</div>-->
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-               aria-expanded="false">CAD$ <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <!--<div class="dropdown-menu">-->
-            <!--<a class="dropdown-item" href="#">Action</a>-->
-            <!--<a class="dropdown-item" href="#">Another action</a>-->
-            <!--<a class="dropdown-item" href="#">Something else here</a>-->
-            <!--<div class="dropdown-divider"></div>-->
-            <!--<a class="dropdown-item" href="#">Separated link</a>-->
-            <!--</div>-->
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-               aria-expanded="false">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <!--<div class="dropdown-menu">-->
-            <!--<a class="dropdown-item" href="#">Action</a>-->
-            <!--<a class="dropdown-item" href="#">Another action</a>-->
-            <!--<a class="dropdown-item" href="#">Something else here</a>-->
-            <!--<div class="dropdown-divider"></div>-->
-            <!--<a class="dropdown-item" href="#">Separated link</a>-->
-            <!--</div>-->
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="row">
-      <div class="col text-right">
-        <a class="navbar-brand"><b>MATURIN</b></a>
-      </div>
-      <div class="col-lg-8 col-md-6 col-sm-4 header-search">
-        <div class="row no-gutters">
-          <div class="col text-right">
-            <input class="form-control form-control-lg border-secondary border-right-0 rounded-0 search-input"
-                   type="search" placeholder="Rechercher...">
-          </div>
-          <div class="col-auto">
-            <button class="btn btn-lg btn-outline-secondary border-left-0 rounded-0 rounded-right search-btn"
-                    type="button">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </div>
+    <!--Header-->
+    <header>
+        <div class="row">
+            <nav class="navbar navbar-dark full-width header-menu-top">
+                <ul class="nav justify-content-end full-width">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Vendre sur Marketablle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">S’inscrire</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">Se connecter <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">QC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">CAD$ <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <div class="col text-left">
-        <div class="header-icons">
-          <button class="btn btn-lg btn-icons btn-icons-list">
-          </button>
-          <button class="btn btn-lg btn-icons btn-icons-cart">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span class="btn-icons-cart-count">
+        <div class="row">
+            <div class="col text-right">
+                <a class="navbar-brand"><b>MATURIN</b></a>
+            </div>
+            <div class="col-lg-9 col-md-6 col-sm-4 header-search">
+                <div class="row no-gutters">
+                    <div class="col text-right">
+                        <input class="form-control form-control-lg border-secondary border-right-0 rounded-0 search-input"
+                               type="search" placeholder="Rechercher...">
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-lg btn-outline-secondary border-left-0 rounded-0 rounded-right search-btn"
+                                type="button">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-right">
+                <div class="header-icons">
+                    <button class="btn btn-lg btn-icons btn-icons-list">
+                    </button>
+                    <button class="btn btn-lg btn-icons btn-icons-cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="btn-icons-cart-count">
               99
             </span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <nav class="navbar full-width header-menu-main">
-        <ul class="nav justify-content-end full-width">
-          <li class="nav-item">
-            <a class="nav-link" href="#">À BOIRE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">VIANDE ET POISSON</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PRODUITS LAITIERS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BOULANGERIE ET PÂTISSERIE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FRUITS & LÉGUMES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ÉPICERIE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SUCRERIES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">COSMÉTIQUES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">NOUVEAUTÉS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CADEAUX</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">SOLDES</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="row ">
-      <div class="col-md-8 no-padding">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./images/img1.png" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="carousel-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
-                <h6 class="carousel-caption-description">Des produits d’ici. À votre porte demain. </h6>
-                <button class="carousel-caption-btn">Magaziner</button>
-              </div>
+                    </button>
+                </div>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-      </div>
-      <div class="col-md-4 no-padding">
-        <div class="row photo-right-section-top">
-          <img src="./images/img2.png" alt="">
-          <div class="photo-section-caption-top">
-            <h4>DÉCOUVREZ VOTRE RÉGION</h4>
-            <h6>Laurentide, Québec <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h6>
-          </div>
+        <div class="row justify-content-center">
+            <div class="full-width header-menu-main">
+                <ul class="nav justify-content-end full-width">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">À BOIRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">VIANDE ET POISSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUITS LAITIERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BOULANGERIE ET PÂTISSERIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FRUITS & LÉGUMES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ÉPICERIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SUCRERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COSMÉTIQUES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOUVEAUTÉS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CADEAUX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">SOLDES</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="row photo-right-section-bottom">
-          <img src="./images/img3.png" alt="">
-          <div class="photo-section-caption-bottom">
-            <h4>À LA UNE</h4>
-            <h6>Nouvelles/articles <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h6>
-          </div>
+        <div class="row ">
+            <div class="col-md-8 no-padding">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/img1.png" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="carousel-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
+                                <h6 class="carousel-caption-description">Des produits d’ici. À votre porte demain. </h6>
+                                <button class="carousel-caption-btn">Magaziner</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 no-padding">
+                <div class="row photo-right-section-top">
+                    <img src="./images/img2.png" alt="">
+                    <div class="photo-section-caption-top">
+                        <h4 class="photo-section-caption-title">DÉCOUVREZ VOTRE RÉGION</h4>
+                        <h6 class="photo-section-caption-description">Laurentide, Québec <i
+                                class="fa fa-long-arrow-right" aria-hidden="true"></i></h6>
+                    </div>
+                </div>
+                <div class="row photo-right-section-bottom">
+                    <img src="./images/img3.png" alt="">
+                    <div class="photo-section-caption-bottom">
+                        <h4 class="photo-section-caption-title">À LA UNE</h4>
+                        <h6 class="photo-section-caption-description">Nouvelles/articles <i
+                                class="fa fa-long-arrow-right" aria-hidden="true"></i></h6>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
-  </header>
-  <!-- Header-->
+    </header>
+    <!-- Header-->
 
-  <!--Main content-->
-  <section class="section-2">
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <img src="./images/pig.png">
-          <h5>Des économies en argent et en temps</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
-            mattis ac neque. Duis vulputate commodo.</p>
+    <!--Main content-->
+    <section class="section-2">
+        <div class="row">
+            <div class="col text-center">
+                <img src="./images/pig.png">
+                <h5>DES ÉCONOMIES EN ARGENT ET EN TEMPS</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque. Duis vulputate commodo.</p>
+            </div>
+            <div class="col text-center">
+                <img src="./images/location.png">
+                <h5>ENCOURAGER LE LOCAL</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque. Duis vulputate commodo.</p>
+            </div>
+            <div class="col text-center">
+                <img src="./images/truck.png">
+                <h5>LIVRAISON EN MOINS DE 48H</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque. Duis vulputate commodo.</p>
+            </div>
         </div>
-        <div class="col text-center">
-          <img src="./images/location.png">
-          <h5>Encourager le local</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
-            mattis ac neque. Duis vulputate commodo.</p>
-        </div>
-        <div class="col text-center">
-          <img src="./images/truck.png">
-          <h5>Livraison en moins de 48h</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
-            mattis ac neque. Duis vulputate commodo.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Main content-->
+    </section>
 
-  <!-- Footer-->
-  <footer></footer>
-  <!--Footer-->
+    <section class="section-3">
+        <div class="row">
+            <div class="section-title section-title-line">PRODUIT EN VEDETTE</div>
+            <div class="slider produit-en-vedette">
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product1.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">MINOT DES GLACES</h6>
+                        <p class="product-info-description">Cidrerie du Minot</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(55)</span>
+                        </p>
+                        <p class="product-info-price">22,95 CA$</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product2.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">TARTE AUX POMMES</h6>
+                        <p class="product-info-description">Pavillon de la pomme</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(12)</span>
+                        </p>
+                        <p class="product-info-price">9,95 CA$</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product3.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">SAUMON SAUVAGE </h6>
+                        <p class="product-info-description">Poissonnerie Gaspez'y</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(27)</span>
+                        </p>
+                        <p class="product-info-price">8,00/100 g CA$</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product4.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">Biscuits à l’avoine et miel</h6>
+                        <p class="product-info-description">Pâtisserie Michaud</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(103)</span>
+                        </p>
+                        <p class="product-info-price">5,95/paquet de 6 CA$</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product1.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">MINOT DES GLACES</h6>
+                        <p class="product-info-description">Cidrerie du Minot</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(55)</span>
+                        </p>
+                        <p class="product-info-price">22,95 CA$</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product2.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">TARTE AUX POMMES</h6>
+                        <p class="product-info-description">Pavillon de la pomme</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(12)</span>
+                        </p>
+                        <p class="product-info-price">9,95 CA$</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product3.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">SAUMON SAUVAGE </h6>
+                        <p class="product-info-description">Poissonnerie Gaspez'y</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(27)</span>
+                        </p>
+                        <p class="product-info-price">8,00/100 g CA$</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="img-group">
+                        <img src="./images/product4.png">
+                        <span class="on-hover-btns">
+                        <button class="btn-quick-overview">APERÇU RAPIDE</button>
+                        <button class="btn-product-like"></button>
+                        <button class="btn-add-to-cart">AJOUTER AU PANIER</button>
+                    </span>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-info-caption">Biscuits à l’avoine et miel</h6>
+                        <p class="product-info-description">Pâtisserie Michaud</p>
+                        <p class="product-info-mark">
+                            <span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span><span>(103)</span>
+                        </p>
+                        <p class="product-info-price">5,95/paquet de 6 CA$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4">
+        <div class="row">
+            <div class="section-title">PARCOURIR PAR CATÉGORIES</div>
+            <div class="slider parcourir-par-catégories">
+                <div class="parent">
+                    <img src="./images/product21.png">
+                    <p>À BOIRE</p>
+                </div>
+                <div class="parent">
+                    <img src="./images/product22.png">
+                    <p>VIANDE ET POISSON</p>
+                </div>
+                <div class="parent">
+                    <img src="./images/product23.png">
+                    <p>PRODUITS LAITIERS</p>
+                </div>
+                <div class="parent">
+                    <img src="./images/product24.png">
+                    <p>BOULANGERIE ET PÂTISSERIE</p>
+                </div>
+                <div class="parent">
+                    <img src="./images/product25.png">
+                    <p>FRUITS & LÉGUMES</p>
+                </div>
+                <div class="parent">
+                    <img src="./images/product26.png">
+                    <p>ÉPICERIE</p>
+                </div>
+                <div class="parent">
+                    <img src="./images/product27.png">
+                    <p>SUCRERIES</p>
+                </div>
+                <div class="parent">
+                    <img src="./images/product28.png">
+                    <p>COSMÉTIQUES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-5">
+        <div class="row">
+            <div class="section-title section-title-line">PRODUCTEUR DE LA SEMAINE</div>
+            <div class="producteur-de-la-semaine">
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/img5.png" alt="">
+                    </div>
+                    <div class="col">
+                        <div>
+                            <p>
+                                Cidrerie du Minot
+                                <span>Montérégie</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu
+                                pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt
+                                id.
+                                Sed rhoncus, tortor sed eleifend tristique.
+                            </p>
+                        </div>
+                        <button>En savoir plus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-6">
+        <div class="row">
+            <div class="section-title section-title-line">NOS CLIENTS NOUS DISENT...</div>
+        </div>
+    </section>
+    <!-- Main content-->
+
+    <!-- Footer-->
+    <footer></footer>
+    <!--Footer-->
 </div>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -231,5 +520,31 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.produit-en-vedette').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            infinite: true,
+            arrows: true,
+            cssEase: 'linear'
+        });
+        $('.parcourir-par-catégories').slick({
+            slidesToShow: 8,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            infinite: true,
+            arrows: true,
+            cssEase: 'linear'
+        });
+        $('.slick-prev').append('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
+        $('.slick-next').append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
+//        $('.slick-next').each(function(){
+//            $(this).append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
+//        });
+    });
+</script>
 </body>
 </html>

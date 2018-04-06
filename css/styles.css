@@ -1,74 +1,152 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@font-face {
+    font-family: NunitoSans-Black;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Black.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-BlackItalic;
+    src: url(../fonts/Nunito_Sans/NunitoSans-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-Bold;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-BoldItalic;
+    src: url(../fonts/Nunito_Sans/NunitoSans-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-ExtraBold;
+    src: url(../fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-ExtraBoldItalic;
+    src: url(../fonts/Nunito_Sans/NunitoSans-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-ExtraLight;
+    src: url(../fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-ExtraLightItalic;
+    src: url(../fonts/Nunito_Sans/NunitoSans-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-Italic;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-Light;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-LightItalic;
+    src: url(../fonts/Nunito_Sans/NunitoSans-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-Regular;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-SemiBold;
+    src: url(../fonts/Nunito_Sans/NunitoSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: NunitoSans-SemiBoldItalic;
+    src: url(../fonts/Nunito_Sans/NunitoSans-SemiBoldItalic.ttf);
+}
+
 body {
-        font-family: 'Nunito Sans', serif;
-        font-size: 14px;
-      }
+    font-family: NunitoSans-Regular, serif;
+    font-size: 14px;
+}
 
 h1,
 h2,
 h3 {
-  font-weight: normal;
-  line-height: 1.2;
+    font-weight: normal;
+    line-height: 1.2;
 }
 
-.full-width{
+.full-width {
     width: 100% !important;
 }
 
-.no-padding{
+.no-padding {
     padding: 0px !important;
 }
 
 /*HEADER*/
-.header-menu-top{
-    margin-bottom: 1%;
-    padding: 0px !important;
+.header-menu-top {
+    margin-bottom: 0.7%;
+    padding: 0 !important;
+    background-color: #000000;
 }
 
-.header-menu-top .nav-link{
+.header-menu-top .nav-link {
     color: white;
-}
-
-a.nav-link{
+    font-family: NunitoSans-Light, serif;
     font-size: 13px;
 }
 
-a.nav-link.active, a.nav-link:hover{
+a.nav-link {
+    font-size: 13px;
+}
+
+.header-menu-top  a.nav-link.active, .header-menu-top  a.nav-link:hover {
     text-decoration: underline;
 }
 
-.header-menu-top .dropdown-toggle::after{
+.header-menu-top .dropdown-toggle::after {
     display: none !important;
 }
 
-.navbar-brand{
-	font-weight: bolder;
-	font-size: 30px;
+.navbar-brand {
+    font-family: NunitoSans-ExtraBold, serif;
+    font-size: 30px;
 }
 
-.search-input, .search-btn{
+.search-input, .search-btn {
     border-color: #c1c1c1 !important;
 }
 
 .search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */
+    font-size: 18px;
+    font-family: NunitoSans-SemiBold, serif;
 }
 
 .search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: black;
+    font-size: 18px;
+    font-family: NunitoSans-SemiBold, serif;
 }
 
 .search-input::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
+    font-size: 18px;
+    font-family: NunitoSans-SemiBold, serif;
 }
 
-.header-icons{
+.header-icons {
     height: 100%;
     width: 100%;
 }
 
-.btn-icons{
+.btn-icons {
     position: relative;
     border: none;
     background-color: transparent;
@@ -81,26 +159,36 @@ a.nav-link.active, a.nav-link:hover{
     margin-top: 10px;
 }
 
-.btn-icons-cart{
-    margin: 0!important;
+.btn-icons-cart {
+    margin: 0 !important;
 }
 
-.btn-icons-cart i{
-    font-size: 32px;
+.btn-icons-cart i {
+    font-size: 36px;
+    margin-top: -5px;
     /*background-image: url("../images/cart-icon.png");*/
 }
-.btn-icons-list{
-    background-image: url("../images/list-icon.png");
+
+.btn-icons-cart:hover i {
+    color: black;
 }
 
-.btn-icons-list-likes{
+.btn-icons-list {
+     background-image: url("../images/list-icon.png");
+ }
+
+.btn-icons-list:hover {
+    background-image: url("../images/list-icon-hover.png");
+}
+
+.btn-icons-list-likes {
     position: absolute;
     font-size: 14px;
     right: 10px;
     bottom: 10px;
 }
 
-.btn-icons-cart-count{
+.btn-icons-cart-count {
     position: absolute;
     font-size: 12px;
     right: 25%;
@@ -108,74 +196,127 @@ a.nav-link.active, a.nav-link:hover{
     border-radius: 10px;
     width: 15px;
     height: 15px;
-    background-color: orangered;
+    background-color: #f0632f;
     color: white;
     font-weight: bold;
 }
 
-.header-menu-main .nav-link.active{
-    color: orangered;
+.header-menu-main .nav-link.active {
+    color: #f0632f;
     text-decoration: none;
 }
 
-.header-menu-main .nav-link{
+.header-menu-main .nav-link {
     color: black;
-    font-weight: bold;
+    font-family: NunitoSans-Regular, serif;
+    font-size: 13px;
+    margin: 1rem 2.35rem;
 }
 
-.carousel-caption{
-    top: 30%!important;
+.header-menu-main  .nav-item:hover {
+    background: black;
+    color: white!important;
+}
+
+.header-menu-main  .nav-item:hover .nav-link{
+    color: white!important;
+}
+
+.header-menu-main .nav .nav-item a {
+    padding: 0 !important;
+}
+
+.header-menu-main .nav .nav-item:first-child a {
+    border-bottom: 2px solid black;
+}
+
+.carousel-caption {
+    top: 30% !important;
     text-align: left !important;
+    right: 0 !important;
+    left: 13% !important;
 }
 
-.carousel-caption .carousel-caption-title{
+.carousel-caption .carousel-caption-title {
     background-color: black;
-    width: 100%;
+    width: 90%;
     text-align: center;
-    font-weight: bold;
-    word-spacing: 10px;
+    /*font-weight: bold;*/
+    /*word-spacing: 10px;*/
+    font-size: 51.13px;
+    font-family: NunitoSans-Bold, serif;
 }
 
-.carousel-caption .carousel-caption-description{
+.carousel-caption .carousel-caption-description {
     background-color: white;
     color: black;
     text-align: center;
-    width: 50%;
-    font-weight: bold;
+    width: 40%;
+    font-size: 23px;
+    font-family: NunitoSans-Bold, serif;
 }
 
-.carousel-caption .carousel-caption-btn{
-    background-color: orangered !important;
+.carousel-caption .carousel-caption-btn {
+    background-color: #f0632f !important;
     color: white !important;
-    width: 25%;
+    width: 18%;
     border: none;
     padding: .5rem 1rem;
     margin-top: 3%;
+    font-size: 18px;
+    font-family: NunitoSans-SemiBold, serif;
 }
 
-.photo-right-section-top, .photo-right-section-bottom{
+.carousel-caption .carousel-caption-btn:hover {
+    background-color: #d6582a !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5% !important;
+    color: black !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    position: absolute;
+    width: 80% !important;
+    height: 80px !important;
+}
+
+.carousel-control-next-icon {
+    background-image: none !important;
+    font-size: 30px;
+    right: 0;
+}
+
+.carousel-control-prev-icon {
+    background-image: none !important;
+    font-size: 30px;
+    left: 0;
+}
+
+.photo-right-section-top, .photo-right-section-bottom {
     width: 100%;
     height: 100%;
     margin-left: 0;
 }
 
-.photo-right-section-top{
+.photo-right-section-top {
     height: 70%;
     position: absolute;
     top: 0;
 }
 
-.photo-right-section-bottom{
+.photo-right-section-bottom {
     height: 30%;
     position: absolute;
     bottom: 0;
 }
 
-.photo-right-section-bottom img, .photo-right-section-top img{
+.photo-right-section-bottom img, .photo-right-section-top img {
     width: 100%;
 }
 
-.photo-section-caption-top, .photo-section-caption-bottom{
+.photo-section-caption-top, .photo-section-caption-bottom {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -184,28 +325,238 @@ a.nav-link.active, a.nav-link:hover{
     text-decoration: underline;
 }
 
-.photo-section-caption-top{
+.photo-section-caption-top {
     top: 65%;
 }
 
-.photo-section-caption-bottom{
+.photo-section-caption-bottom {
     top: 35%;
 }
 
-.photo-section-caption i{
-    text-decoration: none!important;
+.photo-section-caption-title {
+    font-size: 30px;
+    font-family: NunitoSans-Light, serif;
 }
+
+.photo-section-caption-description {
+    font-size: 24px;
+    font-family: NunitoSans-Bold, serif;
+}
+
+.photo-section-caption i {
+    text-decoration: none !important;
+}
+
 /*HEADER*/
 /*BODY*/
-.section-2{
-    margin-top: 3%;
+/*SECTION2*/
+.section-2 {
+    margin: 3% auto;
+    width: 80%;
 }
 
-.section-2 h5{
-    font-weight: bold;
+.section-2 h5 {
+    font-size: 18px;
+    font-family: NunitoSans-ExtraBold, serif;
 }
 
-.section-2 img{
-   margin-bottom: 2%;
+.section-2 p {
+    font-size: 15px;
+    font-family: NunitoSans-Light, serif;
+    color: #888888;
+    padding: 0 15%;
 }
+
+.section-2 img {
+    margin-bottom: 2%;
+}
+
+/*SECTION2*/
+
+/*SECTION3*/
+.section-title {
+    font-size: 30px;
+    font-family: NunitoSans-ExtraBold, serif;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-title-line {
+    overflow: hidden;
+}
+
+.section-title-line:before,
+.section-title-line:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1px;
+    background: #cdcdcd;
+    border: solid #FFF;
+    border-width: 0 10px;
+}
+
+.section-title-line:before {
+    margin-left: -100%;
+}
+
+.section-title-line:after {
+    margin-right: -100%;
+}
+
+.img-group {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.on-hover-btns {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 92%;
+    height: 100%;
+    z-index: 100;
+}
+
+.on-hover-btns:hover {
+    display: block;
+}
+
+.btn-product-like {
+    width: 26px;
+    height: 23px;
+    background-image: url(../images/like-icon.png);
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.btn-product-like:hover {
+    background-image: url(../images/like-icon-hover.png);
+}
+
+.btn-quick-overview {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background: white;
+    border: none;
+    font-size: 13px;
+    font-family: NunitoSans-Bold, serif;
+}
+
+.btn-quick-overview:hover {
+    background: #000000;
+    color: white;
+}
+
+.btn-add-to-cart {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    left: 25%;
+    border: none;
+    background: #f0632f;
+    font-size: 15px;
+    font-family: NunitoSans-Bold, serif;
+    padding: .7rem 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.btn-add-to-cart:hover {
+    background: #d6582a;
+}
+
+.produit-en-vedette img {
+    width: 350px;
+    height: 350px;
+}
+
+.product-info{
+    margin-top: 5%;
+}
+
+.product-info-caption{
+    font-family: NunitoSans-Bold, serif;
+    font-size: 18px;
+}
+
+.product-info-description{
+    color: #999999;
+    font-family: NunitoSans-Light, serif;
+    font-size: 15px;
+    margin: 0!important;
+}
+
+.product-info-mark{
+    font-family: NunitoSans-Light, serif;
+    font-size: 15px;
+    margin: 0!important;
+}
+
+.product-info-price{
+    font-family: NunitoSans-Bold, serif;
+    font-size: 15px;
+}
+/*SECTION3*/
+
+/*SECTION4*/
+.section-4{
+    background: #f2f1f1;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.parcourir-par-catégories p{
+    font-size: 15px;
+    font-family: NunitoSans-Regular, serif;
+}
+
+.parcourir-par-catégories .parent:hover{
+    border-bottom: 2px solid black;
+}
+/*SECTION4*/
+
+/*SECTION5*/
+.producteur-de-la-semaine{
+    width: 54%;
+    margin: 1% auto;
+}
+/*SECTION5*/
 /*BODY*/
+/*SLIDER*/
+.slider {
+    width: 80%;
+    margin: 1% auto;
+    margin-left: 10.8%;
+}
+
+.slick-arrow i {
+    color: #000 !important;
+    font-size: 30px;
+}
+
+.slick-prev:before, .slick-next:before {
+    display: none !important;
+}
+
+.slick-prev, .slick-next {
+    top: 35% !important;
+}
+
+.slick-prev {
+    left: -50px !important;
+}
+
+/*SLIDER*/
