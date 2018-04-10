@@ -88,6 +88,25 @@ h3 {
     padding: 0px !important;
 }
 
+li{
+    list-style-type: none;
+}
+ul{
+    padding: 0!important;
+}
+
+.divider{
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 80%;
+    height: 1px;
+    background: #cdcdcd;
+    border: solid #FFF;
+    border-width: 0 10px;
+    margin: 1% auto;
+}
+
 /*HEADER*/
 .header-menu-top {
     margin-bottom: 0.7%;
@@ -105,7 +124,7 @@ a.nav-link {
     font-size: 13px;
 }
 
-.header-menu-top  a.nav-link.active, .header-menu-top  a.nav-link:hover {
+.header-menu-top a.nav-link.active, .header-menu-top a.nav-link:hover {
     text-decoration: underline;
 }
 
@@ -174,8 +193,8 @@ a.nav-link {
 }
 
 .btn-icons-list {
-     background-image: url("../images/list-icon.png");
- }
+    background-image: url("../images/list-icon.png");
+}
 
 .btn-icons-list:hover {
     background-image: url("../images/list-icon-hover.png");
@@ -213,13 +232,13 @@ a.nav-link {
     margin: 1rem 2.35rem;
 }
 
-.header-menu-main  .nav-item:hover {
+.header-menu-main .nav-item:hover {
     background: black;
-    color: white!important;
+    color: white !important;
 }
 
-.header-menu-main  .nav-item:hover .nav-link{
-    color: white!important;
+.header-menu-main .nav-item:hover .nav-link {
+    color: white !important;
 }
 
 .header-menu-main .nav .nav-item a {
@@ -483,57 +502,253 @@ a.nav-link {
     height: 350px;
 }
 
-.product-info{
+.product-info {
     margin-top: 5%;
 }
 
-.product-info-caption{
+.product-info-caption {
     font-family: NunitoSans-Bold, serif;
     font-size: 18px;
 }
 
-.product-info-description{
+.product-info-description {
     color: #999999;
     font-family: NunitoSans-Light, serif;
     font-size: 15px;
-    margin: 0!important;
+    margin: 0 !important;
 }
 
-.product-info-mark{
+.product-info-mark {
     font-family: NunitoSans-Light, serif;
     font-size: 15px;
-    margin: 0!important;
+    margin: 0 !important;
 }
 
-.product-info-price{
+.product-info-price {
     font-family: NunitoSans-Bold, serif;
     font-size: 15px;
 }
+
 /*SECTION3*/
 
 /*SECTION4*/
-.section-4{
+.section-4 {
     background: #f2f1f1;
     text-align: center;
     padding: 2rem 0;
 }
 
-.parcourir-par-catégories p{
+.parcourir-par-catégories p {
     font-size: 15px;
     font-family: NunitoSans-Regular, serif;
 }
 
-.parcourir-par-catégories .parent:hover{
+.parcourir-par-catégories .slide:hover {
     border-bottom: 2px solid black;
 }
+
 /*SECTION4*/
 
 /*SECTION5*/
-.producteur-de-la-semaine{
-    width: 54%;
+.producteur-de-la-semaine {
+    width: 50%;
     margin: 1% auto;
+    font-family: NunitoSans-Regular, serif;
+    font-size: 15px;
+}
+
+.producteur-de-la-semaine-caption {
+    display: block;
+    color: #000 !important;
+    font-family: NunitoSans-Bold, serif !important;
+    font-size: 18px !important;
+    margin: 0 !important;
+}
+.producteur-de-la-semaine-subtitle{
+    display: block;
+    font-family: NunitoSans-Regular, serif !important;
+    font-size: 15px !important;
+    margin-bottom: 5%;
+}
+.producteur-de-la-semaine-subtitle, .producteur-de-la-semaine-description{
+    color: #999999;
+}
+
+.producteur-de-la-semaine-btn {
+    border: none;
+    background: #f0632f;
+    font-size: 15px;
+    font-family: NunitoSans-Bold, serif;
+    padding: .7rem 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.producteur-de-la-semaine-btn:hover {
+    background: #d6582a;
+}
+.client-maturin-caption{
+    font-size: 30px;
+    font-family: NunitoSans-Light, serif;
+}
+
+.client-maturin-description{
+    font-size: 15px;
+    font-family: NunitoSans-Light, serif;
+    margin: 5% auto;
+}
+.client-maturin-details a{
+    font-size: 16px;
+    font-family: NunitoSans-Bold, serif;
+    color: #f0632f!important;
+}
+
+.client-maturin-details a:hover{
+    color: #d6582a!important;
 }
 /*SECTION5*/
+
+/*SECTION6*/
+
+.nos-clients-nous-disent-left {
+    background-image: url("../images/img4.png");
+    background-size: cover;
+    height: 530px;
+    width: 100%;
+    float: right;
+}
+
+.nos-clients-nous-disent-right {
+    background: black;
+    height: 530px;
+    width: 100%;
+    float: left;
+    color: white;
+    padding-left: 20px;
+    padding-top: 5%;
+}
+
+.nos-clients-nous-disent-right-caption{
+    font-size: 24px;
+    font-family: NunitoSans-Bold, serif;
+}
+
+.nos-clients-nous-disent-right-subtitle{
+    font-size: 15px;
+    font-family: NunitoSans-Bold, serif;
+    display: block;
+}
+
+.nos-clients-nous-disent-right-description{
+    font-size: 15px;
+    font-family: NunitoSans-Italic, serif;
+    margin: 5% auto;
+}
+.nos-clients-nous-disent-right-profile{
+    font-size: 13px;
+    font-family: NunitoSans-Bold, serif;
+    margin: 10% auto;
+}
+
+.nos-clients-nous-disent-right-btn{
+    border: none;
+    background: #f0632f;
+    font-size: 15px;
+    font-family: NunitoSans-Bold, serif;
+    padding: .7rem 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.nos-clients-nous-disent-right-btn:hover {
+    background: #d6582a;
+}
+.messenger-btn{
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/messenger.png");
+    background-size: cover;
+    border: none!important;
+    background-color: transparent!important;
+    position: relative;
+    right: -105%;
+    top: 20px;
+}
+
+.quest-ce-que-maturin{
+    width: 35%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.quest-ce-que-maturin-caption{
+    font-size: 30px;
+    font-family: NunitoSans-SemiBold, serif;
+}
+
+.quest-ce-que-maturin-description{
+    color: #777777!important;
+    font-size: 15px;
+    font-family: NunitoSans-Light, serif;
+}
+
+.quest-ce-que-maturin a{
+    font-size: 16px;
+    font-family: NunitoSans-Bold, serif;
+    color: #f0632f!important;
+}
+
+.quest-ce-que-maturin a:hover{
+    color: #d6582a!important;
+}
+
+.quest-ce-que-maturin-btn-grey, .quest-ce-que-maturin-btn-orage{
+    display: block;
+    border: none;
+    font-size: 15px;
+    font-family: NunitoSans-Bold, serif;
+    padding: .7rem 1rem;
+    text-align: center;
+    margin: 2% auto;
+    width: 340px;
+}
+
+.quest-ce-que-maturin-btn-grey{
+    color: black;
+    background: #e0dfde;
+}
+.quest-ce-que-maturin-btn-orage{
+    background: #f0632f;
+    color: white;
+}
+/*SECTION6*/
+
+/*FOOTER*/
+.nav-footer{
+    width: 80%;
+    margin: 1% auto;
+    font-size: 15px;
+    font-family: NunitoSans-Regular, serif;
+    color: #777777;
+}
+
+.nav-footer-caption{
+    font-family: NunitoSans-Bold, serif !important;
+    color: black!important;
+}
+.nav-footer-suivre i{
+    font-size: 18px;
+    padding-left: 2%;
+}
+.nav-footer-inline li {
+    display: inline-table;
+}
+
+.nav-footer-block{
+    border: 1px solid #e0dfde;
+}
+/*FOOTER*/
+
 /*BODY*/
 /*SLIDER*/
 .slider {
