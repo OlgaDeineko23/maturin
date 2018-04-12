@@ -88,14 +88,15 @@ h3 {
     padding: 0px !important;
 }
 
-li{
+li {
     list-style-type: none;
 }
-ul{
-    padding: 0!important;
+
+ul {
+    padding: 0 !important;
 }
 
-.divider{
+.divider {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
@@ -105,6 +106,13 @@ ul{
     border: solid #FFF;
     border-width: 0 10px;
     margin: 1% auto;
+}
+
+.section-6 {
+    margin: 1% auto!important;
+}
+section {
+    margin: 5% auto;
 }
 
 /*HEADER*/
@@ -299,6 +307,7 @@ a.nav-link {
     position: absolute;
     width: 80% !important;
     height: 80px !important;
+    background: #f9f9f9;
 }
 
 .carousel-control-next-icon {
@@ -311,6 +320,16 @@ a.nav-link {
     background-image: none !important;
     font-size: 30px;
     left: 0;
+}
+
+.carousel-control-next-icon i {
+    padding-top: 25px;
+    margin-left: 5px;
+}
+
+.carousel-control-prev-icon i {
+    padding-top: 25px;
+    margin-right: 5px;
 }
 
 .photo-right-section-top, .photo-right-section-bottom {
@@ -399,6 +418,7 @@ a.nav-link {
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 30px !important;
 }
 
 .section-title-line {
@@ -426,25 +446,31 @@ a.nav-link {
     margin-right: -100%;
 }
 
-.img-group {
+.slide-group {
     position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto;
 }
 
-.on-hover-btns {
+.slide-group-img {
     display: block;
+}
+
+.slide-group:hover .on-hover-btns {
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.on-hover-btns {
+    opacity: 0;
+    transition: opacity .3s;
     position: absolute;
     top: 0;
     bottom: 0;
     width: 92%;
     height: 100%;
     z-index: 100;
-}
-
-.on-hover-btns:hover {
-    display: block;
 }
 
 .btn-product-like {
@@ -502,6 +528,10 @@ a.nav-link {
     height: 350px;
 }
 
+.produit-en-vedette a {
+    color: #999999;
+}
+
 .product-info {
     margin-top: 5%;
 }
@@ -529,6 +559,18 @@ a.nav-link {
     font-size: 15px;
 }
 
+.starHover {
+    color: #f0632f !important;
+}
+
+.rating li, .rating ul {
+    display: inline !important;
+}
+
+.rating {
+    display: initial !important;
+}
+
 /*SECTION3*/
 
 /*SECTION4*/
@@ -550,9 +592,13 @@ a.nav-link {
 /*SECTION4*/
 
 /*SECTION5*/
-.producteur-de-la-semaine {
+div.producteur-de-la-semaine:last-child {
+    margin: 4% auto !important;
+}
+
+div.producteur-de-la-semaine {
     width: 50%;
-    margin: 1% auto;
+    margin: 1% auto 4% auto;
     font-family: NunitoSans-Regular, serif;
     font-size: 15px;
 }
@@ -564,13 +610,15 @@ a.nav-link {
     font-size: 18px !important;
     margin: 0 !important;
 }
-.producteur-de-la-semaine-subtitle{
+
+.producteur-de-la-semaine-subtitle {
     display: block;
     font-family: NunitoSans-Regular, serif !important;
     font-size: 15px !important;
     margin-bottom: 5%;
 }
-.producteur-de-la-semaine-subtitle, .producteur-de-la-semaine-description{
+
+.producteur-de-la-semaine-subtitle, .producteur-de-la-semaine-description {
     color: #999999;
 }
 
@@ -582,30 +630,35 @@ a.nav-link {
     padding: .7rem 1rem;
     color: #ffffff;
     text-align: center;
+    width: 210px;
 }
 
 .producteur-de-la-semaine-btn:hover {
     background: #d6582a;
 }
-.client-maturin-caption{
+
+.client-maturin-caption {
     font-size: 30px;
     font-family: NunitoSans-Light, serif;
 }
 
-.client-maturin-description{
+.client-maturin-description {
     font-size: 15px;
     font-family: NunitoSans-Light, serif;
     margin: 5% auto;
 }
-.client-maturin-details a{
+
+.client-maturin-details a {
     font-size: 16px;
     font-family: NunitoSans-Bold, serif;
-    color: #f0632f!important;
+    color: #f0632f !important;
+    cursor: pointer;
 }
 
-.client-maturin-details a:hover{
-    color: #d6582a!important;
+.client-maturin-details a:hover {
+    color: #d6582a !important;
 }
+
 /*SECTION5*/
 
 /*SECTION6*/
@@ -628,29 +681,30 @@ a.nav-link {
     padding-top: 5%;
 }
 
-.nos-clients-nous-disent-right-caption{
+.nos-clients-nous-disent-right-caption {
     font-size: 24px;
     font-family: NunitoSans-Bold, serif;
 }
 
-.nos-clients-nous-disent-right-subtitle{
+.nos-clients-nous-disent-right-subtitle {
     font-size: 15px;
     font-family: NunitoSans-Bold, serif;
     display: block;
 }
 
-.nos-clients-nous-disent-right-description{
+.nos-clients-nous-disent-right-description {
     font-size: 15px;
     font-family: NunitoSans-Italic, serif;
     margin: 5% auto;
 }
-.nos-clients-nous-disent-right-profile{
+
+.nos-clients-nous-disent-right-profile {
     font-size: 13px;
     font-family: NunitoSans-Bold, serif;
     margin: 10% auto;
 }
 
-.nos-clients-nous-disent-right-btn{
+.nos-clients-nous-disent-right-btn {
     border: none;
     background: #f0632f;
     font-size: 15px;
@@ -663,46 +717,49 @@ a.nav-link {
 .nos-clients-nous-disent-right-btn:hover {
     background: #d6582a;
 }
-.messenger-btn{
+
+.messenger-btn {
     width: 50px;
     height: 50px;
     background-image: url("../images/messenger.png");
     background-size: cover;
-    border: none!important;
-    background-color: transparent!important;
+    border: none !important;
+    background-color: transparent !important;
     position: relative;
     right: -105%;
-    top: 20px;
+    top: 90px;
 }
 
-.quest-ce-que-maturin{
+div.quest-ce-que-maturin {
     width: 35%;
-    margin: 1% auto;
+    margin: 4% auto;
     text-align: center;
 }
 
-.quest-ce-que-maturin-caption{
+.quest-ce-que-maturin-caption {
     font-size: 30px;
     font-family: NunitoSans-SemiBold, serif;
 }
 
-.quest-ce-que-maturin-description{
-    color: #777777!important;
+.quest-ce-que-maturin-description {
+    color: #777777 !important;
     font-size: 15px;
     font-family: NunitoSans-Light, serif;
+    margin: 3% auto;
 }
 
-.quest-ce-que-maturin a{
+.quest-ce-que-maturin a {
     font-size: 16px;
     font-family: NunitoSans-Bold, serif;
-    color: #f0632f!important;
+    color: #f0632f !important;
+    cursor: pointer;
 }
 
-.quest-ce-que-maturin a:hover{
-    color: #d6582a!important;
+.quest-ce-que-maturin a:hover {
+    color: #d6582a !important;
 }
 
-.quest-ce-que-maturin-btn-grey, .quest-ce-que-maturin-btn-orage{
+.quest-ce-que-maturin-btn-grey, .quest-ce-que-maturin-btn-orage {
     display: block;
     border: none;
     font-size: 15px;
@@ -713,18 +770,28 @@ a.nav-link {
     width: 340px;
 }
 
-.quest-ce-que-maturin-btn-grey{
+.quest-ce-que-maturin-btn-grey {
     color: black;
     background: #e0dfde;
 }
-.quest-ce-que-maturin-btn-orage{
+
+.quest-ce-que-maturin-btn-orage {
     background: #f0632f;
     color: white;
 }
+
+.quest-ce-que-maturin-btn-grey:hover {
+    background: #e0dfde87 !important;
+}
+
+.quest-ce-que-maturin-btn-orage:hover {
+    background: #d6582a !important;
+}
+
 /*SECTION6*/
 
 /*FOOTER*/
-.nav-footer{
+.nav-footer {
     width: 80%;
     margin: 1% auto;
     font-size: 15px;
@@ -732,21 +799,52 @@ a.nav-link {
     color: #777777;
 }
 
-.nav-footer-caption{
+.nav-footer-caption {
     font-family: NunitoSans-Bold, serif !important;
-    color: black!important;
+    color: black !important;
 }
-.nav-footer-suivre i{
+
+.nav-footer-suivre i {
     font-size: 18px;
     padding-left: 2%;
+    color: black !important;
 }
+
+.nav-footer-suivre i:hover {
+    color: #777777!important;
+}
+
+.nav-footer-inline {
+    margin: 0 auto;
+}
+
 .nav-footer-inline li {
     display: inline-table;
 }
 
-.nav-footer-block{
-    border: 1px solid #e0dfde;
+.nav-footer-help {
+    margin-right: 190px;
 }
+
+.nav-footer-help li {
+    margin-right: 40px;
+}
+
+.nav-footer-block {
+    border: 1px solid #e0dfde;
+    max-width: 70%;
+}
+
+.nav-footer-block li {
+    padding: 0.8rem 0.5rem !important;
+    cursor: pointer;
+}
+
+.nav-footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /*FOOTER*/
 
 /*BODY*/
@@ -772,6 +870,10 @@ a.nav-link {
 
 .slick-prev {
     left: -50px !important;
+}
+
+.parcourir-par-catégories .slick-track {
+    height: 220px;
 }
 
 /*SLIDER*/
