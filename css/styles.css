@@ -237,7 +237,7 @@ a.nav-link {
     color: black;
     font-family: NunitoSans-Regular, serif;
     font-size: 13px;
-    margin: 1rem 2.35rem;
+    margin: 1rem 1.35rem;
 }
 
 .header-menu-main .nav-item:hover {
@@ -446,23 +446,23 @@ a.nav-link {
     margin-right: -100%;
 }
 
-.slide-group {
+.product-group {
     position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto;
 }
 
-.slide-group-img {
+.product-image {
     display: block;
 }
 
-.slide-group:hover .on-hover-btns {
+.product-group:hover .product-btn {
     opacity: 1;
     transition: opacity .3s;
 }
 
-.on-hover-btns {
+.product-btn {
     opacity: 0;
     transition: opacity .3s;
     position: absolute;
@@ -473,7 +473,7 @@ a.nav-link {
     z-index: 100;
 }
 
-.btn-product-like {
+.product-btn-like {
     width: 26px;
     height: 23px;
     background-image: url(../images/like-icon.png);
@@ -486,11 +486,11 @@ a.nav-link {
     top: 15px;
 }
 
-.btn-product-like:hover {
+.product-btn-like:hover {
     background-image: url(../images/like-icon-hover.png);
 }
 
-.btn-quick-overview {
+.product-btn-overview {
     position: absolute;
     left: 15px;
     top: 15px;
@@ -500,12 +500,12 @@ a.nav-link {
     font-family: NunitoSans-Bold, serif;
 }
 
-.btn-quick-overview:hover {
+.product-btn-overview:hover {
     background: #000000;
     color: white;
 }
 
-.btn-add-to-cart {
+.product-btn-add-to-cart {
     position: absolute;
     bottom: 25px;
     right: 0;
@@ -519,42 +519,44 @@ a.nav-link {
     text-align: center;
 }
 
-.btn-add-to-cart:hover {
+.product-btn-add-to-cart:hover {
     background: #d6582a;
 }
 
 .produit-en-vedette img {
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
 }
 
 .produit-en-vedette a {
     color: #999999;
 }
 
-.product-info {
+.product {
     margin-top: 5%;
 }
 
-.product-info-caption {
+.product-title {
     font-family: NunitoSans-Bold, serif;
     font-size: 18px;
 }
 
-.product-info-description {
+.product-subtitle {
     color: #999999;
     font-family: NunitoSans-Light, serif;
     font-size: 15px;
     margin: 0 !important;
 }
 
-.product-info-mark {
+.product-rating {
     font-family: NunitoSans-Light, serif;
     font-size: 15px;
     margin: 0 !important;
 }
 
-.product-info-price {
+.product-price {
     font-family: NunitoSans-Bold, serif;
     font-size: 15px;
 }
@@ -727,7 +729,7 @@ div.producteur-de-la-semaine {
     background-color: transparent !important;
     position: relative;
     right: -105%;
-    top: 90px;
+    top: 4rem;
 }
 
 div.quest-ce-que-maturin {
@@ -832,7 +834,7 @@ div.quest-ce-que-maturin {
 
 .nav-footer-block {
     border: 1px solid #e0dfde;
-    max-width: 70%;
+    max-width: 90%;
 }
 
 .nav-footer-block li {
