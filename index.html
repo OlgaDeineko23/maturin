@@ -114,9 +114,9 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="full-width header-menu-main">
-                <ul class="nav justify-content-end full-width">
+        <div class="row">
+            <div class="header-menu-main">
+                <ul class="nav nav-justified">
                     <li class="nav-item">
                         <a class="nav-link" href="category.html">À BOIRE</a>
                     </li>
@@ -721,46 +721,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.produit-en-vedette').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            focusOnSelect: true,
-            infinite: true,
-            arrows: true
-        });
-        $('.parcourir-par-catégories').slick({
-            slidesToShow: 8,
-            slidesToScroll: 1,
-            focusOnSelect: true,
-            infinite: true,
-            arrows: true
-        });
-        $('.slick-prev').append('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
-        $('.slick-next').append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
-
-        $(".product-image").mouseover(function () {
-            $(".product-btn").style.display = 'block';
-        });
-        $('ul.rating li').hover(function(){
-            console.log("hover");
-            var id      = $('a', this).attr('id');
-            var counter = 1;
-            var salt    = $(this).attr('class');
-            var parent = $(this).parent();
-            console.log('ul.rating li#'+id);
-            $('a').removeClass("starHover");
-            $('li.'+salt, parent).each(function(i){
-                if (id >= counter) {
-                    $('a#'+counter, parent).addClass("starHover");
-                } else {
-                    $('a#'+counter, parent).removeClass("starHover");
-                }
-                counter++;
-            });
-        });
-    });
-</script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

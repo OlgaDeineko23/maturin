@@ -238,6 +238,14 @@ a.nav-link {
     font-weight: bold;
 }
 
+.header-menu-main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header-menu-main .nav {
+    display: -webkit-box!important;
+}
 .header-menu-main .nav-link.active {
     color: #f0632f;
     text-decoration: none;
@@ -247,7 +255,10 @@ a.nav-link {
     color: black;
     font-family: NunitoSans-Regular, serif;
     font-size: 13px;
-    margin: 1rem 1.35rem;
+}
+
+.header-menu-main .nav-item{
+    margin: 1% 1%;
 }
 
 .header-menu-main .nav-item:hover {
@@ -457,7 +468,7 @@ a.nav-link {
 .product-group {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -479,7 +490,7 @@ a.nav-link {
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     z-index: 100;
     cursor: pointer;
 }
@@ -827,8 +838,7 @@ div.quest-ce-que-maturin {
 }
 
 .nav-footer-suivre i:hover {
-    color: #999999;
-!important;
+    color: #999999!important;
 }
 
 .nav-footer-inline {
@@ -840,7 +850,7 @@ div.quest-ce-que-maturin {
 }
 
 .nav-footer-help {
-    margin-right: 190px;
+    margin-right: 10%;
 }
 
 .nav-footer-help li {
@@ -912,14 +922,14 @@ div.quest-ce-que-maturin {
 .category-header-top {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .category-header-top-caption {
     position: absolute;
     right: 0;
     left: 0;
-    top: 40%;
+    top: 30%;
     margin: 0 auto;
     color: white;
     width: 65% !important;
@@ -988,9 +998,6 @@ a.category-header-description-more:hover {
     font-family: NunitoSans-Regular, serif;
     color: #999999;
 }
-/*.category-products-all .product-col{*/
-    /*float: left;*/
-/*}*/
 
 .category-product-filter{
     margin: 7% auto;
