@@ -1,0 +1,11 @@
+@media (max-width: 767px){
+    .section-2{
+        display: none;
+    }
+    .section-4{
+        display: none;
+    }
+    .section-4-mobile{
+        display: block!important;
+    }
+}
