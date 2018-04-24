@@ -28,7 +28,7 @@
             <nav class="navbar navbar-dark full-width header-menu-top">
                 <ul class="nav justify-content-end full-width">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Vendre sur Marketablle</a>
+                        <a class="nav-link" href="#">Vendre sur Marketablle</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">S’inscrire</a>
@@ -65,7 +65,7 @@
         </div>
         <div class="row">
             <div class="col text-right">
-                <a class="navbar-brand"><b>MATURIN</b></a>
+                <a class="navbar-brand goToHomePage"><b>MATURIN</b></a>
             </div>
             <div class="col-lg-9 col-md-6 col-sm-4 header-search">
                 <div class="row no-gutters">
@@ -97,8 +97,8 @@
         <div class="row">
             <div class="header-menu-main">
                 <ul class="nav nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link" href="category.html">À BOIRE</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">À BOIRE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">VIANDE ET POISSON</a>
@@ -131,38 +131,83 @@
                         <a class="nav-link active" href="#">SOLDES</a>
                     </li>
                 </ul>
+                <div class="sous-menu row">
+                    <div class="sous-menu-main col-2">
+                        <ul>
+                            <li>TOUS LES PRODUITS À BOIRE
+                                <i class="fa fa-chevron-right " aria-hidden="true"></i></li>
+                            <li>BOISSONS ALCOOLISÉES
+                                <i class="fa fa-chevron-right " aria-hidden="true"></i></li>
+                            <li>BOISSONS SANS ALCOOL
+                                <i class="fa fa-chevron-right " aria-hidden="true"></i></li>
+                            <li>
+                                JUS<i class="fa fa-chevron-right " aria-hidden="true"></i></li>
+                        </ul>
+                        <div class="sous-menu-btn">
+                            <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                        </div>
+                    </div>
+                    <div class="sous-submenu col-9">
+                        <div class="row">
+                        <div class="col-3">
+                            <ul>
+                                <li class="caption">VIN</li>
+                                <li>Vin blanc</li>
+                                <li>Vin rouge</li>
+                                <li>Vin rosé</li>
+                                <li class="caption">BIÈRE</li>
+                                <li>Bière blonde</li>
+                                <li>Bière blanche</li>
+                                <li>Bière rousse</li>
+                                <li>Bière IPA</li>
+                            </ul>
+                            <div class="sous-menu-btn">
+                                <button class="btn">NOUVEAUTÉS</button>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <ul>
+                                <li class="caption">CIDRE</li>
+                                <li>Cidre rosé</li>
+                                <li>Cidre blanc</li>
+                                <li class="caption">MOUSSEAUX</li>
+                                <li>Mousseau blanc</li>
+                                <li>Mousseau rosé</li>
+                                <li class="caption">SPIRITUEUX</li>
+                            </ul>
+                            <div class="sous-menu-btn">
+                                <button class="btn">SOLDES</button>
+                            </div>
+                        </div>
+                        <div class="sous-menu-img col-3">
+                            <img src="./images/sous-menu-img.png"  alt="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row ">
             <div class="col-md-8 no-padding">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="./images/img1.png" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="carousel-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
-                                <h6 class="carousel-caption-description">Des produits d’ici. À votre porte demain. </h6>
-                                <button class="carousel-caption-btn">Magaziner</button>
+                <div class="header-slider">
+                    <div class="slide"><img class="w-100" src="./images/header/img1.png" alt="First slide">
+                        <div class="header-slider-caption">
+                            <h2 class="header-slider-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
+                            <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte demain. </h6>
+                            <button class="header-slider-caption-btn goToCategoryPage">Magaziner</button>
                             </div>
-                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true">
-              <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            </span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true">
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="slide"><img class="w-100" src="./images/header/img1.png" alt="First second">
+                        <div class="header-slider-caption">
+                            <h2 class="header-slider-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
+                            <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte demain. </h6>
+                            <button class="header-slider-caption-btn goToCategoryPage">Magaziner</button>
+                        </div></div>
                 </div>
             </div>
             <div class="col-md-4 no-padding">
                 <div class="row photo-right-section-top">
-                    <img src="./images/img2.png" alt="">
+                    <img src="./images/header/img2.png" alt="">
                     <div class="photo-section-caption-top">
                         <h4 class="photo-section-caption-title">DÉCOUVREZ VOTRE RÉGION</h4>
                         <h6 class="photo-section-caption-description">Laurentide, Québec <i
@@ -170,7 +215,7 @@
                     </div>
                 </div>
                 <div class="row photo-right-section-bottom">
-                    <img src="./images/img3.png" alt="">
+                    <img src="./images/header/img3.png" alt="">
                     <div class="photo-section-caption-bottom">
                         <h4 class="photo-section-caption-title">À LA UNE</h4>
                         <h6 class="photo-section-caption-description">Nouvelles/articles <i
@@ -188,19 +233,19 @@
     <section class="section-2">
         <div class="row">
             <div class="col text-center">
-                <img src="./images/pig.png">
+                <img src="./images/icons/pig.png">
                 <h5>DES ÉCONOMIES EN ARGENT ET EN TEMPS</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
                     mattis ac neque. Duis vulputate commodo.</p>
             </div>
             <div class="col text-center">
-                <img src="./images/location.png">
+                <img src="./images/icons/location.png">
                 <h5>ENCOURAGER LE LOCAL</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
                     mattis ac neque. Duis vulputate commodo.</p>
             </div>
             <div class="col text-center">
-                <img src="./images/truck.png">
+                <img src="./images/icons/truck.png">
                 <h5>LIVRAISON EN MOINS DE 48H</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
                     mattis ac neque. Duis vulputate commodo.</p>
@@ -634,7 +679,8 @@
                 <div class="quest-ce-que-maturin-description">Recevez les suggestions que nous préparerons pour vous
                     ainsi que des idées-repas.
                 </div>
-                <button class="quest-ce-que-maturin-btn-grey">Entrez votre courriel</button>
+                <input type="email" class="quest-ce-que-maturin-btn-grey" placeholder="Entrez votre courriel" pattern=".+@beststartupever.com" oninput="validateEmail(this.value)"></input>
+                <span class="email-incorrect">E-mail incorrect</span>
                 <button class="quest-ce-que-maturin-btn-orage">M’inscrire</button>
                 <div class="messenger">
                     <button class="messenger-btn"></button>

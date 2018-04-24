@@ -1,10 +1,31 @@
 $(document).ready(function () {
-  $('.produit-en-vedette').slick({
+    $('.header-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        infinite: true,
+        arrows: true
+    });
+    $('.produit-en-vedette').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     focusOnSelect: true,
     infinite: true,
-    arrows: true
+    arrows: true,
+      responsive: [
+          {
+              breakpoint: 750,
+              settings: {
+                  slidesToShow: 2
+              }
+          },
+          {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1
+              }
+          }
+      ]
   });
   $('.parcourir-par-catégories').slick({
     slidesToShow: 8,
@@ -36,4 +57,22 @@ $(document).ready(function () {
       counter++;
     });
   });
+    $( ".goToCategoryPage" ).click(function() {
+        location.href = location.origin + '/maturin/' + 'category.html';
+    });
+    $( ".goToHomePage" ).click(function() {
+        location.href = location.origin + '/maturin/';
+    });
 });
+
+function validateEmail(email)
+{
+    var re = /\S+@\S+\.\S+/;
+    var warningMessage = $('.email-incorrect')[0];
+    if(re.test(email) === false){
+        warningMessage.style.opacity = 1;
+    }else {
+        warningMessage.style.opacity = 0;
+    }
+    console.log(re.test(email));
+}
