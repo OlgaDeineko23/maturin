@@ -27,6 +27,13 @@ $(document).ready(function () {
           }
       ]
   });
+  $('.produit-a-proximite').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    infinite: true,
+    arrows: true
+  });
   $('.parcourir-par-catégories').slick({
     slidesToShow: 8,
     slidesToScroll: 1,
@@ -63,6 +70,15 @@ $(document).ready(function () {
     $( ".goToHomePage" ).click(function() {
         location.href = location.origin + '/maturin/';
     });
+
+    $('.sous-menu-main li').mouseover(function () {
+        $(this).children().css( "display", "block");
+    }).mouseleave(function () {
+        if($(this).children()[1]){
+            $(this).children()[1].style.display = 'none';
+        }
+    });
+
 });
 
 function validateEmail(email)
