@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
     <link href="./css/responsive.css" rel="stylesheet" type="text/css" media="all">
     <script src="https://use.fontawesome.com/874ad7ad81.js"></script>
@@ -24,7 +24,7 @@
 <div class="container-fluid">
     <!--Header-->
     <header>
-        <div class="row">
+        <div class="row d-none d-xl-block  d-lg-block">
             <nav class="navbar navbar-dark full-width header-menu-top">
                 <ul class="nav justify-content-end full-width">
                     <li class="nav-item">
@@ -38,11 +38,11 @@
                            aria-haspopup="true"
                            aria-expanded="false">Se connecter <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -71,10 +71,39 @@
             </nav>
         </div>
         <div class="row">
-            <div class="col text-right">
-                <a class="navbar-brand goToHomePage"><b>MATURIN</b></a>
+            <div class="col-xl col-lg-2 col-md-6 col-sm-6 col-6">
+                <div class=" navbar-brand-wrapper">
+                    <a class="navbar-brand goToHomePage"><b>MATURIN</b></a>
+                    <button class="navbar-toggler d-xl-none d-lg-none d-sm-block" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        Hello
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-9 col-md-6 col-sm-4 header-search">
+            <div class="d-xl-none d-lg-none d-sm-block col-md-6 col-sm-6 col-6 text-right">
+                <div class="nav-wrapper">
+                    <button class="btn btn-lg btn-icons btn-icons-cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="btn-icons-cart-count">
+              99
+            </span>
+                    </button>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vendre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Se connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 header-search">
                 <div class="row no-gutters">
                     <div class="col text-right">
                         <input class="form-control form-control-lg border-secondary border-right-0 rounded-0 search-input"
@@ -88,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col text-right">
+            <div class="col-xl col-lg-2  d-none d-xl-block  d-lg-block text-right">
                 <div class="header-icons">
                     <button class="btn btn-lg btn-icons btn-icons-list">
                     </button>
@@ -102,7 +131,7 @@
             </div>
         </div>
         <div class="row">
-            <nav class="navbar header-menu-main full-width">
+            <nav class="navbar header-menu-main full-width d-none d-xl-block  d-lg-block">
                 <ul class="nav nav-justified">
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-toggle="dropdown" href="#" role="button"
@@ -130,7 +159,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -144,11 +174,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -171,7 +202,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -185,11 +217,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -212,7 +245,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -226,11 +260,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,7 +288,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -267,18 +303,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +348,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -324,11 +363,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -351,7 +391,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -365,11 +406,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -392,7 +434,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -406,11 +449,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -433,7 +477,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -447,18 +492,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -490,7 +537,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -504,11 +552,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -531,7 +580,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -545,11 +595,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -572,7 +623,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -586,11 +638,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -613,7 +666,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -627,18 +681,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -670,7 +726,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -684,11 +741,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -711,7 +769,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -725,11 +784,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -752,7 +812,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -766,11 +827,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -793,7 +855,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -807,18 +870,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -850,7 +915,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -864,11 +930,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -891,7 +958,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -905,11 +973,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -932,7 +1001,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -946,11 +1016,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -973,7 +1044,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -987,18 +1059,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1030,7 +1104,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1044,11 +1119,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1071,7 +1147,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1085,11 +1162,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1112,7 +1190,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1126,11 +1205,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1153,7 +1233,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1167,18 +1248,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1188,7 +1271,7 @@
                         <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true"
                            aria-expanded="false">SUCRERIES</a>
-                         <div class="dropdown-menu">
+                        <div class="dropdown-menu">
                             <div class="sous-menu row">
                                 <div class="sous-menu-main">
                                     <ul class="sous-menu-main-items">
@@ -1210,7 +1293,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1224,11 +1308,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1251,7 +1336,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1265,11 +1351,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1292,7 +1379,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1306,11 +1394,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1333,7 +1422,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1347,18 +1437,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1368,7 +1460,7 @@
                         <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true"
                            aria-expanded="false">COSMÉTIQUES</a>
-                         <div class="dropdown-menu">
+                        <div class="dropdown-menu">
                             <div class="sous-menu row">
                                 <div class="sous-menu-main">
                                     <ul class="sous-menu-main-items">
@@ -1390,7 +1482,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1404,11 +1497,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1431,7 +1525,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1445,11 +1540,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1472,7 +1568,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1486,11 +1583,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1513,7 +1611,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1527,18 +1626,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1548,7 +1649,7 @@
                         <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true"
                            aria-expanded="false">NOUVEAUTÉS</a>
-                         <div class="dropdown-menu">
+                        <div class="dropdown-menu">
                             <div class="sous-menu row">
                                 <div class="sous-menu-main">
                                     <ul class="sous-menu-main-items">
@@ -1570,7 +1671,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1584,11 +1686,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1611,7 +1714,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1625,11 +1729,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1652,7 +1757,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1666,11 +1772,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1693,7 +1800,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1707,18 +1815,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1728,7 +1838,7 @@
                         <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true"
                            aria-expanded="false">CADEAUX</a>
-                         <div class="dropdown-menu">
+                        <div class="dropdown-menu">
                             <div class="sous-menu row">
                                 <div class="sous-menu-main">
                                     <ul class="sous-menu-main-items">
@@ -1750,7 +1860,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1764,11 +1875,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1791,7 +1903,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1805,11 +1918,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1832,7 +1946,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1846,11 +1961,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1873,7 +1989,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1887,18 +2004,20 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1908,7 +2027,7 @@
                         <a class="nav-link active" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true"
                            aria-expanded="false">SOLDES</a>
-                         <div class="dropdown-menu">
+                        <div class="dropdown-menu">
                             <div class="sous-menu row">
                                 <div class="sous-menu-main">
                                     <ul class="sous-menu-main-items">
@@ -1930,7 +2049,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1944,11 +2064,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1971,7 +2092,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -1985,11 +2107,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2012,7 +2135,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -2026,11 +2150,12 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2053,7 +2178,8 @@
                                                             <li><a>Bière IPA</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">NOUVEAUTÉS</button>
+                                                            <button class="button button-340 button-white">NOUVEAUTÉS
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -2067,45 +2193,55 @@
                                                             <li class="caption"><a>SPIRITUEUX</a></li>
                                                         </ul>
                                                         <div class="sous-menu-btn">
-                                                            <button class="btn">SOLDES</button>
+                                                            <button class="button button-340 button-white">SOLDES
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="sous-menu-img col-3">
-                                                        <img src="./images/sous-menu-img.png"  alt="">
+                                                        <img src="./images/sous-menu-img.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="sous-menu-btn">
-                                        <button class="btn">TOUS LES PRODUITS À BOIRE</button>
+                                        <button class="button button-340 button-white">TOUS LES PRODUITS À BOIRE
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
                 </ul>
+
             </nav>
         </div>
         <div class="row ">
-            <div class="col-md-8 no-padding">
+            <div class="col-lg-8 no-padding col-md-12">
                 <div class="header-slider">
                     <div class="slide"><img class="w-100" src="./images/header/img1.png" alt="First slide">
                         <div class="header-slider-caption">
                             <h2 class="header-slider-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
-                            <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte demain. </h6>
-                            <button class="header-slider-caption-btn goToCategoryPage">Magaziner</button>
-                            </div>
+                            <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte
+                                demain. </h6>
+                            <button class="header-slider-caption-btn button button-200 button-orage goToCategoryPage">
+                                Magaziner
+                            </button>
+                        </div>
                     </div>
                     <div class="slide"><img class="w-100" src="./images/header/img1.png" alt="First second">
                         <div class="header-slider-caption">
                             <h2 class="header-slider-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
-                            <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte demain. </h6>
-                            <button class="header-slider-caption-btn goToCategoryPage">Magaziner</button>
-                        </div></div>
+                            <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte
+                                demain. </h6>
+                            <button class="header-slider-caption-btn button button-200 button-orage goToCategoryPage">
+                                Magaziner
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 no-padding">
+            <div class="col-lg-4 col-md-0 no-padding">
                 <div class="row photo-right-section-top">
                     <img src="./images/header/img2.png" alt="">
                     <div class="photo-section-caption-top">
@@ -2124,8 +2260,6 @@
                 </div>
             </div>
         </div>
-
-
     </header>
     <!-- Header-->
 
@@ -2163,7 +2297,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cartbutton button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2193,7 +2327,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2223,7 +2357,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2253,7 +2387,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2283,7 +2417,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2313,7 +2447,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2343,7 +2477,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2373,7 +2507,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2411,7 +2545,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2441,7 +2575,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2471,7 +2605,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2501,7 +2635,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2531,7 +2665,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2561,7 +2695,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2591,7 +2725,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2621,7 +2755,7 @@
                         <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
                     </span>
                     </div>
                     <div class="product">
@@ -2724,7 +2858,8 @@
         <div class="row">
             <div class="section-title">PARCOURIR PAR CATÉGORIES</div>
             <ul>
-                <li><p class="pull-left">À BOIRE</p><i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></li>
+                <li><p class="pull-left">À BOIRE</p><i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+                </li>
                 <li><p>VIANDE ET POISSON</p><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
                 <li><p>PRODUITS LAITIERS</p><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
                 <li><p>BOULANGERIE ET PÂTISSERIE</p><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
@@ -2754,7 +2889,7 @@
                             id.
                             Sed rhoncus, tortor sed eleifend tristique.
                         </p>
-                        <button class="producteur-de-la-semaine-btn">En savoir plus</button>
+                        <button class="button button-200 button-orage">En savoir plus</button>
                     </div>
                 </div>
             </div>
@@ -2806,7 +2941,7 @@
                                 <img src="./images/photo1.png" alt="">
                                 <span>Tom Bernard, Mont-Saint-Hilaire</span>
                             </div>
-                            <button class="nos-clients-nous-disent-right-btn">Voir tous les témoignages</button>
+                            <button class="button button-220 button-orage">Voir tous les témoignages</button>
                         </div>
                         <div class="col-4"></div>
                     </div>
@@ -2827,9 +2962,11 @@
                 <div class="quest-ce-que-maturin-description">Recevez les suggestions que nous préparerons pour vous
                     ainsi que des idées-repas.
                 </div>
-                <input type="email" class="quest-ce-que-maturin-btn-grey" placeholder="Entrez votre courriel" pattern=".+@beststartupever.com" oninput="validateEmail(this.value)"></input>
+                <input type="email" class="quest-ce-que-maturin-btn button button-340 button-gray"
+                       placeholder="Entrez votre courriel" pattern=".+@beststartupever.com"
+                       oninput="validateEmail(this.value)"></input>
                 <span class="email-incorrect">E-mail incorrect</span>
-                <button class="quest-ce-que-maturin-btn-orage">M’inscrire</button>
+                <button class="quest-ce-que-maturin-btn button button-340 button-orage">M’inscrire</button>
                 <div class="messenger">
                     <button class="messenger-btn"></button>
                 </div>
@@ -2900,14 +3037,14 @@
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
