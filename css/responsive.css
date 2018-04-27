@@ -22,17 +22,47 @@
     .header-menu-main .nav-link {
         font-size: 12px !important;
     }
+
+    .header-slider-caption {
+        top: 15% !important;
+    }
+
+    .photo-section-caption-top {
+        top: 45%;
+    }
+
+    .nav-footer-block li {
+        padding: 0.8rem 0 !important;
+    }
+
+    .copyright {
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 1260px) {
     .header-menu-main .nav-item {
         margin: 0;
     }
+
+    .messenger-btn {
+        top: 2rem;
+        right: -100%;
+    }
 }
 
 @media (max-width: 1150px) {
     .header-menu-main .nav-link {
         font-size: 11px !important;
+    }
+
+    .photo-section-caption-bottom {
+        top: 20%;
+    }
+
+    .nav-footer {
+        width: 90%;
     }
 }
 
@@ -44,7 +74,7 @@
 
     .header-slider-caption {
         text-align: center !important;
-        top: 10%!important;
+        top: 10% !important;
     }
 
     .header-slider-caption-description {
@@ -59,9 +89,11 @@
     .btn-icons-cart i {
         margin-top: 0px;
     }
-    .nav-wrapper .nav li a{
-        line-height:37px;
+
+    .nav-wrapper .nav li a {
+        line-height: 37px;
     }
+
     .navbar-brand-wrapper {
         text-align: left !important;
         position: relative;
@@ -71,6 +103,10 @@
     .navbar-brand {
         float: left;
     }
+
+    .nav-footer-help {
+         margin-right: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -78,17 +114,172 @@
         display: none;
     }
 
+    div.quest-ce-que-maturin {
+        width: 90%;
+    }
+
+    .messenger-btn {
+        display: none;
+    }
+
+    .nav-footer-block {
+        display: none;
+    }
+    .nav-footer-help li {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .header-slider-caption-title {
+        font-size: 24px;
+    }
+
+    .producteur-de-la-semaine {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .producteur-de-la-semaine .col {
+        margin: 0 auto !important;
+    }
+
+    .section-title-line:after, .section-title-line:before {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .btn-icons-cart i {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        padding: .5rem .5rem;
+    }
+
+    .header-slider .slick-slide img {
+        height: 150px;
+    }
+
+    .produit-a-proximite {
+        display: none !important;
+    }
+
+    .produit-a-proximite-mobile {
+        display: block;
+    }
+
+    .produit-en-vedette .product-btn-add-to-cart {
+        width: 70% !important;
+    }
+
+    .produit-en-vedette .product-btn-overview {
+        width: 40%;
+    }
+
+    .nos-clients-nous-disent-right, .nos-clients-nous-disent-left {
+        height: auto !important;
+    }
+
+    .nos-clients-nous-disent-right-profile {
+        margin: 5% auto;
+    }
+
+    .nos-clients-nous-disent-right .button {
+        margin-bottom: 10px;
+    }
+    .nav-footer-inline{
+        text-align: left;
+        width: 100%;
+        padding-right: 15px!important;
+        padding-left: 15px!important;
+    }
+
+    .nav-footer-inline li {
+        display: block;
+    }
+    .header-slider-caption-title {
+        font-size: 22px;
+    }
+    .header-slider-caption-description{
+        font-size: 18px;
+    }
+    .header-slider-caption-btn {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
     .section-4 {
         display: none;
     }
 
     .section-4-mobile {
         display: block !important;
+        background: #f2f1f1;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding-bottom: 20px;
     }
-}
 
-@media (max-width: 570px) {
-    .nav-link{
-        padding: .5rem .5rem;
+    .section-4-mobile .sous-menu-mobile a {
+        color: black;
+    }
+
+    .section-4-mobile .sous-menu-mobile {
+        margin-left: 20px !important;
+    }
+
+    .section-4-mobile .sous-menu-mobile-item:first-child {
+        border-top: 1px solid #E5E5E5;
+    }
+
+    .section-4-mobile .section-title {
+        text-align: left;
+        font-size: 16px;
+        font-family: NunitoSans-Bold, serif;
+        padding: 20px !important;
+        margin: 0 !important;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .btn-icons-cart i {
+        font-size: 18px;
+    }
+
+    .navbar-toggler {
+        height: auto;
+    }
+
+    .navbar-toggler i {
+        font-size: 18px;
+    }
+
+    .header-slider-caption-description {
+        font-size: 13px;
+    }
+
+    .header-slider-caption-btn {
+        font-size: 12px;
+        padding: .3rem 0.1rem;
+        width: 50%;
+    }
+
+    .produit-en-vedette .product-btn-add-to-cart {
+        font-size: 11px;
+        padding: 0.1rem;
+    }
+
+    .produit-en-vedette .product-btn-overview {
+        font-size: 11px;
     }
 }
