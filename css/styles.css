@@ -237,13 +237,13 @@ a.nav-link {
     bottom: 0;
     font-size: 24px !important;
     float: left;
+    height: 51px;
 }
 
 .nav-wrapper {
     text-align: right;
     display: inline;
     position: relative;
-    height: 100%;
 }
 
 .nav-wrapper .nav {
@@ -386,7 +386,7 @@ a.nav-link {
 
 .header-menu-main .nav .nav-item a {
     padding: 0 !important;
-    height: 20px;
+    min-height: 20px;
 }
 
 .header-menu-main .nav .nav-item:hover a.nav-link {
@@ -483,6 +483,22 @@ a.nav-link {
 .sous-menu-btn {
     position: absolute;
     bottom: 5%;
+}
+
+.sous-menu-btn {
+    max-width: 90%;
+}
+
+.sous-menu-btn button {
+    max-width: 100%;
+}
+
+.sous-menu-btn-main-menu {
+    width: 19%;
+}
+
+.sous-menu-btn-main-menu button {
+    max-width: 100%;
 }
 
 .photo-right-section-top, .photo-right-section-bottom {
@@ -634,12 +650,12 @@ a.nav-link {
 }
 
 .product-btn-like {
-    width: 26px;
-    height: 23px;
+    width: 27px;
+    height: 24px;
     background-image: url(../images/icons/like-icon.png);
     background-position: center;
     background-color: transparent;
-    background-size: contain;
+    background-size: cover;
     border: none;
     position: absolute;
     right: 15px;
@@ -658,6 +674,7 @@ a.nav-link {
     border: none;
     font-size: 13px;
     font-family: NunitoSans-Bold, serif;
+    max-width: 50%;
 }
 
 .product-btn-overview:hover {
@@ -672,6 +689,8 @@ a.nav-link {
     left: 0 !important;
     display: block !important;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 40%;
 }
 
 .produit-en-vedette img, .produit-a-proximite img {
@@ -690,10 +709,11 @@ a.nav-link {
     margin-right: 0.5%;
 }
 
-.produit-a-proximite-mobile{
+.produit-a-proximite-mobile {
     display: none;
 }
-.button-en-voir-plus{
+
+.button-en-voir-plus {
     margin: 0 auto;
 }
 
@@ -786,6 +806,10 @@ div.producteur-de-la-semaine {
     font-size: 15px;
 }
 
+div.producteur-de-la-semaine img {
+    width: 100%;
+}
+
 .producteur-de-la-semaine-caption {
     display: block;
     color: #000 !important;
@@ -832,13 +856,15 @@ div.producteur-de-la-semaine {
 /*SECTION6*/
 
 .nos-clients-nous-disent-left {
-    height: 530px;
+    height: 100%;
     width: 100%;
     float: right;
 }
-.nos-clients-nous-disent-left img{
+
+.nos-clients-nous-disent-left img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .nos-clients-nous-disent-right {
@@ -1080,11 +1106,11 @@ div.quest-ce-que-maturin {
     display: none !important;
 }
 
-.produit-en-vedette .slick-prev, .parcourir-par-catégories .slick-prev, .produit-en-vedette .slick-next, .parcourir-par-catégories .slick-next {
+.produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev, .produit-en-vedette .slick-next, .produit-a-proximite .slick-next, .parcourir-par-catégories .slick-next {
     top: 35% !important;
 }
 
-.produit-en-vedette .slick-prev, .parcourir-par-catégories .slick-prev {
+.produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev {
     left: -50px !important;
 }
 
@@ -1408,6 +1434,8 @@ a.category-header-description-more:hover {
     min-height: 100%;
     border: 0 none;
     border-radius: 0;
+    width: 99% !important;
+    margin: 0 auto !important;
 }
 
 .modal-fullscreen .modal-title {
@@ -1421,7 +1449,7 @@ a.category-header-description-more:hover {
     margin: 0;
 }
 
-.modal-back-button{
+.modal-back-button {
     background: transparent;
     border: none;
     font-size: 1.5rem;
@@ -1436,20 +1464,42 @@ a.category-header-description-more:hover {
     opacity: 1;
 }
 
-.sous-menu-mobile-item{
+.sous-menu-mobile-item {
     padding: 20px 0;
     border-bottom: 1px solid #E5E5E5;
 }
 
-.sous-menu-mobile-item i{
+.sous-menu-mobile-item i {
     float: right;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-.sous-menu-mobile-item a{
+.sous-menu-mobile-item a {
     font-size: 15px;
     font-family: NunitoSans-Regular, serif;
 }
+
+.sous-menu-mobile li.caption:first-child {
+    border: none;
+    padding-top: 0px;
+}
+
+.sous-menu-mobile li.caption {
+    border-top: 1px solid #E5E5E5;
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: NunitoSans-SemiBold, serif;
+}
+
+.sous-menu-mobile li a {
+    color: #222;
+}
+
+.sous-menu-mobile li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /*MODAL*/
 
 /*CATEGORY PAGE*/

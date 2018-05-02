@@ -107,7 +107,27 @@ $(document).ready(function () {
         }
     });
 
+    var mobileMenuModal = $('#mobileMenuModal');
+    var defaultmobileMenuModalTitle = mobileMenuModal.find('.modal-title')[0].textContent;
+    var mobileMenuModalBackButton = mobileMenuModal.find('.modal-back-button')[0];
+
+    $(document).on('click','.sous-menu-mobile-item', function () {
+        console.log($(this));
+        mobileMenuModal.find('.modal-title')[0].textContent = $(this).find('.sous-submenu-mobile-title')[0].textContent;
+        mobileMenuModalBackButton.style.display = 'block';
+        var defaultParentHTML = $(this).parent()[0].innerHTML;
+        var defaultParent = $(this).parent()[0];
+        $(this).parent()[0].innerHTML = $(this).find('.sous-submenu-mobile-body')[0].innerHTML;
+        $('.modal-back-button').on('click', function () {
+            mobileMenuModalBackButton.style.display = 'none';
+            mobileMenuModal.find('.modal-title')[0].textContent = defaultmobileMenuModalTitle;
+            defaultParent.innerHTML = defaultParentHTML;
+        });
+
+    });
+
 });
+
 
 function validateEmail(email)
 {
