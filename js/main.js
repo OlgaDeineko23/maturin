@@ -106,7 +106,18 @@ $(document).ready(function () {
             $(this).children()[1].style.display = 'none';
         }
     });
-
+    $('.product-property-title').click(function() {
+        if ($(this).hasClass('product-open')) {
+            $('.product-property-description').hide();
+            $('.product-property-title').removeClass('product-open');
+            $(this).siblings().hide();
+        } else {
+        $('.product-property-description').hide();
+        $('.product-property-title').removeClass('product-open');
+        $(this).addClass('product-open');
+        $(this).siblings().show();
+    }
+    });
 });
 
 function validateEmail(email)
