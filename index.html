@@ -29,23 +29,36 @@
                 <div class="row d-none d-xl-block  d-lg-block">
                     <nav class="navbar navbar-dark full-width header-menu-top">
                         <ul class="nav justify-content-end full-width">
-                            <li class="nav-item">
+                            <li class="nav-item d-login">
                                 <a class="nav-link" href="#">Vendre sur Marketablle</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">S’inscrire</a>
+                            <li class="nav-item is-login">
+                                <a class="nav-link" href="#">Magasin</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item d-login">
+                                <button type="button" class="button-transparent" id="sinscrire-button"
+                                        data-toggle="modal"
+                                        data-target="#registrModal">
+                                    <a class="nav-link" href="#"> S’inscrire </a>
+                                </button>
+                            </li>
+                            <li class="nav-item d-login">
+                                <button type="button" class="button-transparent" id="se-connecter-button"
+                                        data-toggle="modal"
+                                        data-target="#registrModal">
+                                    <a class="nav-link" href="#"> Se connecter </a>
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown is-login">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
-                                   aria-expanded="false">Se connecter <i class="fa fa-angle-down"
-                                                                         aria-hidden="true"></i></a>
+                                   aria-expanded="false">Profil<i class="fa fa-angle-down"
+                                                                  aria-hidden="true"></i></a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Voir le profil</a>
+                                    <a class="dropdown-item" href="#">Achats</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
+                                    <a class="dropdown-item" href="#">Se dèconnecter</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -384,7 +397,7 @@
                     </div>
                     <div class="col-xl col-lg-2  d-none d-xl-block  d-lg-block text-right">
                         <div class="header-icons">
-                            <button class="btn btn-lg btn-icons btn-icons-list">
+                            <button class="btn btn-lg btn-icons btn-icons-list is-login-opacity">
                             </button>
                             <button class="btn btn-lg btn-icons btn-icons-cart">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -2577,7 +2590,7 @@
                                     <h2 class="header-slider-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
                                     <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte
                                         demain. </h6>
-                                    <button class="header-slider-caption-btn button button-200 button-orage goToCategoryPage">
+                                    <button class="header-slider-caption-btn button button-200 button-orange goToCategoryPage">
                                         Magaziner
                                     </button>
                                 </div>
@@ -2587,7 +2600,7 @@
                                     <h2 class="header-slider-caption-title">DE NOTRE MARKET À VOTRE ASSIETTE</h2>
                                     <h6 class="header-slider-caption-description">Des produits d’ici. À votre porte
                                         demain. </h6>
-                                    <button class="header-slider-caption-btn button button-200 button-orage goToCategoryPage">
+                                    <button class="header-slider-caption-btn button button-200 button-orange goToCategoryPage">
                                         Magaziner
                                     </button>
                                 </div>
@@ -2653,7 +2666,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2683,7 +2696,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2713,7 +2726,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2743,7 +2756,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2773,7 +2786,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2803,7 +2816,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2833,7 +2846,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2863,7 +2876,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -2896,7 +2909,7 @@
                                     <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                                 </div>
                                 <div class="product">
@@ -2928,7 +2941,7 @@
                                     <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                                 </div>
                                 <div class="product">
@@ -2960,7 +2973,7 @@
                                     <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                                 </div>
                                 <div class="product">
@@ -2992,7 +3005,7 @@
                                     <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                                 </div>
                                 <div class="product">
@@ -3020,7 +3033,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <button class="button button-200 button-orage button-en-voir-plus">En voir plus</button>
+                            <button class="button button-200 button-orange button-en-voir-plus">En voir plus</button>
                         </div>
                     </div>
                 </div>
@@ -3036,7 +3049,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3066,7 +3079,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3096,7 +3109,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3126,7 +3139,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3156,7 +3169,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3186,7 +3199,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3216,7 +3229,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3246,7 +3259,7 @@
                                 <span class="product-btn">
                         <button class="product-btn-overview">APERÇU RAPIDE</button>
                         <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orage">AJOUTER AU PANIER</button>
+                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
                     </span>
                             </div>
                             <div class="product">
@@ -3388,7 +3401,7 @@
                                     id.
                                     Sed rhoncus, tortor sed eleifend tristique.
                                 </p>
-                                <button class="button button-200 button-orage">En savoir plus</button>
+                                <button class="button button-200 button-orange">En savoir plus</button>
                             </div>
                         </div>
                     </div>
@@ -3448,7 +3461,7 @@
                                         <img src="./images/photo1.png" alt="">
                                         <span>Tom Bernard, Mont-Saint-Hilaire</span>
                                     </div>
-                                    <button class="button button-220 button-orage">Voir tous les témoignages</button>
+                                    <button class="button button-220 button-orange">Voir tous les témoignages</button>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-2 col-sm-1 col-1"></div>
                             </div>
@@ -3474,10 +3487,9 @@
                             ainsi que des idées-repas.
                         </div>
                         <input type="email" class="quest-ce-que-maturin-btn button button-340 button-gray"
-                               placeholder="Entrez votre courriel" pattern=".+@beststartupever.com"
-                               oninput="validateEmail(this.value)"></input>
+                               placeholder="Entrez votre courriel" pattern=".+@beststartupever.com"></input>
                         <span class="email-incorrect">E-mail incorrect</span>
-                        <button class="quest-ce-que-maturin-btn button button-340 button-orage">M’inscrire</button>
+                        <button class="quest-ce-que-maturin-btn button button-340 button-orange">M’inscrire</button>
                         <div class="messenger">
                             <button class="messenger-btn"></button>
                         </div>
@@ -3545,6 +3557,134 @@
                 </div>
             </footer>
             <!--Footer-->
+
+            <!--Sign in/ Registration modal-->
+            <div class="modal fade" id="registrModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-register-tab" data-toggle="pill"
+                                   href="#pills-register"
+                                   role="tab" aria-controls="pills-register"
+                                   aria-selected="true">S’inscrire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-login-tab" data-toggle="pill" href="#pills-login"
+                                   role="tab" aria-controls="pills-login" aria-selected="false">Se connecter</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-register" role="tabpanel"
+                                 aria-labelledby="pills-register-tab">
+                                <div class="container">
+                                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 m-0-auto">
+                                        <div class="row">
+                                            <p class="registr-top-text m--30">Pour enregistrer des articles ou recevoir des
+                                                bulletins d'information,
+                                                des
+                                                alertes ou
+                                                des recommandations - tout est gratuit.</p>
+                                        </div>
+                                        <div class="row">
+                                            <button class="button button-300 button-fb">
+                                                <span class="button-icon fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                                Se connecter avec Facebook
+                                            </button>
+                                            <button class="button button-300 button-g">
+                                                    <span class="button-icon g-icon"><img
+                                                            src="./images/icons/google-icon.png"
+                                                            alt=""></span>
+                                                Se connecter avec Google
+                                            </button>
+                                        </div>
+                                        <form id="registrForm">
+                                        <div class="row">
+                                            <h5 class="section-title-line">OU</h5>
+                                            <input type="text" placeholder="Prénom"
+                                                   class="form-control registr-form-control">
+                                            <input type="email" placeholder="Courriel"
+                                                   class="form-control registr-form-control">
+                                            <span class="email-incorrect">E-mail incorrect</span>
+                                            <input type="password" placeholder="Mot de passe"
+                                                   class="form-control registr-form-control">
+                                            <input type="password" placeholder="Confirmer le mot de passe"
+                                                   class="form-control registr-form-control">
+                                        </div>
+                                        <div class="row">
+                                            <button class="button button-full-width button-orange">S’INSCRIRE</button>
+                                        </div>
+                                        </form>
+                                        <div class="row">
+                                            <p class="registr-bottom-text">
+                                                En cliquant sur S'inscrire, vous acceptez de respecter les <span><a
+                                                    href="#">Conditions
+                                                d'utilisation</a></span> et le <span><a href="#">Règlement</a></span>
+                                                concernant la confidentialité
+                                                de Maturin.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-login" role="tabpanel"
+                                 aria-labelledby="pills-login-tab">
+                                <div class="container">
+                                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 m-0-auto">
+                                        <div class="row">
+                                            <p class="registr-top-text m-0-auto">Se connecter pour démarrer votre boutique</p>
+                                        </div>
+                                        <div class="row">
+                                            <button class="button button-300 button-fb">
+                                                <span class="button-icon fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                                Se connecter avec Facebook
+                                            </button>
+                                            <button class="button button-300 button-g">
+                                                    <span class="button-icon g-icon"><img
+                                                            src="./images/icons/google-icon.png"
+                                                            alt=""></span>
+                                                Se connecter avec Google
+                                            </button>
+                                        </div>
+                                        <form id="loginForm">
+                                        <div class="row">
+                                            <h5 class="section-title-line">OU</h5>
+                                            <input id="login-email" type="email" placeholder="Courriel"
+                                                   class="form-control registr-form-control">
+                                            <span class="email-incorrect">E-mail incorrect</span>
+                                            <input id="login-password" type="password" placeholder="Mot de passe"
+                                                   class="form-control registr-form-control">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Rester
+                                                        connecté</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 text-right">
+                                                <a href="#" class="orange-link">Mot de passe oublié?</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <button class="button button-full-width button-orange" id="btn-se-connecter">SE CONNECTER</button>
+                                        </div>
+                                        </form>
+                                        <div class="row">
+                                            <p class="registr-bottom-text">
+                                                Vous n’avez pas de compte? <span><a
+                                                    href="#">Inscrivez-vous maintenant.</a></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sign in/ Registration modal-->
         </div>
     </div>
 </div>
@@ -3561,5 +3701,6 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/registration.js"></script>
 </body>
 </html>

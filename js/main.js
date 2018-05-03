@@ -112,7 +112,6 @@ $(document).ready(function () {
     var mobileMenuModalBackButton = mobileMenuModal.find('.modal-back-button')[0];
 
     $(document).on('click','.sous-menu-mobile-item', function () {
-        console.log($(this));
         mobileMenuModal.find('.modal-title')[0].textContent = $(this).find('.sous-submenu-mobile-title')[0].textContent;
         mobileMenuModalBackButton.style.display = 'block';
         var defaultParentHTML = $(this).parent()[0].innerHTML;
@@ -138,16 +137,13 @@ $(document).ready(function () {
             $(this).siblings().show();
         }
     });
+    
+    $('#se-connecter-button').on('click',function (e) {
+        e.preventDefault();
+        $('#pills-tab a[href="#pills-login"]').tab('show')
+    });
+    $('#sinscrire-button').on('click',function (e) {
+        e.preventDefault();
+        $('#pills-tab a[href="#pills-register"]').tab('show')
+    });
 });
-
-function validateEmail(email)
-{
-    var re = /\S+@\S+\.\S+/;
-    var warningMessage = $('.email-incorrect')[0];
-    if(re.test(email) === false){
-        warningMessage.style.opacity = 1;
-    }else {
-        warningMessage.style.opacity = 0;
-    }
-    console.log(re.test(email));
-}

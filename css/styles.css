@@ -97,6 +97,14 @@ h3 {
     padding-left: 0px !important;
 }
 
+.m-0-auto {
+    margin: 0 auto;
+}
+.m--30 {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
 li {
     list-style-type: none;
 }
@@ -143,16 +151,24 @@ section {
     width: 220px;
 }
 
+.button-300 {
+    width: 300px;
+}
+
 .button-340 {
     width: 340px;
 }
 
-.button-orage {
+.button-full-width {
+    width: 100%;
+}
+
+.button-orange {
     background: #f0632f;
     color: #ffffff;
 }
 
-.button-orage:hover {
+.button-orange:hover {
     background-color: #d6582a !important;
 }
 
@@ -185,6 +201,29 @@ section {
     background: #f0632f;
 }
 
+.button-transparent {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.orange-link{
+    color: #f0632f;
+    text-decoration: none;
+}
+.orange-link:hover{
+    color: #f0632f;
+    text-decoration: underline;
+}
+
+.is-login {
+    display: none;
+}
+.is-login-opacity{
+    opacity: 0;
+    transition: opacity .3s;
+}
+
 /*HOME  PAGE*/
 /*HEADER*/
 .header-menu-top {
@@ -205,18 +244,6 @@ a.nav-link {
 
 .header-menu-top a.nav-link.active, .header-menu-top a.nav-link:hover {
     text-decoration: underline;
-}
-
-.header-menu-top .dropdown-toggle::after {
-    display: none !important;
-}
-
-.header-menu-top .dropdown {
-    position: initial !important;
-}
-
-.header-menu-top .dropdown-menu {
-    width: 100%;
 }
 
 .navbar-brand {
@@ -947,12 +974,7 @@ div.quest-ce-que-maturin {
 }
 
 .email-incorrect {
-    opacity: 0;
-    transition: opacity 0.1s;
-    -o-transition: opacity 0.1s;
-    -ms-transition: opacity 0.1s;
-    -moz-transition: opacity 0.1s;
-    -webkit-transition: opacity 0.1s;
+    display: none;
     color: red;
 }
 
@@ -1502,4 +1524,116 @@ a.category-header-description-more:hover {
 
 /*MODAL*/
 
+/*Login/Registration modal*/
+
+#registrModal .modal-content {
+    background-color: transparent !important;
+}
+
+#registrModal .tab-content {
+    background: white;
+}
+
+#registrModal .nav-link {
+    border-radius: 0;
+    text-transform: uppercase;
+    background: #000;
+    color: white;
+    font-size: 15px;
+    font-family: NunitoSans-ExtraBold, serif;
+}
+
+#registrModal .nav-link.active {
+    background: white;
+    color: #000;
+}
+
+#registrModal .tab-pane .row {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 7%;
+}
+
+#registrModal h5 {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 7%;
+}
+
+.registr-top-text, .registr-bottom-text{
+    text-align: center;
+    color: #777777;
+    font-family: NunitoSans-Regular, serif;
+    font-size: 13px;
+}
+
+.registr-top-text a, .registr-bottom-text a{
+    text-decoration: underline;
+    color:black;
+    font-weight: bolder;
+}
+
+.registr-top-text{
+    padding-top: 5%;
+}
+.registr-bottom-text{
+    padding-bottom: 5%;
+}
+
+.button-g, .button-fb{
+    padding:10px;
+    color: #FFF;
+    margin: 0 auto;
+    border-radius: .2rem;
+    margin-bottom: 2%;
+    font-family: NunitoSans-ExtraBold, serif;
+}
+
+.button-fb:hover{
+    background-color: #3f61a3;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.button-fb{
+    background-color: #3B5998;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.button-g:hover{
+    background-color: #df5e52;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+.button-g{
+    border-color: rgba(0, 0, 0, 0.15);
+    background-color: #e95d5d;
+}
+
+.button-icon{
+    float: left;
+    width: 42px;
+    height: 42px;
+    margin: -10px -10px;
+    border-radius: .2rem;
+}
+.fb-icon{
+    line-height: 48px;
+    background: #526ea3;
+}
+.fb-icon i{
+    font-size: 20px;
+}
+.g-icon{
+    line-height: 40px;
+    background: #e96666;
+}
+.g-icon img{
+    width: 20px;
+    height: auto;
+}
+
+.registr-form-control{
+    border-radius: 0;
+    margin-bottom: 2%;
+}
 /*CATEGORY PAGE*/
