@@ -7,7 +7,6 @@ $(document).ready(function () {
         if($('#login-email')[0].value !== '' && $('#login-password')[0].value !== '' && re.test($('#login-email')[0].value) !== false){
             var storedEmail = localStorage.getItem('email');
             var storedPw = localStorage.getItem('pw');
-            console.log(storedEmail,$('#login-email')[0].value,storedPw,$('#login-password')[0].value)
             if(storedEmail !== $('#login-email')[0].value  || storedPw !== $('#login-password')[0].value){
                 alert('Incorrect email or password');
                 $('#registrModal').modal('show');

@@ -76,12 +76,10 @@ $(document).ready(function () {
     $(".product-btn").style.display = 'block';
   });
   $('ul.rating li').hover(function(){
-    console.log("hover");
     var id      = $('a', this).attr('id');
     var counter = 1;
     var salt    = $(this).attr('class');
     var parent = $(this).parent();
-    console.log('ul.rating li#'+id);
     $('a').removeClass("starHover");
     $('li.'+salt, parent).each(function(i){
       if (id >= counter) {
