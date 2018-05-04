@@ -4,23 +4,23 @@ $(document).ready(function () {
     localStorage.setItem('email', 'admin@gmail.com');
     localStorage.setItem('pw', 'qwerty123');
     $('#btn-se-connecter').on('click', function () {
-        if($('#login-email')[0].value !== '' && $('#login-password')[0].value !== '' && re.test($('#login-email')[0].value) !== false){
+        if ($('#login-email')[0].value !== '' && $('#login-password')[0].value !== '' && re.test($('#login-email')[0].value) !== false) {
             var storedEmail = localStorage.getItem('email');
             var storedPw = localStorage.getItem('pw');
-            if(storedEmail !== $('#login-email')[0].value  || storedPw !== $('#login-password')[0].value){
+            if (storedEmail !== $('#login-email')[0].value || storedPw !== $('#login-password')[0].value) {
                 alert('Incorrect email or password');
                 $('#registrModal').modal('show');
                 $('#login-email')[0].value = '';
                 $('#login-password')[0].value = '';
-            }else{
+            } else {
                 alert('You are loged in.');
-                $('.d-login').each(function(index, item){
+                $('.d-login').each(function (index, item) {
                     item.style.display = 'none';
                 });
-                $('.is-login').each(function(index, item){
+                $('.is-login').each(function (index, item) {
                     item.style.display = 'block';
                 });
-                $('.is-login-opacity').each(function(index, item){
+                $('.is-login-opacity').each(function (index, item) {
                     item.style.opacity = 1;
                 });
                 $('#login-email')[0].value = '';
@@ -28,6 +28,9 @@ $(document).ready(function () {
                 $('#registrModal').modal('hide')
             }
         }
+    });
+    $('.btn-registr-modal-close').on('click', function () {
+        $('#registrModal').modal('hide')
     });
 
     $(document).on('input', 'input[type=email]', function () {

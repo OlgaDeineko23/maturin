@@ -27,6 +27,7 @@
             <!--Header-->
             <header>
                 <div class="row d-none d-xl-block  d-lg-block">
+                    <!-- Menu top-->
                     <nav class="navbar navbar-dark full-width header-menu-top">
                         <ul class="nav justify-content-end full-width">
                             <li class="nav-item d-login">
@@ -36,14 +37,14 @@
                                 <a class="nav-link" href="#">Magasin</a>
                             </li>
                             <li class="nav-item d-login">
-                                <button type="button" class="button-transparent" id="sinscrire-button"
+                                <button type="button" class="button-transparent sinscrire-button"
                                         data-toggle="modal"
                                         data-target="#registrModal">
                                     <a class="nav-link" href="#"> S’inscrire </a>
                                 </button>
                             </li>
                             <li class="nav-item d-login">
-                                <button type="button" class="button-transparent" id="se-connecter-button"
+                                <button type="button" class="button-transparent se-connecter-button"
                                         data-toggle="modal"
                                         data-target="#registrModal">
                                     <a class="nav-link" href="#"> Se connecter </a>
@@ -85,17 +86,21 @@
                             </li>
                         </ul>
                     </nav>
+                    <!-- Menu top-->
                 </div>
                 <div class="row">
+                    <!-- Menu principale (mobile) / Search menu-->
                     <div class="col-xl col-lg-2 col-md-12 col-sm-12 col-12 padding-right-10-screen-380">
                         <div class=" navbar-brand-wrapper">
                             <a class="navbar-brand goToHomePage"><b>MATURIN</b></a>
+                            <!-- Menu principale(mobile) toggler -->
                             <button class="navbar-toggler d-xl-none d-lg-none d-sm-block" type="button"
                                     data-toggle="modal"
                                     data-target="#mobileMenuModal">
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                             </button>
-                            <!-- Modal -->
+                            <!-- Menu principale (mobile) toggler -->
+                            <!-- Menu principale (mobile) Modal -->
                             <div class="modal fade modal-fullscreen d-xl-none d-lg-none" id="mobileMenuModal"
                                  tabindex="-1"
                                  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -360,9 +365,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Modal -->
+                            <!-- Menu principale(mobile)  Modal -->
                         </div>
-
+                        <!-- Menu top (mobile)-->
                         <div class="nav-wrapper d-xl-none d-lg-none d-sm-block text-right">
                             <button class="btn btn-lg btn-icons btn-icons-cart">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -374,13 +379,30 @@
                                 <li class="nav-item">
                                     <a class="nav-link d-sm-block d-none" href="#">Vendre</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Se connecter</a>
+                                <li class="nav-item d-login">
+                                    <button type="button" class="button-transparent se-connecter-button"
+                                            data-toggle="modal"
+                                            data-target="#registrModal">
+                                        <a class="nav-link" href="#"> Se connecter </a>
+                                    </button>
+                                </li>
+                                <li class="nav-item dropdown is-login">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">Profil<i class="fa fa-angle-down"
+                                                                      aria-hidden="true"></i></a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Voir le profil</a>
+                                        <a class="dropdown-item" href="#">Achats</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Se dèconnecter</a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
+                        <!-- Menu top (mobile)-->
                     </div>
-
+                    <!-- Search-->
                     <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 header-search">
                         <div class="row no-gutters">
                             <div class="col text-right">
@@ -395,6 +417,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Search-->
+                    <!-- Cart & List buttons-->
                     <div class="col-xl col-lg-2  d-none d-xl-block  d-lg-block text-right">
                         <div class="header-icons">
                             <button class="btn btn-lg btn-icons btn-icons-list is-login-opacity">
@@ -407,14 +431,19 @@
                             </button>
                         </div>
                     </div>
+                    <!-- Cart & List buttons-->
+                    <!-- Menu principale (mobile) / Search menu-->
                 </div>
                 <div class="row">
+                    <!-- Menu principale-->
                     <nav class="navbar header-menu-main full-width d-none d-xl-block  d-lg-block">
                         <ul class="nav nav-justified">
+                            <!-- Menu principale À BOIRE-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">À BOIRE</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -607,11 +636,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale VIANDE ET POISSON-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">VIANDE ET POISSON</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -804,11 +836,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale PRODUITS LAITIERS-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">PRODUITS LAITIERS</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -1001,11 +1036,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale BOULANGERIE ET PÂTISSERIE-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">BOULANGERIE ET PÂTISSERIE</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -1198,11 +1236,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale FRUITS & LÉGUMES-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">FRUITS & LÉGUMES</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -1395,11 +1436,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale ÉPICERIE-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">ÉPICERIE</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -1592,11 +1636,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale SUCRERIES-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">SUCRERIES</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -1789,11 +1836,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale COSMÉTIQUES-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">COSMÉTIQUES</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -1986,11 +2036,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale NOUVEAUTÉS-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">NOUVEAUTÉS</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -2183,11 +2236,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale CADEAUX-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">CADEAUX</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -2380,11 +2436,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
+                            <!-- Menu principale SOLDES-->
                             <li class="nav-item dropdown">
                                 <a class="nav-link active" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">SOLDES</a>
+                                <!-- Menu principale dropdown-menu-->
                                 <div class="dropdown-menu">
                                     <div class="sous-menu row">
                                         <div class="sous-menu-main">
@@ -2577,13 +2636,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Menu principale dropdown-menu-->
                             </li>
                         </ul>
 
                     </nav>
+                    <!-- Menu principale-->
                 </div>
                 <div class="row ">
+                    <!-- Photos header-->
                     <div class="col-xl-8 col-lg-8 no-padding col-md-12 col-sm-12 col-12">
+                        <!-- Photos header slider-->
                         <div class="header-slider">
                             <div class="slide"><img class="w-100" src="./images/header/img1.png" alt="First slide">
                                 <div class="header-slider-caption">
@@ -2606,8 +2669,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Photos header slider-->
                     </div>
                     <div class="col-xl-4 col-lg-4 d-none d-xl-block  d-lg-block no-padding">
+                        <!-- Photos header slider right section-->
                         <div class="row photo-right-section-top">
                             <img src="./images/header/img2.png" alt="">
                             <div class="photo-section-caption-top">
@@ -2624,12 +2689,16 @@
                                         class="fa fa-long-arrow-right" aria-hidden="true"></i></h6>
                             </div>
                         </div>
+                        <!-- Photos header right section-->
                     </div>
+                    <!-- Photos header-->
                 </div>
             </header>
             <!-- Header-->
 
             <!--Main content-->
+
+            <!--Section 2 - Contenu-->
             <section class="section-2">
                 <div class="row">
                     <div class="col text-center">
@@ -2655,20 +2724,25 @@
                     </div>
                 </div>
             </section>
+            <!--Section 2 - Contenu-->
 
+            <!--Section 3 - Produit a proximite slider-->
             <section class="section-3">
                 <div class="row">
                     <div class="section-title section-title-line">PRODUITS À PROXIMITÉ</div>
                     <div class="slider produit-a-proximite">
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product1.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">MINOT DES GLACES</h6>
                                 <p class="product-subtitle">Cidrerie du Minot</p>
@@ -2689,16 +2763,20 @@
                                 </p>
                                 <p class="product-price">22,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product2.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">TARTE AUX POMMES</h6>
                                 <p class="product-subtitle">Pavillon de la pomme</p>
@@ -2719,16 +2797,20 @@
                                 </p>
                                 <p class="product-price">9,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product3.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">SAUMON SAUVAGE </h6>
                                 <p class="product-subtitle">Poissonnerie Gaspez'y</p>
@@ -2749,16 +2831,20 @@
                                 </p>
                                 <p class="product-price">8,00/100 g CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product4.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">Biscuits à l’avoine et miel</h6>
                                 <p class="product-subtitle">Pâtisserie Michaud</p>
@@ -2779,16 +2865,20 @@
                                 </p>
                                 <p class="product-price">5,95/paquet de 6 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product1.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">MINOT DES GLACES</h6>
                                 <p class="product-subtitle">Cidrerie du Minot</p>
@@ -2809,16 +2899,20 @@
                                 </p>
                                 <p class="product-price">22,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product2.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">TARTE AUX POMMES</h6>
                                 <p class="product-subtitle">Pavillon de la pomme</p>
@@ -2839,16 +2933,20 @@
                                 </p>
                                 <p class="product-price">9,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product3.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">SAUMON SAUVAGE </h6>
                                 <p class="product-subtitle">Poissonnerie Gaspez'y</p>
@@ -2869,16 +2967,20 @@
                                 </p>
                                 <p class="product-price">8,00/100 g CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product4.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">Biscuits à l’avoine et miel</h6>
                                 <p class="product-subtitle">Pâtisserie Michaud</p>
@@ -2899,18 +3001,21 @@
                                 </p>
                                 <p class="product-price">5,95/paquet de 6 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                     </div>
+
+                    <!--Produit a proximite slider (mobile)-->
                     <div class="produit-a-proximite-mobile">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-6">
                                 <div class="product-group">
                                     <img class="product-image" src="./images/product1.png">
                                     <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                        <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                        <button class="product-btn-like"></button>
+                                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                    </span>
                                 </div>
                                 <div class="product">
                                     <h6 class="product-title">MINOT DES GLACES</h6>
@@ -2939,10 +3044,10 @@
                                 <div class="product-group">
                                     <img class="product-image" src="./images/product2.png">
                                     <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                        <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                        <button class="product-btn-like"></button>
+                                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                    </span>
                                 </div>
                                 <div class="product">
                                     <h6 class="product-title">TARTE AUX POMMES</h6>
@@ -2971,10 +3076,10 @@
                                 <div class="product-group">
                                     <img class="product-image" src="./images/product3.png">
                                     <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                        <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                        <button class="product-btn-like"></button>
+                                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                    </span>
                                 </div>
                                 <div class="product">
                                     <h6 class="product-title">SAUMON SAUVAGE </h6>
@@ -3003,10 +3108,10 @@
                                 <div class="product-group">
                                     <img class="product-image" src="./images/product4.png">
                                     <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                        <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                        <button class="product-btn-like"></button>
+                                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                    </span>
                                 </div>
                                 <div class="product">
                                     <h6 class="product-title">Biscuits à l’avoine et miel</h6>
@@ -3036,22 +3141,28 @@
                             <button class="button button-200 button-orange button-en-voir-plus">En voir plus</button>
                         </div>
                     </div>
+                    <!--Produit a proximite slider (mobile)-->
                 </div>
             </section>
+            <!--Section 3 - Produit a proximite slider-->
 
+            <!--Section 3.2 - Produits en vedette slider-->
             <section class="section-3">
                 <div class="row">
                     <div class="section-title section-title-line">PRODUIT EN VEDETTE</div>
                     <div class="slider produit-en-vedette">
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product1.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">MINOT DES GLACES</h6>
                                 <p class="product-subtitle">Cidrerie du Minot</p>
@@ -3072,16 +3183,20 @@
                                 </p>
                                 <p class="product-price">22,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product2.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">TARTE AUX POMMES</h6>
                                 <p class="product-subtitle">Pavillon de la pomme</p>
@@ -3102,16 +3217,20 @@
                                 </p>
                                 <p class="product-price">9,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product3.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">SAUMON SAUVAGE </h6>
                                 <p class="product-subtitle">Poissonnerie Gaspez'y</p>
@@ -3132,16 +3251,20 @@
                                 </p>
                                 <p class="product-price">8,00/100 g CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product4.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">Biscuits à l’avoine et miel</h6>
                                 <p class="product-subtitle">Pâtisserie Michaud</p>
@@ -3162,16 +3285,20 @@
                                 </p>
                                 <p class="product-price">5,95/paquet de 6 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product1.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">MINOT DES GLACES</h6>
                                 <p class="product-subtitle">Cidrerie du Minot</p>
@@ -3192,16 +3319,20 @@
                                 </p>
                                 <p class="product-price">22,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product2.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">TARTE AUX POMMES</h6>
                                 <p class="product-subtitle">Pavillon de la pomme</p>
@@ -3222,16 +3353,20 @@
                                 </p>
                                 <p class="product-price">9,95 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product3.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">SAUMON SAUVAGE </h6>
                                 <p class="product-subtitle">Poissonnerie Gaspez'y</p>
@@ -3252,16 +3387,20 @@
                                 </p>
                                 <p class="product-price">8,00/100 g CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                         <div class="slide">
+                            <!--Produit a proximite slider image with buttons-->
                             <div class="product-group">
                                 <img class="product-image" src="./images/product4.png">
                                 <span class="product-btn">
-                        <button class="product-btn-overview">APERÇU RAPIDE</button>
-                        <button class="product-btn-like"></button>
-                        <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
-                    </span>
+                                    <button class="product-btn-overview">APERÇU RAPIDE</button>
+                                    <button class="product-btn-like"></button>
+                                    <button class="product-btn-add-to-cart button button-200 button-orange">AJOUTER AU PANIER</button>
+                                </span>
                             </div>
+                            <!--Produit a proximite slider image with buttons-->
+                            <!--Produit a proximite slider description-->
                             <div class="product">
                                 <h6 class="product-title">Biscuits à l’avoine et miel</h6>
                                 <p class="product-subtitle">Pâtisserie Michaud</p>
@@ -3282,11 +3421,14 @@
                                 </p>
                                 <p class="product-price">5,95/paquet de 6 CA$</p>
                             </div>
+                            <!--Produit a proximite slider description-->
                         </div>
                     </div>
                 </div>
             </section>
+            <!--Section 3.2 - Produits en vedette slider-->
 
+            <!--Section 4 - Parcourir par catégories-->
             <section class="section-4">
                 <div class="row">
                     <div class="section-title">PARCOURIR PAR CATÉGORIES</div>
@@ -3358,6 +3500,8 @@
                     </div>
                 </div>
             </section>
+            <!--Section 4 - Parcourir par catégories-->
+            <!--Section 4 - Parcourir par catégories (mobile)-->
             <section class="section-4-mobile">
                 <div class="section-title">PARCOURIR PAR CATÉGORIES</div>
                 <ul class="sous-menu-mobile">
@@ -3380,10 +3524,13 @@
                                                                                     aria-hidden="true"></i></li>
                 </ul>
             </section>
+            <!--Section 4 - Parcourir par catégories (mobile)-->
 
+            <!--Section 5 - Producteur de la semaine-->
             <section class="section-5">
                 <div class="row">
                     <div class="section-title section-title-line">PRODUCTEUR DE LA SEMAINE</div>
+                    <!--Section 5.1 - Producteur de la semaine-->
                     <div class="producteur-de-la-semaine">
                         <div class="row">
                             <div class="col-xl col-lg col-md col-sm col-12 ">
@@ -3405,7 +3552,9 @@
                             </div>
                         </div>
                     </div>
+                    <!--Section 5.1 - Producteur de la semaine-->
                     <div class="divider"></div>
+                    <!--Section 5.2 - Producteur de la semaine-->
                     <div class="producteur-de-la-semaine">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -3430,12 +3579,16 @@
                             </div>
                         </div>
                     </div>
+                    <!--Section 5.2 - Producteur de la semaine-->
                 </div>
             </section>
+            <!--Section 5 - Producteur de la semaine-->
 
+            <!--Section 6 - Nos clients nous disent-->
             <section class="section-6">
                 <div class="row">
                     <div class="section-title section-title-line">NOS CLIENTS NOUS DISENT...</div>
+                    <!--Section 6.1 - Nos clients nous disent-->
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 no-padding">
                         <div class="nos-clients-nous-disent-left">
                             <img src="./images/img4.png" alt="">
@@ -3444,7 +3597,7 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 no-padding">
                         <div class="nos-clients-nous-disent-right">
                             <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-11 col-11 ">
+                                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 ">
                                     <h6 class="nos-clients-nous-disent-right-caption">Mousseau sans alcool Clos
                                         <span class="nos-clients-nous-disent-right-subtitle">Cidrerie du Minot</span>
                                     </h6>
@@ -3467,6 +3620,10 @@
                             </div>
                         </div>
                     </div>
+                    <!--Section 6.1 - Nos clients nous disent-->
+
+                    <!--Section 6.2 - Nos clients nous disent-->
+                    <!--Qu’est-ce que Maturin-->
                     <div class="quest-ce-que-maturin">
                         <div class="quest-ce-que-maturin-caption">QU’EST-CE QUE MATURIN</div>
                         <div class="quest-ce-que-maturin-description">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -3479,25 +3636,29 @@
                         </div>
                         <div><a>En savoir plus »</a></div>
                     </div>
+                    <!--Qu’est-ce que Maturin-->
                     <div class="divider"></div>
+                    <!--Abonnez-vous à notre infolettre-->
                     <div class="quest-ce-que-maturin">
                         <div class="quest-ce-que-maturin-caption">ABONNEZ-VOUS À NOTRE INFOLETTRE</div>
                         <div class="quest-ce-que-maturin-description">Recevez les suggestions que nous préparerons pour
                             vous
                             ainsi que des idées-repas.
                         </div>
-                        <input type="email" class="quest-ce-que-maturin-btn button button-340 button-gray"
+                        <input type="email" class="quest-ce-que-maturin-btn button button-300 button-gray"
                                placeholder="Entrez votre courriel" pattern=".+@beststartupever.com"></input>
                         <span class="email-incorrect">E-mail incorrect</span>
-                        <button class="quest-ce-que-maturin-btn button button-340 button-orange">M’inscrire</button>
+                        <button class="quest-ce-que-maturin-btn button button-300 button-orange">M’inscrire</button>
                         <div class="messenger">
                             <button class="messenger-btn"></button>
                         </div>
                     </div>
-
+                    <!--Abonnez-vous à notre infolettre-->
                     <div class="divider"></div>
+                    <!--Section 6.2 - Nos clients nous disent-->
                 </div>
             </section>
+            <!--Section 6 - Nos clients nous disent-->
             <!-- Main content-->
 
             <!-- Footer-->
@@ -3613,6 +3774,7 @@
                                         </div>
                                         <div class="row">
                                             <button class="button button-full-width button-orange">S’INSCRIRE</button>
+                                            <button class="button button-full-width button-black btn-registr-modal-close">Fermer</button>
                                         </div>
                                         </form>
                                         <div class="row">
@@ -3669,6 +3831,7 @@
                                         </div>
                                         <div class="row">
                                             <button class="button button-full-width button-orange" id="btn-se-connecter">SE CONNECTER</button>
+                                            <button class="button button-full-width button-black btn-registr-modal-close">Fermer</button>
                                         </div>
                                         </form>
                                         <div class="row">

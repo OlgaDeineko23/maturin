@@ -18,6 +18,13 @@
     }
 }
 
+@media (max-width: 1480px) {
+    /*CATEGORY PAGE*/
+    .category-header-top-caption{
+        width: 80%!important;
+    }
+}
+
 @media (max-width: 1400px) {
     .header-menu-main .nav-link {
         font-size: 12px !important;
@@ -58,11 +65,20 @@
         top: 2rem;
         right: -100%;
     }
+
+    .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next{
+        top: 22%!important;
+    }
 }
 
 @media (max-width: 1210px) {
     .sous-submenu{
         width: 1100px;
+    }
+
+    /*CATEGORY PAGE*/
+    .category-header-top-caption{
+        width: 94%!important;
     }
 }
 
@@ -103,6 +119,11 @@
 
     .sous-submenu{
         width: 900px;
+    }
+
+    /*CATEGORY PAGE*/
+    .category-header-top-caption{
+        font-size: 37px;
     }
 
 }
@@ -161,6 +182,10 @@
         max-width: 90%;
         font-size: 13px;
     }
+
+    .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next{
+        top: 35%!important;
+    }
 }
 @media (max-width: 845px) {
     .nav-footer-help li {
@@ -171,6 +196,13 @@
 @media (max-width: 767px) {
     .section-2 {
         display: none;
+    }
+    .section-title {
+        width: 90%;
+        font-size: 24px;
+    }
+    .header-slider-caption{
+        left: 9%!important;
     }
 
     div.quest-ce-que-maturin {
@@ -199,6 +231,31 @@
     .nav-footer-block {
         max-width: 50%;
     }
+
+    .btn-registr-modal-close{
+        display: block;
+    }
+    .producteur-de-la-semaine-caption{
+        padding-top: 20px;
+    }
+
+    .client-maturin-caption {
+        padding-top: 20px;
+    }
+
+    .nos-clients-nous-disent-right {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev {
+        left: -40px !important;
+    }
+    /*CATEGORY PAGE*/
+    .category-header-top-img{
+        height: 150px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -217,6 +274,15 @@
 
     .section-title-line:after, .section-title-line:before {
         display: none;
+    }
+
+    .header-slider .slick-slide img {
+        height: 200px;
+    }
+
+    .header-slider-caption-btn {
+        margin-top: 7%;
+        margin-left: -5%;
     }
 }
 
@@ -241,16 +307,13 @@
         padding: .5rem .5rem;
     }
 
-    .header-slider .slick-slide img {
-        height: 150px;
-    }
-
     .produit-a-proximite {
         display: none !important;
     }
 
     .produit-a-proximite-mobile {
         display: block;
+        padding: 0 15px;
     }
 
     .produit-en-vedette .product-btn-add-to-cart {
@@ -280,10 +343,11 @@
     .header-slider-caption-description {
         font-size: 18px;
     }
-
-    .header-slider-caption-btn {
-        margin-top: 0;
+    /*CATEGORY PAGE*/
+    .category-header-top-caption{
+        font-size: 24px;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -329,7 +393,6 @@
 
     .header-slider-caption-btn {
         font-size: 12px;
-        padding: .3rem 0.1rem;
         width: 50%;
     }
 

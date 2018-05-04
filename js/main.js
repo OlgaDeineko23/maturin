@@ -136,11 +136,11 @@ $(document).ready(function () {
         }
     });
     
-    $('#se-connecter-button').on('click',function (e) {
+    $('.se-connecter-button').on('click',function (e) {
         e.preventDefault();
         $('#pills-tab a[href="#pills-login"]').tab('show')
     });
-    $('#sinscrire-button').on('click',function (e) {
+    $('.sinscrire-button').on('click',function (e) {
         e.preventDefault();
         $('#pills-tab a[href="#pills-register"]').tab('show')
     });
