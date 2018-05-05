@@ -284,6 +284,10 @@
     .category-header-top-img {
         height: 150px;
     }
+
+    .modal-open{
+        position: fixed;
+    }
 }
 
 @media (max-width: 640px) {

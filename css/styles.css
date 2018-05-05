@@ -1270,9 +1270,6 @@ div.quest-ce-que-maturin {
     overflow-y: hidden!important;
     height: 100%;
 }
-.modal-open{
-    position: fixed;
-}
 
 .modal-fullscreen .modal-dialog {
     width: 100%;
