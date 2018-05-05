@@ -1681,4 +1681,29 @@ a.category-header-description-more:hover {
 .checkbox input:checked + i {
     border-color: #888;
 }
+
+.masonry-layout {
+    column-count: 4;
+    column-gap: 0;
+    height:100%;
+}
+
+.masonry-layout__panel{
+    opacity: 0;
+}
+
+.masonry-layout__panel {
+    break-inside: avoid;
+    padding: 5px;
+}
+
+.masonry-layout__panel-content {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.masonry-layout__panel-content img {
+    width: 100%;
+    height: auto;
+}
 /*CATEGORY PAGE*/
