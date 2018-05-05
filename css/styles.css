@@ -135,11 +135,11 @@ ul {
 }
 
 .section-6 {
-    margin: 1% auto !important;
+    margin: 1rem auto !important;
 }
 
 section {
-    margin: 5% auto;
+    margin: 7rem auto;
 }
 
 .button {
@@ -187,8 +187,8 @@ section {
 }
 
 .button-black:hover {
-    background: #e1e1e1;
-    color: black;
+    background: #333333;
+    color: white;
 }
 
 .button-gray {
@@ -254,10 +254,16 @@ a.nav-link {
 .header-menu-top a.nav-link.active, .header-menu-top a.nav-link:hover {
     text-decoration: underline;
 }
+.header-menu-top .dropdown-toggle::after {
+    display: none!important;
+}
 
 .navbar-brand {
     font-family: NunitoSans-ExtraBold, serif;
     font-size: 30px;
+}
+.navbar-brand:hover {
+    cursor: pointer;
 }
 
 .navbar-brand-wrapper {
@@ -945,12 +951,12 @@ div.producteur-de-la-semaine img {
     background-color: transparent !important;
     position: relative;
     right: -105%;
-    top: 4rem;
+    bottom: -60px;
 }
 
 div.quest-ce-que-maturin {
     width: 35%;
-    margin: 4% auto;
+    margin: 5rem auto;
     text-align: center;
 }
 

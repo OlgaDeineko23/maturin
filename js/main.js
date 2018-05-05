@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // init sliders
     $('.header-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -9,7 +10,7 @@ $(document).ready(function () {
     $('.produit-en-vedette').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    focusOnSelect: true,
+    focusOnSelect: false,
     infinite: true,
     arrows: true,
       responsive: [
@@ -30,7 +31,7 @@ $(document).ready(function () {
   $('.produit-a-proximite').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    focusOnSelect: true,
+    focusOnSelect: false,
     infinite: true,
     arrows: true,
       responsive: [
@@ -45,7 +46,7 @@ $(document).ready(function () {
   $('.parcourir-par-catégories').slick({
     slidesToShow: 8,
     slidesToScroll: 1,
-    focusOnSelect: true,
+    focusOnSelect: false,
     infinite: true,
     arrows: true,
       responsive: [
@@ -69,12 +70,16 @@ $(document).ready(function () {
           }
       ]
   });
+  // sliders arrows
   $('.slick-prev').append('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
   $('.slick-next').append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
 
+  // show buttons on slide hover effect
   $(".product-image").mouseover(function () {
     $(".product-btn").style.display = 'block';
   });
+
+  // Stars hover efect
   $('ul.rating li').hover(function(){
     var id      = $('a', this).attr('id');
     var counter = 1;
@@ -90,12 +95,6 @@ $(document).ready(function () {
       counter++;
     });
   });
-    $( ".goToCategoryPage" ).click(function() {
-        location.href = location.origin + '/maturin/' + 'category.html';
-    });
-    $( ".goToHomePage" ).click(function() {
-        location.href = location.origin + '/maturin/';
-    });
 
     $('.sous-menu-main li').mouseover(function () {
         $(this).children().css( "display", "block");
@@ -105,6 +104,7 @@ $(document).ready(function () {
         }
     });
 
+    // Mobile sous menu
     var mobileMenuModal = $('#mobileMenuModal');
     var defaultmobileMenuModalTitle = mobileMenuModal.find('.modal-title')[0].textContent;
     var mobileMenuModalBackButton = mobileMenuModal.find('.modal-back-button')[0];
@@ -123,19 +123,8 @@ $(document).ready(function () {
 
     });
 
-    $('.product-property-title').click(function() {
-        if ($(this).hasClass('product-open')) {
-            $('.product-property-description').hide();
-            $('.product-property-title').removeClass('product-open');
-            $(this).siblings().hide();
-        } else {
-            $('.product-property-description').hide();
-            $('.product-property-title').removeClass('product-open');
-            $(this).addClass('product-open');
-            $(this).siblings().show();
-        }
-    });
-    
+
+    // Open login\registration modal with specific tab
     $('.se-connecter-button').on('click',function (e) {
         e.preventDefault();
         $('#pills-tab a[href="#pills-login"]').tab('show')
@@ -144,4 +133,33 @@ $(document).ready(function () {
         e.preventDefault();
         $('#pills-tab a[href="#pills-register"]').tab('show')
     });
+
+  // Go to shop page
+  $( ".goToCategoryPage" ).click(function() {
+    location.href = location.origin + '/maturin/' + 'category.html';
+  });
+  // Go to main page
+  $( ".goToHomePage" ).click(function() {
+    location.href = location.origin + '/maturin/';
+  });
+
+// Go to product page
+  $(".product-btn").on('click', function (e) {
+    if (!$(e.target).is(".product-btn-overview") && !$(e.target).is(".product-btn-like") && !$(e.target).is(".product-btn-add-to-cart")) {
+      location.href = location.origin + '/maturin/product.html';
+    };
+  });
+
+  $('.product-property-title').click(function() {
+    if ($(this).hasClass('product-open')) {
+      $('.product-property-description').hide();
+      $('.product-property-title').removeClass('product-open');
+      $(this).siblings().hide();
+    } else {
+      $('.product-property-description').hide();
+      $('.product-property-title').removeClass('product-open');
+      $(this).addClass('product-open');
+      $(this).siblings().show();
+    }
+  });
 });
