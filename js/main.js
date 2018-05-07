@@ -70,6 +70,33 @@ $(document).ready(function () {
           }
       ]
   });
+  $('.vous-aimeriez-aussi').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    focusOnSelect: false,
+    infinite: true,
+    arrows: true,
+      responsive: [
+          {
+              breakpoint: 1300,
+              settings: {
+                  slidesToShow: 6
+              }
+          },
+          {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 4
+              }
+          },
+          {
+              breakpoint: 750,
+              settings: {
+                  slidesToShow: 3
+              }
+          }
+      ]
+  });
   // sliders arrows
   $('.slick-prev').append('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
   $('.slick-next').append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');

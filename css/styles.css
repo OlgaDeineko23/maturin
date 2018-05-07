@@ -111,6 +111,11 @@ h3 {
     margin-left: -30px;
 }
 
+.h-545{
+    max-height: 545px;
+    overflow-y: hidden;
+}
+
 li {
     list-style-type: none;
 }
