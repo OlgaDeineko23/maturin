@@ -1404,7 +1404,7 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button{
 #registrModal .tab-pane .row {
     position: relative;
     margin: 0 auto;
-    padding-bottom: 7%;
+    padding-bottom: 20px;
 }
 
 #registrModal h5 {
@@ -1428,10 +1428,10 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button{
 }
 
 .registr-top-text{
-    padding-top: 5%;
+    padding-top: 15px;
 }
 .registr-bottom-text{
-    padding-bottom: 5%;
+    padding-bottom: 15px;
 }
 
 .button-g, .button-fb{
@@ -1439,7 +1439,7 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button{
     color: #FFF;
     margin: 0 auto;
     border-radius: .2rem;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
     font-family: NunitoSans-ExtraBold, serif;
 }
 
@@ -1487,12 +1487,12 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button{
 
 .registr-form-control{
     border-radius: 0;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
 }
 
 .btn-registr-modal-close{
     display: none;
-    margin-top: 2%;
+    margin-top: 10px;
 }
 
 
