@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid mb-rem">
             <!--Header-->
             <header>
                 <div class="row d-none d-xl-block  d-lg-block">
@@ -2709,7 +2709,9 @@
                             <div class="product-quantity">
                                 <p class="product-quantity-title">Quantité</p>
                                 <div class="product-quantity-value">
-                                    <input type="number" value="1">
+                                    <input class="form-control" type="number"
+                                           name="points" step="1" value="1"
+                                           min="1">
                                     <button class="button button-200 button-orange">AJOUTER AU PANIER</button>
                                 </div>
                                 <button class="button button-200 button-black">LISTE DE SOUHAIT</button>
@@ -3402,11 +3404,11 @@
                 </ul>
             </section>
             <!--Main content-->
+            <div class="divider m-r-l-10"></div>
         </div>
         <!-- Footer-->
         <footer>
             <div class="row">
-                <div class="divider"></div>
                 <div class="nav-footer">
                     <div class="row">
                         <div class="col">
@@ -3702,6 +3704,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="./js/main.js"></script>
+        <script type="text/javascript" src="./js/registration.js"></script>
     </body>
 
 </html>

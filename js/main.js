@@ -103,7 +103,7 @@ $(document).ready(function () {
 
   // show buttons on slide hover effect
   $(".product-image").mouseover(function () {
-    $(".product-btn").style.display = 'block';
+    $(".product-btn").css("display", "block");
   });
 
   // Stars hover efect

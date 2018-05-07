@@ -110,6 +110,12 @@ h3 {
     margin-right: -30px;
     margin-left: -30px;
 }
+.mb-rem{
+    margin-bottom: 1rem;
+}
+.m-r-l-10{
+    margin: 0 10%!important;
+}
 
 .h-545{
     max-height: 545px;
@@ -403,7 +409,7 @@ a.nav-link {
 
 .header-menu-main .nav {
     display: -webkit-box !important;
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
 }
 
@@ -843,12 +849,12 @@ a.nav-link {
 
 /*SECTION5*/
 div.producteur-de-la-semaine:last-child {
-    margin: 4% auto !important;
+    margin: 4rem auto !important;
 }
 
 div.producteur-de-la-semaine {
     width: 50%;
-    margin: 1% auto 4% auto;
+    margin: 1rem auto 4rem auto;
     font-family: NunitoSans-Regular, serif;
     font-size: 15px;
 }
@@ -1169,6 +1175,10 @@ div.quest-ce-que-maturin {
     border-radius: 0;
 }
 
+input[type=number].modal-product-btn-amount::-webkit-inner-spin-button{
+    opacity: 1;
+}
+
 .modal-product-image {
     display: block;
     width: 100%;
@@ -1261,6 +1271,7 @@ div.quest-ce-que-maturin {
     height: 12px;
     background-repeat: no-repeat;
     margin-left: 2%;
+    margin-bottom: 0;
 }
 
 .modal-product-social-icon-email:hover {
@@ -1692,6 +1703,8 @@ a.category-header-description-more:hover {
 
 .masonry-layout {
     column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
     column-gap: 0;
     height:100%;
 }
@@ -1702,6 +1715,12 @@ a.category-header-description-more:hover {
 
 .masonry-layout__panel {
     break-inside: avoid;
+    -moz-page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside: avoid;
+    page-break-inside: avoid;
     padding: 5px;
 }
 
