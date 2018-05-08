@@ -199,10 +199,12 @@ $(document).ready(function () {
   });
   $('.gallery-image li').click(function() {
     var image = $(this).find('img').attr('src');
-    $('.product').append('<div class="product-zoom"><img src="' + image + '" alt="product zoom"></div>');
+    $('#product').append('<div class="product-zoom"><img src="' + image + '" alt="product zoom"></div>');
+    $('.product-info').hide();
     $('.product-zoom img').click(function(e) {
        e.stopPropagation();
        $(this).parent().remove(); 
+       $('.product-info').show();
     });
   });
 });
