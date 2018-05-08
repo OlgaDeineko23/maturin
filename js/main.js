@@ -177,6 +177,14 @@ $(document).ready(function () {
     };
   });
 
+  // Produt page gallery
+  $(".gallery-thumb").on('click', 'a', function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 600);
+    });
+
   $('.product-property-title').click(function() {
     if ($(this).hasClass('product-open')) {
       $('.product-property-description').hide();
@@ -188,5 +196,13 @@ $(document).ready(function () {
       $(this).addClass('product-open');
       $(this).siblings().show();
     }
+  });
+  $('.gallery-image li').click(function() {
+    var image = $(this).find('img').attr('src');
+    $('.product').append('<div class="product-zoom"><img src="' + image + '" alt="product zoom"></div>');
+    $('.product-zoom img').click(function(e) {
+       e.stopPropagation();
+       $(this).parent().remove(); 
+    });
   });
 });
