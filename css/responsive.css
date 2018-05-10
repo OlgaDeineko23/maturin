@@ -1,21 +1,40 @@
-@media (max-width: 1820px) {
+@media (max-width: 1866px) {
     .header-menu-main .nav-item {
         margin: 0 1.2%;
+    }
+
+    .header-slider-caption-wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1765px) {
+    .header-slider-caption-wrapper {
+        width: 90%;
+    }
+    .photo-section-caption-bottom {
+        top: 25%;
     }
 }
 
 @media (max-width: 1679px) {
-    .header-menu-main .nav-item {
-        margin: 0 0.7%;
-    }
 
-    .header-menu-main .nav-link {
-        font-size: 13px !important;
-    }
+.header-menu-main .nav-item {
+    margin: 0 0.7%;
+}
 
-    .header-menu-main .nav {
-        width: 100%;
-    }
+.header-menu-main .nav-link {
+    font-size: 13px !important;
+}
+
+.header-menu-main .nav {
+    width: 100%;
+}
+
+.parcourir-par-catégories p {
+    width: 100%;
+}
+
 }
 
 @media (max-width: 1480px) {
@@ -30,7 +49,7 @@
         font-size: 12px !important;
     }
 
-    .header-slider-caption {
+    .header-slider-caption-wrapper {
         top: 15% !important;
     }
 
@@ -107,7 +126,7 @@
         margin-top: 0;
     }
 
-    .header-slider-caption {
+    .header-slider-caption-wrapper {
         top: 10% !important;
     }
 
@@ -150,7 +169,6 @@
     }
 
     .header-slider-caption {
-        text-align: center !important;
         top: 10% !important;
     }
 
@@ -226,10 +244,6 @@
         font-size: 24px;
     }
 
-    .header-slider-caption {
-        left: 9% !important;
-    }
-
     div.quest-ce-que-maturin {
         width: 90%;
     }
@@ -285,14 +299,24 @@
         height: 150px;
     }
 
-    .modal-open{
+    .modal-open {
         position: fixed;
     }
 }
 
 @media (max-width: 640px) {
+    .header-slider-caption {
+         top: 0!important;
+    }
+    .header-slider-caption-wrapper {
+        width: 80%;
+    }
     .header-slider-caption-title {
-        font-size: 24px;
+        font-size: 32px;
+    }
+
+    .header-slider-caption-description {
+        font-size: 18px;
     }
 
     .producteur-de-la-semaine {
@@ -312,10 +336,6 @@
         height: 200px;
     }
 
-    .header-slider-caption-btn {
-        margin-top: 7%;
-        margin-left: -5%;
-    }
 }
 
 @media (max-width: 575px) {
@@ -368,13 +388,14 @@
         margin-bottom: 10px;
     }
 
-    .header-slider-caption-title {
-        font-size: 22px;
+    .header-slider-caption {
+        text-align: center !important;
     }
 
-    .header-slider-caption-description {
-        font-size: 18px;
+    .header-slider-caption-title {
+        font-size: 26px;
     }
+
 
     /*CATEGORY PAGE*/
     .category-header-top-caption {
@@ -435,7 +456,7 @@
     }
 
     .produit-en-vedette .product-btn-overview {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .nav-footer-block {

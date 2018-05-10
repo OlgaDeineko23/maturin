@@ -7,12 +7,12 @@ $(function() {
     var $magicLine = $(".magic-line");
     $magicLine
         .width($("#example-one .current_page_item").width())
-        .css("left", $("#example-one .current_page_item a").offset().left)
-        .data("origLeft", $("#example-one .current_page_item a").offset().left)
+        .css("left", $("#example-one .current_page_item a.nav-link").offset().left)
+        .data("origLeft", $("#example-one .current_page_item a.nav-link").offset().left)
         .data("origWidth", $magicLine.width());
-    console.log($("#example-one .current_page_item").offset(), $("#example-one .current_page_item a").offset())
 
-    $("#example-one li a").hover(function() {
+    $("#example-one li.nav-item a.nav-link").hover(function() {
+        console.log($(this))
         $el = $(this);
         leftPos = $el.offset().left;
         newWidth = $el.parent().width();
@@ -21,11 +21,17 @@ $(function() {
             left: leftPos,
             width: newWidth
         });
+        if($el[0].className.includes("active")){
+            $magicLine.css("background", "#f0632f");
+        }else{
+            $magicLine.css("background", "black");
+        }
     }, function() {
         $magicLine.stop().animate({
             left: $magicLine.data("origLeft"),
             width: $magicLine.data("origWidth")
         });
+        $magicLine.css("background", "black");
     });
 
     var $eltop, leftPostop, newWidthtop,
