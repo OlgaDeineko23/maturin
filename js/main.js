@@ -122,13 +122,21 @@ $(document).ready(function () {
       counter++;
     });
   });
-
-    $('.sous-menu-main li').mouseover(function () {
+    // Sous menu
+    $('.sous-menu-main li.sous-menu-main-item').mouseover(function () {
+        $(this).parent().find('.default').removeClass("active");
         $(this).children().css( "display", "block");
+        $(this).addClass("active");
     }).mouseleave(function () {
+        $(this).removeClass("active");
         if($(this).children()[1]){
             $(this).children()[1].style.display = 'none';
         }
+        $(this).parent().find('.default').addClass("active");
+    });
+
+    $('.sous-menu-main-item-wm').mouseover(function () {
+        $(this).parent().find('.default').addClass("active");
     });
 
     // Mobile sous menu
