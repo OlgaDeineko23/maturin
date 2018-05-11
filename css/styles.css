@@ -257,8 +257,14 @@ section {
 .is-login-opacity {
     opacity: 0;
     transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    -moz-transition: opacity .3s;
 }
 
+.d-m{
+    display: none;
+}
 /*HOME  PAGE*/
 /*HEADER*/
 .header-menu-top {
@@ -520,16 +526,22 @@ a.nav-link {
 
 .sous-menu-main li i {
     opacity: 0;
-    transition: opacity .3s;
     position: relative;
     float: right;
     right: 6%;
     top: 2px;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    -moz-transition: opacity .3s;
 }
 
 .sous-menu-main-item:hover i {
     opacity: 1;
     transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    -moz-transition: opacity .3s;
 }
 
 .sous-menu-main-items {
@@ -549,6 +561,9 @@ a.nav-link {
     position: absolute;
     display: block;
     transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -webkit-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -o-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -moz-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
 }
 
 .sous-menu-main-items li.sous-menu-main-item-wm a::before {
@@ -563,6 +578,9 @@ a.nav-link {
     transform-origin: left top;
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
+    -webkit-transition: color 0.1s, transform 0.2s ease-out;
+    -o-transition: color 0.1s, transform 0.2s ease-out;
+    -moz-transition: color 0.1s, transform 0.2s ease-out;
 }
 
 .sous-menu-main-items li.sous-menu-main-item-wm a:active::before {
@@ -614,12 +632,14 @@ a.nav-link {
 }
 
 .sous-submenu a {
-    /*transition: color 0.1s, background-color 0.1s;*/
     position: absolute;
     display: block;
     margin: 0 12px;
     letter-spacing: 1px;
     transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -webkit-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -o-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -moz-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
 }
 
 .sous-submenu a::before {
@@ -634,6 +654,9 @@ a.nav-link {
     transform-origin: left top;
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
+    -webkit-transition: color 0.1s, transform 0.2s ease-out;
+    -o-transition: color 0.1s, transform 0.2s ease-out;
+    -moz-transition: color 0.1s, transform 0.2s ease-out;
 }
 
 .sous-submenu a:active::before {
@@ -699,6 +722,9 @@ a.nav-link {
 
 .photo-section-caption-top .photo-section-caption-img, .photo-section-caption-bottom .photo-section-caption-img {
     transition: margin .5s;
+    -webkit-transition:margin .5s;
+    -o-transition:margin .5s;
+    -moz-transition:margin .5s;
 }
 
 .photo-section-caption-top:hover .photo-section-caption-img, .photo-section-caption-bottom:hover .photo-section-caption-img {
@@ -814,11 +840,17 @@ a.nav-link {
 .product-group:hover .product-btn {
     opacity: 1;
     transition: opacity .3s;
+    -webkit-transition:opacity .3s;
+    -o-transition:opacity .3s;
+    -moz-transition:opacity .3s;
 }
 
 .product-btn {
     opacity: 0;
     transition: opacity .3s;
+    -webkit-transition:opacity .3s;
+    -o-transition:opacity .3s;
+    -moz-transition:opacity .3s;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1069,8 +1101,11 @@ div.producteur-de-la-semaine img {
     width: 100%;
     float: left;
     color: white;
-    padding-left: 20px;
-    padding-top: 5%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;
+    line-height: 1.8;
 }
 
 .nos-clients-nous-disent-right-caption {
@@ -1166,11 +1201,11 @@ div.quest-ce-que-maturin {
 .nav-footer-suivre i {
     font-size: 18px;
     padding-left: 2%;
-    color: black !important;
+    color:  #999999 !important;
 }
 
 .nav-footer-suivre i:hover {
-    color: #999999 !important;
+    color: black !important;
 }
 
 .nav-footer-inline {
@@ -1191,13 +1226,15 @@ div.quest-ce-que-maturin {
 }
 
 .nav-footer-block {
-    border: 1px solid #e0dfde;
-    max-width: 90%;
+    text-align: right;
 }
 
 .nav-footer-block li {
-    padding: 0.8rem 0.1rem !important;
+    padding: 0.1rem !important;
     cursor: pointer;
+}
+.nav-footer-block-wrapper li{
+    margin: 0 0.5rem;
 }
 
 .nav-footer-main li {
@@ -1213,6 +1250,9 @@ div.quest-ce-que-maturin {
     position: absolute;
     display: block;
     transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -webkit-transition:color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -o-transition:color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -moz-transition:color 0.1s, background-color 0.1s, padding 0.2s ease-in;
 }
 
 .nav-footer-main li a::before {
@@ -1227,6 +1267,9 @@ div.quest-ce-que-maturin {
     transform-origin: left top;
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
+    -webkit-transition:color 0.1s, transform 0.2s ease-out;
+    -o-transition:color 0.1s, transform 0.2s ease-out;
+    -moz-transition:color 0.1s, transform 0.2s ease-out;
 }
 
 .nav-footer-main li a:active::before {
@@ -1242,6 +1285,16 @@ div.quest-ce-que-maturin {
     position: relative !important;
 }
 
+.nav-footer-block-wrapper{
+    border: 1px solid #e0dfde;
+    padding: 0.8rem;
+}
+
+.copyright{
+    font-size: 13px;
+    line-height: 1.8;
+    padding-right: 15px;
+}
 /*FOOTER*/
 
 /*BODY*/
@@ -1458,7 +1511,7 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     text-decoration: none;
 }
 
-.modal-product-complete-list-arrow {
+.modal-product-complete-list  .modal-product-complete-list-arrow {
     background-image: url("../images/icons/orange-arrow-right.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -1469,15 +1522,15 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     position: relative;
     top: 3px;
 }
-.modal-product-complete-list a .modal-product-complete-list-arrow{
-    transition:  margin .5s;
+
+.modal-product-complete-list{
+    width: 100%;
 }
 
-.modal-product-complete-list a:hover .modal-product-complete-list-arrow {
-    /*background-image: url("../images/icons/orange-arrow-right-hovered.png");*/
-    margin-left: 10px;
-}
-
+.modal-product-complete-list .modal-product-complete-list-arrow{
+    margin-left: 0;
+    transition: all .2s ease-in-out; }
+.modal-product-complete-list:hover .modal-product-complete-list-arrow{ margin-left: 10px; }
 .modal-product-social-icon-email {
     display: inline-flex;
     background-image: url(../images/icons/email-icon.png);
@@ -1646,7 +1699,8 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 }
 
 .registr-top-text {
-    padding-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 5px;
 }
 
 .registr-bottom-text {
@@ -1718,6 +1772,9 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     display: none;
     margin-top: 10px;
 }
+.rester-connecté{
+    margin: -10px -15px!important;
+}
 
 /*CATEGORY PAGE*/
 .category {
@@ -1727,9 +1784,66 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 .category-products {
     width: 90%;
 }
+.category-product-filter a:hover, .category-product-filter a:focus, .category-product-filter a:active {
+    text-decoration: none!important;
+}
 
-.category-product-filter-title, .product-title, .product-price, .product-rating span, .category-products-result {
+.category-product-filter a{
+    position: relative;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -webkit-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -o-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -moz-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+}
+
+.category-product-filter a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    transform-origin: left top;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+    -webkit-transition: color 0.1s, transform 0.2s ease-out;
+    -o-transition: color 0.1s, transform 0.2s ease-out;
+    -moz-transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.category-product-filter a::before{
+    background-color: black;
+}
+.category-product-filter.first a::before{
+    background-color: #999999;
+}
+.category-product-filter.soldes a::before{
+    background-color: #f0632f;
+}
+
+.category-product-filter a:active::before {
+    background-color: black;
+}
+
+.category-product-filter.first a:active::before {
+    background-color: #999999;
+}
+.category-product-filter.soldes a:active::before {
+    background-color: #f0632f;
+}
+
+.category-product-filter  a:hover::before, .category-product-filter  a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.category-product-filter-title, .product-title, .product-price, .product-rating span, .category-products-result, .category-product-filter-title a, .category-product-filter-title a:hover, .category-product-filter-title a:active{
     color: black;
+}
+.category-product-filter-title a,.category-product-filter-title a:hover,.category-product-filter-title a:active{
+    text-decoration: none;
 }
 
 .category-header {
@@ -1794,12 +1908,12 @@ a.category-header-description-more:hover {
 .category-products-filter-by:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 0 !important;
+    margin-left: 50px!important;
 }
 
 .category-products-filter-by {
     display: inline-table;
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 0.8rem;
     border: 1px solid #cdcdcd;
     margin: 0.4rem;
     font-size: 15px;
@@ -1842,7 +1956,6 @@ a.category-header-description-more:hover {
 }
 
 .category-product-filter-default li:hover {
-    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -2311,6 +2424,9 @@ a.category-header-description-more:hover {
 #example-one li.nav-item a.nav-link{
     position: relative;
     transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -webkit-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -o-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    -moz-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
 }
 
 .photo-section-caption-title .text-underline::before, .photo-section-caption-description .text-underline::before, #example-one li.nav-item a.nav-link::before {
@@ -2325,6 +2441,9 @@ a.category-header-description-more:hover {
     transform-origin: left top;
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
+    -webkit-transition: color 0.1s, transform 0.2s ease-out;
+    -o-transition: color 0.1s, transform 0.2s ease-out;
+    -moz-transition: color 0.1s, transform 0.2s ease-out;
 }
 
 #example-one li.nav-item a.nav-link.active::before{

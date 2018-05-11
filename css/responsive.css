@@ -79,6 +79,12 @@
 
 }
 
+@media (max-width: 1370px) {
+    .nav-footer-block-wrapper li{
+        margin: 0;
+    }
+}
+
 @media (max-width: 1260px) {
     .header-menu-main .nav-item {
         margin: 0 0.5%;
@@ -204,6 +210,7 @@
 
     .nav-footer-block {
         max-width: 30%;
+        margin-bottom: 15px;
     }
 
     .nav-footer-block li {
@@ -211,7 +218,6 @@
     }
 
     .nav-footer-block a {
-        max-width: 90%;
         font-size: 13px;
     }
 
@@ -302,6 +308,12 @@
     .modal-open {
         position: fixed;
     }
+    .d-f{
+        display: none;
+    }
+    .d-m{
+        display: block;
+    }
 }
 
 @media (max-width: 640px) {
@@ -335,7 +347,6 @@
     .header-slider .slick-slide img {
         height: 200px;
     }
-
 }
 
 @media (max-width: 575px) {
