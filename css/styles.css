@@ -448,7 +448,7 @@ a.nav-link {
 
 .header-menu-main .nav-item {
     margin: 0 1.5%;
-    padding: 0.5%;
+    padding: 0.5rem;
 }
 
 .header-menu-main .nav-item.show.active {
@@ -1348,11 +1348,12 @@ div.quest-ce-que-maturin {
     left: 0;
 }
 
-.header-slider-caption-title, .category-header-top-caption {
+.header-slider-caption-title span, .category-header-top-caption span {
     background-color: black;
     font-size: 51.13px;
     font-family: NunitoSans-Bold, serif;
     color: white;
+    padding: 0 10px;
 }
 
 .category-header-top-caption {
@@ -1366,13 +1367,16 @@ div.quest-ce-que-maturin {
 }
 
 .header-slider-caption-description {
-    background-color: white;
     color: black;
     text-align: left;
     width: 45%;
     font-size: 23px;
     font-family: NunitoSans-Bold, serif;
     padding-left: 15px;
+}
+.header-slider-caption-description span{
+    background-color: white;
+    padding: 0 10px;
 }
 
 .header-slider-caption-btn {
@@ -1405,7 +1409,7 @@ div.quest-ce-que-maturin {
 }
 
 .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev, .produit-en-vedette .slick-next, .produit-a-proximite .slick-next, .parcourir-par-catégories .slick-next {
-    top: 35% !important;
+    top: 30% !important;
 }
 
 .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev {
@@ -1783,6 +1787,8 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 
 .category-products {
     width: 90%;
+    max-height: 100%;
+    height: auto;
 }
 .category-product-filter a:hover, .category-product-filter a:focus, .category-product-filter a:active {
     text-decoration: none!important;
@@ -2026,7 +2032,9 @@ a.category-header-description-more:hover {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-gap: 0;
-    height: 100%;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    max-height: 100%;
 }
 
 .masonry-layout__panel {
@@ -2246,7 +2254,6 @@ a.category-header-description-more:hover {
 
 .product .nav-suivre i {
     color: #000000;
-    font-size: 14px;
     margin: 0 4px;
 }
 

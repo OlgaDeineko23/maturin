@@ -59,4 +59,20 @@ $(function() {
             width: $magicLinetop.data("origWidth")
         });
     });
+
+    // for Firefox
+  $("#example-two li button").hover(function() {
+    $eltop = $(this);
+    leftPostop = $eltop.offset().left;
+    newWidthtop = $eltop.parent().width();
+    $magicLinetop.stop().animate({
+      left: leftPostop,
+      width: newWidthtop
+    });
+  }, function() {
+    $magicLinetop.stop().animate({
+      left: $magicLinetop.data("origLeft"),
+      width: $magicLinetop.data("origWidth")
+    });
+  });
 });
