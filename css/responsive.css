@@ -34,6 +34,12 @@
 .parcourir-par-catégories p {
     width: 100%;
 }
+    .producteur-de-la-semaine-wrapper {
+        width: 90%;
+    }
+    div.producteur-de-la-semaine {
+        width: 60%;
+    }
 
 }
 
@@ -76,12 +82,15 @@
     .photo-section-caption-top, .photo-section-caption-bottom {
         left: 7%;
     }
-
 }
 
 @media (max-width: 1370px) {
     .nav-footer-block-wrapper li{
         margin: 0;
+    }
+
+    div.producteur-de-la-semaine {
+        width: 70%;
     }
 }
 
@@ -139,9 +148,12 @@
     .sous-submenu {
         width: 990px;
     }
+    div.producteur-de-la-semaine {
+        width: 80%;
+    }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1040px) {
     .photo-right-section-top {
         height: 60%;
     }
@@ -162,7 +174,9 @@
     .category-header-top-caption {
         font-size: 37px;
     }
-
+    div.producteur-de-la-semaine {
+        width: 90%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -226,9 +240,15 @@
     }
 }
 
-@media (max-width: 845px) {
+@media (max-width: 847px) {
     .nav-footer-help li {
         margin-right: 30px;
+    }
+    div.producteur-de-la-semaine {
+        width: 100%;
+    }
+    .producteur-de-la-semaine-wrapper {
+        width: 96%;
     }
 }
 
@@ -278,6 +298,10 @@
         max-width: 50%;
     }
 
+    .nav-footer-bottom-mobile li a{
+        position: absolute!important;
+    }
+
     .btn-registr-modal-close {
         display: block;
     }
@@ -313,6 +337,9 @@
     }
     .d-m{
         display: block;
+    }
+    .position-absolute-bottom{
+        position: relative!important;
     }
 }
 
