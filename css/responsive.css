@@ -352,7 +352,7 @@
     }
 
     .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev {
-        left: -40px !important;
+        left: -45px !important;
     }
 
     /*CATEGORY PAGE*/
