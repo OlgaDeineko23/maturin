@@ -273,6 +273,10 @@ section {
     background-color: #000000;
 }
 
+.header-menu-top .nav-item{
+    margin: 0 1.1rem;
+}
+
 .header-menu-top .nav-link {
     color: white;
     font-family: NunitoSans-Light, serif;
@@ -289,10 +293,6 @@ a.nav-link {
 
 .header-menu-top .dropdown-toggle::after {
     display: none !important;
-}
-
-.navbar {
-    padding: 0!important;
 }
 
 .navbar-brand {
@@ -431,8 +431,8 @@ a.nav-link {
 
 .header-menu-main .nav {
     display: -webkit-box !important;
-    width: 98%;
-    margin: 0 auto;
+    width: 97.5%;
+    margin: 0 0 0 auto;
 }
 
 .header-menu-main .nav-link.active {
@@ -916,8 +916,12 @@ a.nav-link {
     color: #999999;
 }
 
-.produit-en-vedette .slick-slide, .parcourir-par-catégories .slick-slide, .produit-a-proximite .slick-slide, .vous-aimeriez-aussi .slick-slide{
+.produit-en-vedette .slick-slide, .parcourir-par-catégories .slick-slide, .produit-a-proximite .slick-slide{
     margin-right: 0.5%;
+}
+
+.vous-aimeriez-aussi .slick-slide{
+    margin-right: 0.2%;
 }
 
 .produit-a-proximite-mobile {
@@ -925,7 +929,7 @@ a.nav-link {
 }
 
 .button-en-voir-plus {
-    margin: 0 auto;
+    margin: 4rem auto auto auto;
 }
 
 .product {
@@ -1130,6 +1134,9 @@ div.producteur-de-la-semaine img {
     font-family: NunitoSans-Bold, serif;
     margin: 10% auto;
 }
+.nos-clients-nous-disent-right-profile span{
+    margin-left: 1rem;
+}
 
 .messenger-btn {
     width: 50px;
@@ -1288,6 +1295,7 @@ div.quest-ce-que-maturin {
 .nav-footer-block-wrapper{
     border: 1px solid #e0dfde;
     padding: 0.8rem;
+    margin: 0 auto;
 }
 
 .copyright{
@@ -1363,7 +1371,6 @@ div.quest-ce-que-maturin {
 
 .header-slider-caption-title {
     text-align: left;
-    padding-left: 15px;
 }
 
 .header-slider-caption-description {
@@ -1372,8 +1379,9 @@ div.quest-ce-que-maturin {
     width: 45%;
     font-size: 23px;
     font-family: NunitoSans-Bold, serif;
-    padding-left: 15px;
+    padding-top: 10px;
 }
+
 .header-slider-caption-description span{
     background-color: white;
     padding: 0 10px;
@@ -1388,7 +1396,7 @@ div.quest-ce-que-maturin {
 .header-slider .slick-prev, .header-slider .slick-next {
     width: 40px;
     height: 70px;
-    background: #efeaeaa3;
+    background: rgba(239, 234, 234, 0.64);
 }
 
 .header-slider .slick-prev {
@@ -1401,7 +1409,7 @@ div.quest-ce-que-maturin {
 }
 
 .header-slider .slick-prev:hover, .header-slider .slick-prev:focus, .header-slider .slick-next:hover, .header-slider .slick-next:focus {
-    background: #f3f5f9fa;
+    background: rgba(243, 245, 249, 0.98);
 }
 
 .slick-prev:before, .slick-next:before {
@@ -1458,6 +1466,7 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     font-family: NunitoSans-Light, serif;
     font-size: 15px;
 }
+
 .modal-product-rating i{
     font-size: 10px;
 }
@@ -1854,9 +1863,7 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 .category-product-filter-title a,.category-product-filter-title a:hover,.category-product-filter-title a:active{
     text-decoration: none;
 }
-.category-product-filter-title img{
-    vertical-align: baseline;
-}
+
 .category-header {
     margin: 0 !important;
 }
@@ -1916,11 +1923,17 @@ a.category-header-description-more:hover {
     text-decoration: none;
 }
 
+.category-products-filter-by:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 50px!important;
+}
+
 .category-products-filter-by {
     display: inline-table;
-    padding: 0.1rem 0.8rem;
+    padding: 0.3rem 0.8rem;
     border: 1px solid #cdcdcd;
-    margin: 0 0.4rem 0.2rem 0.4rem;
+    margin: 0.4rem;
     font-size: 15px;
 }
 
@@ -1935,7 +1948,6 @@ a.category-header-description-more:hover {
 .category-products-result {
     font-size: 15px;
     font-family: NunitoSans-Bold, serif;
-    padding: 0.6rem 0.8rem;
 }
 
 .category-products {
@@ -2070,16 +2082,13 @@ a.category-header-description-more:hover {
 
 /* Example One */
 #example-one, #example-two {
-    margin: 0 auto;
     list-style: none;
     position: relative;
-    width: 100%;
-    text-align: center;
 }
 
 #example-one .nav-link, #example-two .nav-link {
     float: left;
-    padding: 6px 10px 4px 10px;
+    padding: 10px 0px 4px 0px;
     text-decoration: none;
 }
 
@@ -2089,7 +2098,7 @@ a.category-header-description-more:hover {
     margin-bottom: 10px;
     left: 0;
     width: 100px;
-    height: 1px;
+    height: 1.6px;
 }
 
 #example-one .magic-line {
@@ -2240,8 +2249,16 @@ a.category-header-description-more:hover {
     padding-left: 60px;
 }
 
+.product-board .modal-product-complete-list {
+     padding-top: 15px;
+ }
+
 .product .nav-suivre {
     margin: 40px 0 30px 0;
+}
+
+.product .nav-suivre .modal-product-social-icons{
+    margin-bottom: 0;
 }
 
 #product {

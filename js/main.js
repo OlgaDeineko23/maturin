@@ -79,7 +79,7 @@ $(document).ready(function () {
     ]
   });
   $('.vous-aimeriez-aussi').slick({
-    slidesToShow: 8,
+    slidesToShow: 7,
     slidesToScroll: 1,
     focusOnSelect: false,
     infinite: true,
@@ -90,7 +90,7 @@ $(document).ready(function () {
       {
         breakpoint: 1300,
         settings: {
-          slidesToShow: 6
+          slidesToShow: 5
         }
       },
       {
