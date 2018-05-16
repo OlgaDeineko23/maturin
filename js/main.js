@@ -223,4 +223,20 @@ $(document).ready(function () {
       $('.product-info').show();
     });
   });
+
+    $.fn.mathSpace = function() {
+        return $(this).each(function(){
+            $(this).children('span').each(function() {
+                var el = $(this);
+                var text = el.text();
+                el.text(
+                    text.split(' ').join('\u205f')
+                );
+            });
+        });
+    }
+
+    $('.header-slider-caption-title').mathSpace();
+    $('.header-slider-caption-description').mathSpace();
+    $('.category-header-top-caption').mathSpace();
 });

@@ -51,6 +51,10 @@
     .header-menu-main .nav-item {
         margin: 0 0.5%;
     }
+
+    .btn-icons {
+        margin-left: 10%;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -100,6 +104,10 @@
     .header-menu-main .nav-item {
         margin: 0 0.5%;
     }
+    .btn-icons {
+        margin-left: 5%;
+    }
+
 }
 
 @media (max-width: 1260px) {
@@ -119,6 +127,11 @@
     div.producteur-de-la-semaine {
         width: 70%;
     }
+
+    .btn-icons {
+        margin-left: 5px;
+    }
+
 }
 
 @media (max-width: 1210px) {
@@ -168,6 +181,10 @@
     div.producteur-de-la-semaine {
         width: 80%;
     }
+
+    .btn-icons {
+        margin-left: 10%;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -196,14 +213,16 @@
     }
 
     /*CATEGORY PAGE*/
-    .category-header-top-caption {
+    .category-header-top-caption span{
         font-size: 37px;
     }
 
     div.producteur-de-la-semaine {
         width: 90%;
     }
-
+    .category-header-top-img{
+        height: 200px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -220,14 +239,6 @@
         width: 90%;
     }
 
-    .btn-icons {
-        width: inherit;
-        height: auto;
-    }
-
-    .btn-icons-cart i {
-        margin-top: 0px;
-    }
 
     .nav-wrapper .nav li a {
         line-height: 37px;
@@ -262,10 +273,8 @@
     .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
         top: 35% !important;
     }
-
-    .nav-wrapper .btn-icons-cart {
-        width: 75px;
-        height: 30px;
+    .nav-wrapper .btn-icons{
+        margin-left: 5px!important;
     }
 }
 
@@ -379,6 +388,10 @@
     .nos-clients-nous-disent-right-wrapper {
         padding: 5rem;
     }
+
+    .category-header-top-caption span{
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -429,8 +442,9 @@
         height: 45px;
     }
 
-    .btn-icons-cart i {
-        font-size: 24px;
+    .nav-wrapper .btn-icons{
+        height: 35px;
+        width: 35px;
     }
 
     .nav-link {
@@ -497,7 +511,7 @@
     }
 
     /*CATEGORY PAGE*/
-    .category-header-top-caption {
+    .category-header-top-caption span{
         font-size: 24px;
     }
 
@@ -549,9 +563,6 @@
         margin: 0 !important;
     }
 
-    .btn-icons-cart i {
-        font-size: 18px;
-    }
 
     .header-slider-caption-description {
         font-size: 13px;
