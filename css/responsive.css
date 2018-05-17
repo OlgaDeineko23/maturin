@@ -1,3 +1,9 @@
+@media (max-width: 1950px) {
+    .producteur-de-la-semaine-wrapper{
+        width: 90%;
+    }
+}
+
 @media (max-width: 1866px) {
     .header-menu-main .nav-item {
         margin: 0 1.2%;
@@ -6,6 +12,7 @@
     .header-slider-caption-wrapper {
         width: 85%;
     }
+
 }
 
 @media (max-width: 1765px) {
@@ -15,6 +22,10 @@
 
     .photo-section-caption-bottom {
         top: 25%;
+    }
+
+    .producteur-de-la-semaine-wrapper{
+        width: 95%;
     }
 }
 
@@ -32,14 +43,19 @@
         width: 100%;
     }
 
-    .producteur-de-la-semaine-wrapper {
-        width: 90%;
-    }
-
     div.producteur-de-la-semaine {
         width: 60%;
     }
 
+    .header-slider-caption-description {
+        width: 80%;
+    }
+    .client-maturin-caption{
+        width: 80%;
+    }
+    .producteur-de-la-semaine-wrapper{
+        width: 100%;
+    }
 }
 
 @media (max-width: 1480px) {
@@ -55,6 +71,7 @@
     .btn-icons {
         margin-left: 10%;
     }
+
 }
 
 @media (max-width: 1400px) {
@@ -89,6 +106,9 @@
     .photo-section-caption-top, .photo-section-caption-bottom {
         left: 7%;
     }
+    div.producteur-de-la-semaine{
+        width: 70%;
+    }
 
 }
 
@@ -108,6 +128,10 @@
         margin-left: 5%;
     }
 
+    .client-maturin-caption{
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 1260px) {
@@ -124,9 +148,6 @@
         top: 20% !important;
     }
 
-    div.producteur-de-la-semaine {
-        width: 70%;
-    }
 
     .btn-icons {
         margin-left: 5px;
@@ -142,6 +163,10 @@
     /*CATEGORY PAGE*/
     .category-header-top-caption {
         width: 94% !important;
+    }
+
+    div.producteur-de-la-semaine{
+        width: 80%;
     }
 }
 
@@ -178,9 +203,6 @@
         width: 990px;
     }
 
-    div.producteur-de-la-semaine {
-        width: 80%;
-    }
 
     .btn-icons {
         margin-left: 10%;
@@ -276,6 +298,10 @@
     .nav-wrapper .btn-icons{
         margin-left: 5px!important;
     }
+
+    .section-2{
+        width: 95%;
+    }
 }
 
 @media (max-width: 847px) {
@@ -346,10 +372,6 @@
         display: block;
     }
 
-    .producteur-de-la-semaine-caption {
-        padding-top: 20px;
-    }
-
     .client-maturin-caption {
         padding-top: 20px;
     }
@@ -392,6 +414,22 @@
     .category-header-top-caption span{
         font-size: 28px;
     }
+
+    .producteur-de-la-semaine {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .producteur-de-la-semaine .col {
+        margin: 0 auto !important;
+    }
+
+    .header-slider-caption {
+        top: 2% !important;
+    }
+    .producteur-de-la-semaine-caption{
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -411,21 +449,21 @@
         font-size: 18px;
     }
 
-    .producteur-de-la-semaine {
-        width: 100% !important;
-        text-align: center;
-    }
-
-    .producteur-de-la-semaine .col {
-        margin: 0 auto !important;
-    }
 
     .section-title-line:after, .section-title-line:before {
         display: none;
     }
 
     .header-slider .slick-slide img {
-        height: 200px;
+        height: 250px;
+    }
+
+    .header-slider-caption-btn {
+        margin-top: 3%;
+    }
+
+    .client-maturin-caption{
+        width: 100%;
     }
 }
 
@@ -489,22 +527,6 @@
         font-size: 20px;
     }
 
-    .header-slider-caption {
-        text-align: center !important;
-    }
-
-    .header-slider-caption-title span {
-        font-size: 26px;
-    }
-
-    .header-slider-caption-title, .header-slider-caption-description {
-        text-align: center;
-        width: 100%;
-    }
-
-    .header-slider-caption-description {
-        padding-top: 1px;
-    }
 
     .header-slider-caption-btn {
         margin-top: 10px;
@@ -526,6 +548,23 @@
 
     .slick-arrow i {
         font-size: 20px;
+    }
+
+    .header-slider-caption-title span {
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+
+    .header-slider-caption-title, .header-slider-caption-description{
+        width: 95%;
+        text-align: center;
+    }
+
+    .header-slider-caption-wrapper {
+        text-align: center;
     }
 
 }
@@ -585,6 +624,14 @@
     .nav-footer-block {
         max-width: 85%;
     }
+    div.producteur-de-la-semaine img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-slider-caption-title span {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -615,7 +662,7 @@
     }
 
     .header-slider-caption-title span {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .header-slider-caption-btn {

@@ -234,9 +234,8 @@ $(document).ready(function () {
                 );
             });
         });
-    }
+    };
 
     $('.header-slider-caption-title').mathSpace();
-    $('.header-slider-caption-description').mathSpace();
     $('.category-header-top-caption').mathSpace();
 });
