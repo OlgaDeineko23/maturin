@@ -389,6 +389,9 @@
     .nav-footer-bottom-mobile li a {
         position: absolute !important;
     }
+    .nav-footer-bottom-mobile{
+        text-align: left!important;
+    }
 
     .btn-registr-modal-close {
         display: block;
@@ -583,7 +586,7 @@
     .header-slider-caption-title span {
         padding-top: 0.45rem;
         padding-bottom: 0.45rem;
-        line-height: 1.4;
+        line-height: 1.38;
         text-align: center;
     }
 
