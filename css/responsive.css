@@ -1,5 +1,5 @@
 @media (max-width: 1950px) {
-    .producteur-de-la-semaine-wrapper{
+    .producteur-de-la-semaine-wrapper {
         width: 90%;
     }
 }
@@ -24,9 +24,10 @@
         top: 25%;
     }
 
-    .producteur-de-la-semaine-wrapper{
+    .producteur-de-la-semaine-wrapper {
         width: 95%;
     }
+
     .parcourir-par-catégories .slick-track {
         height: 200px;
     }
@@ -53,10 +54,12 @@
     .header-slider-caption-description {
         width: 80%;
     }
-    .client-maturin-caption{
+
+    .client-maturin-caption {
         width: 80%;
     }
-    .producteur-de-la-semaine-wrapper{
+
+    .producteur-de-la-semaine-wrapper {
         width: 100%;
     }
 
@@ -114,7 +117,8 @@
     .photo-section-caption-top, .photo-section-caption-bottom {
         left: 7%;
     }
-    div.producteur-de-la-semaine{
+
+    div.producteur-de-la-semaine {
         width: 70%;
     }
 
@@ -132,11 +136,12 @@
     .header-menu-main .nav-item {
         margin: 0 0.5%;
     }
+
     .btn-icons {
         margin-left: 5%;
     }
 
-    .client-maturin-caption{
+    .client-maturin-caption {
         width: 90%;
     }
 
@@ -162,11 +167,9 @@
         top: 20% !important;
     }
 
-
     .btn-icons {
         margin-left: 5px;
     }
-
 
 }
 
@@ -180,7 +183,7 @@
         width: 94% !important;
     }
 
-    div.producteur-de-la-semaine{
+    div.producteur-de-la-semaine {
         width: 80%;
     }
 }
@@ -218,7 +221,6 @@
         width: 990px;
     }
 
-
     .btn-icons {
         margin-left: 10%;
     }
@@ -250,14 +252,15 @@
     }
 
     /*CATEGORY PAGE*/
-    .category-header-top-caption span{
+    .category-header-top-caption span {
         font-size: 37px;
     }
 
     div.producteur-de-la-semaine {
         width: 90%;
     }
-    .category-header-top-img{
+
+    .category-header-top-img {
         height: 200px;
     }
 }
@@ -275,7 +278,6 @@
     .header-slider-caption-description {
         width: 90%;
     }
-
 
     .nav-wrapper .nav li a {
         line-height: 37px;
@@ -310,13 +312,11 @@
     .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
         top: 35% !important;
     }
-    .nav-wrapper .btn-icons{
-        margin-left: 5px!important;
-    }
 
-    .section-2{
+    .section-2 {
         width: 95%;
     }
+
     .parcourir-par-catégories .slick-track {
         height: 230px;
     }
@@ -389,8 +389,9 @@
     .nav-footer-bottom-mobile li a {
         position: absolute !important;
     }
-    .nav-footer-bottom-mobile{
-        text-align: left!important;
+
+    .nav-footer-bottom-mobile {
+        text-align: left !important;
     }
 
     .btn-registr-modal-close {
@@ -436,7 +437,7 @@
         padding: 5rem;
     }
 
-    .category-header-top-caption span{
+    .category-header-top-caption span {
         font-size: 28px;
     }
 
@@ -452,7 +453,8 @@
     .header-slider-caption {
         top: 2% !important;
     }
-    .producteur-de-la-semaine-caption{
+
+    .producteur-de-la-semaine-caption {
         padding-top: 20px;
     }
 
@@ -478,7 +480,6 @@
         font-size: 18px;
     }
 
-
     .section-title-line:after, .section-title-line:before {
         display: none;
     }
@@ -491,7 +492,7 @@
         margin-top: 3%;
     }
 
-    .client-maturin-caption{
+    .client-maturin-caption {
         width: 100%;
     }
 
@@ -513,11 +514,6 @@
         height: 45px;
     }
 
-    .nav-wrapper .btn-icons{
-        height: 35px;
-        width: 35px;
-    }
-
     .nav-link {
         padding: .5rem .5rem;
     }
@@ -531,11 +527,15 @@
         padding: 0 15px;
     }
 
-    .produit-en-vedette .product-btn-add-to-cart {
+    .produit-a-proximite-mobile .product-group{
+        padding-top: 10px;
+    }
+
+    .produit-en-vedette .product-btn-add-to-cart, .produit-a-proximite-mobile .product-btn-add-to-cart {
         width: 70% !important;
     }
 
-    .produit-en-vedette .product-btn-overview {
+    .produit-en-vedette .product-btn-overview, .produit-a-proximite-mobile .product-btn-overview {
         width: 40%;
     }
 
@@ -560,13 +560,12 @@
         font-size: 20px;
     }
 
-
     .header-slider-caption-btn {
         margin-top: 10px;
     }
 
     /*CATEGORY PAGE*/
-    .category-header-top-caption span{
+    .category-header-top-caption span {
         font-size: 24px;
     }
 
@@ -584,16 +583,21 @@
     }
 
     .header-slider-caption-title span {
-        padding-top: 0.45rem;
-        padding-bottom: 0.45rem;
-        line-height: 1.38;
         text-align: center;
     }
 
-
-    .header-slider-caption-title, .header-slider-caption-description{
-        width: 95%;
+    .header-slider-caption-title, .header-slider-caption-description {
         text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-slider-caption-title {
+        line-height: 0.9;
+        width: 90%;
+    }
+
+    .header-slider-caption-description {
+        width: 95%;
     }
 
     .header-slider-caption-wrapper {
@@ -602,6 +606,86 @@
 
     .parcourir-par-catégories .slick-track {
         height: 190px;
+    }
+
+    .nav-wrapper .btn-icons {
+        margin-left: 5px !important;
+        height: 20px;
+        width: 20px;
+        top: 10px;
+    }
+
+    .btn-icons-cart-count {
+        width: 11px;
+        height: 10px;
+        line-height: 1.6;
+        right: -5px;
+        font-size: 7px;
+    }
+
+    .pb-15-pt-5-screen-575{
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    section {
+        margin:auto;
+    }
+
+    .section-title{
+        margin-bottom: 20px!important;
+    }
+
+    .section-3, .section-4-mobile{
+        margin-top: 30px;
+    }
+    .section-5{
+        margin-top: 40px;
+    }
+    .section-5 .section-title{
+        line-height: 1.1;
+    }
+
+    .section-6 {
+        margin: 30px auto !important;
+    }
+
+    .section-3-copy{
+        margin-top: 70px;
+    }
+
+    .section-3-copy .section-title{
+        margin-bottom: 0!important;
+    }
+
+    div.producteur-de-la-semaine {
+        margin: 0rem auto 50px auto
+    }
+
+    div.producteur-de-la-semaine:last-child {
+        margin: 25px auto !important;
+    }
+
+    .button-en-voir-plus {
+        margin: 3rem auto auto auto;
+    }
+    #registrModal .tab-pane .row{
+        padding-bottom: 10px;
+    }
+
+    #registrModal h5{
+        padding-bottom: 10px;
+        margin-top: -10px;
+    }
+
+    .m--30 {
+        margin-right: -20px;
+        margin-left: -20px;
+        margin-bottom: 0;
+    }
+
+    .product-title{
+        margin-bottom: 0px!important;
     }
 
 }
@@ -639,7 +723,6 @@
         margin: 0 !important;
     }
 
-
     .header-slider-caption-description {
         font-size: 13px;
     }
@@ -649,9 +732,9 @@
         width: 50%;
     }
 
-    .produit-en-vedette .product-btn-add-to-cart {
-        font-size: 11px;
-        padding: 0.1rem;
+    .produit-en-vedette .product-btn-add-to-cart, .produit-a-proximite-mobile .product-btn-add-to-cart {
+        font-size: 8px;
+        padding: 0.5rem 0.2rem;
     }
 
     .produit-en-vedette .product-btn-overview {
@@ -661,6 +744,7 @@
     .nav-footer-block {
         max-width: 85%;
     }
+
     div.producteur-de-la-semaine img {
         width: 100%;
         height: auto;
