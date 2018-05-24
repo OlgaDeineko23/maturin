@@ -180,7 +180,7 @@ ul {
 }
 
 section {
-    margin: 7rem auto;
+    margin: 5rem auto;
 }
 
 .button {
@@ -873,9 +873,11 @@ a.sous-menu-main-item-title,a.sous-menu-main-item-title:hover,  a.sous-menu-main
 
 .vous-aimeriez-aussi .slick-prev {
     left: -35px;
+    top: 45%;
 }
 .vous-aimeriez-aussi .slick-next {
     right: -20px;
+    top: 45%;
 }
 
 .produit-a-proximite-mobile {
@@ -949,6 +951,21 @@ a.sous-menu-main-item-title,a.sous-menu-main-item-title:hover,  a.sous-menu-main
 .section-4-mobile {
     display: none;
 }
+
+.section-4-mobile .sous-menu-mobile-item:active{
+    background-color: rgba(168, 168, 168, 0.53);
+}
+
+.section-4-mobile .sous-menu-mobile-item:first-child {
+    border-top: 1px solid #cacaca;
+}
+
+.section-4-mobile .sous-menu-mobile-item{
+    border-bottom: 1px solid #cacaca;
+    width: 96%;
+    margin: 0 auto;
+}
+
 .parcourir-par-catégories a{
     font-size: 15px;
     font-family: NunitoSans-Regular, serif;
@@ -1055,15 +1072,17 @@ div.producteur-de-la-semaine img {
 /*SECTION6*/
 
 .nos-clients-nous-disent-left {
-    height: 100%;
+    height: 530px;
     width: 100%;
     float: right;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nos-clients-nous-disent-left img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .nos-clients-nous-disent-right {
@@ -1355,7 +1374,11 @@ div.quest-ce-que-maturin {
 }
 
 .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev, .produit-en-vedette .slick-next, .produit-a-proximite .slick-next, .parcourir-par-catégories .slick-next {
-    top: 30% !important;
+    top: 38% !important;
+}
+
+.parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
+    top: 35% !important;
 }
 
 .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev {
@@ -1583,11 +1606,14 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     padding: 20px 0;
     border-bottom: 1px solid #E5E5E5;
 }
+#mobileMenuModal .sous-menu-mobile-item i{
+    margin-top: 4px;
+}
 
 .sous-menu-mobile-item i {
     float: right;
     margin-right: 20px;
-    margin-top: 4px;
+    margin-top: 4.2px;
 }
 
 .sous-menu-mobile-item a {
