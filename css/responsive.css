@@ -457,9 +457,6 @@
         text-align: center;
     }
 
-    .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev {
-        left: -45px !important;
-    }
 
     /*CATEGORY PAGE*/
     .category-header-top-img {

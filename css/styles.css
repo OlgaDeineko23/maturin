@@ -864,7 +864,8 @@ a.sous-menu-main-item-title,a.sous-menu-main-item-title:hover,  a.sous-menu-main
 }
 
 .produit-en-vedette .slick-slide, .parcourir-par-catégories .slick-slide, .produit-a-proximite .slick-slide{
-    margin-right: 0.5%;
+    margin-right: 0.2%;
+    margin-left: 0.2%;
 }
 
 .vous-aimeriez-aussi .slick-slide{
@@ -1256,9 +1257,11 @@ div.quest-ce-que-maturin {
 /*BODY*/
 /*SLIDER*/
 .slider {
-    width: 80%;
-    margin: 1% auto;
-    margin-left: 10.8%;
+    /*width: 80%;*/
+    /*margin: 1% auto;*/
+    /*margin-left: 10.8%;*/
+    width: 78%;
+    margin: 0 auto;
 }
 
 .slick-arrow i {
@@ -1381,8 +1384,12 @@ div.quest-ce-que-maturin {
     top: 35% !important;
 }
 
-.produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev {
-    left: -50px !important;
+.produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev{
+    left: -30px !important;
+}
+
+.produit-en-vedette .slick-next, .produit-a-proximite .slick-next, .parcourir-par-catégories .slick-next{
+    right: -30px !important;
 }
 
 .parcourir-par-catégories .slick-track {
