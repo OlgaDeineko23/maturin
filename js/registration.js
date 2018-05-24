@@ -29,8 +29,8 @@ $(document).ready(function () {
             }
         }
     });
-    $('.btn-registr-modal-close').on('click', function () {
-        $('#registrModal').modal('hide')
+    $(document).on('click', '.btn-registr-modal-close', function () {
+        $('#registrModal').modal('hide');
     });
 
     $(document).on('input', 'input[type=email]', function () {

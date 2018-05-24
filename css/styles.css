@@ -1701,7 +1701,7 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 }
 
 .registr-top-text {
-    padding-top: 25px;
+    padding-top: 35px;
     padding-bottom: 5px;
 }
 
@@ -1772,7 +1772,22 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 
 .btn-registr-modal-close {
     display: none;
-    margin-top: 10px;
+    position: absolute;
+    top: 45px;
+    right: 5px;
+    float: right;
+    background: transparent;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 1.1;
+    text-align: center;
+    border: 1px solid #b5b3b3;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b5b3b3;
+    padding: 2px;
+    z-index: 1000;
 }
 .rester-connecté{
     margin: -10px -15px!important;
