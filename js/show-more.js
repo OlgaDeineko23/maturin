@@ -14,7 +14,7 @@ btn.click(function(e)
   if (btn.hasClass('less')) {
     btn.removeClass('less');
     btn.addClass('more');
-    btn.text('- Less');
+    btn.text('- Moins');
 
     text.animate({'height': h});
   } else {
