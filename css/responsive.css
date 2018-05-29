@@ -164,7 +164,7 @@
     }
 
     .nav-footer-block li {
-        padding: 0.8rem 0 !important;
+        padding: 0.8rem 0.5rem!important;
     }
 
     .copyright {
@@ -418,10 +418,6 @@
     .nav-footer-block {
         max-width: 30%;
         margin-bottom: 15px;
-    }
-
-    .nav-footer-block li {
-        padding: 0.8rem 0.8rem !important;
     }
 
     .nav-footer-block a {

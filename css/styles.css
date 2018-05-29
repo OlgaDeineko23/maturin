@@ -133,6 +133,9 @@ button:focus, input:focus, .slide:focus,.slick-slide:focus, .slick-active:focus,
 .m-r-l-10 {
     margin: 0 10% !important;
 }
+.m-l-30{
+    margin-left: 30px;
+}
 
 .position-absolute-bottom{
     position: absolute;
@@ -292,10 +295,26 @@ section {
     margin-bottom: 0.7%;
     padding: 0 !important;
     background-color: #000000;
+    color: white;
 }
 
 .header-menu-top .nav-item{
     padding: .5rem 1rem;
+}
+
+.nav-divider-wrappper{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.nav-divider{
+    border-right: 0.5px solid white;
+    height: 12px;
 }
 
 .header-menu-top .nav-link {
@@ -1252,7 +1271,11 @@ div.quest-ce-que-maturin {
     cursor: pointer;
 }
 .nav-footer-block-wrapper li{
-    margin: 0 0.5rem;
+    border-right: 1px solid #e0dfde;
+}
+
+.nav-footer-block-wrapper li:last-child{
+    border-right: none;
 }
 
 .nav-footer-main li {
@@ -1265,7 +1288,7 @@ div.quest-ce-que-maturin {
 
 .nav-footer-block-wrapper{
     border: 1px solid #e0dfde;
-    padding: 0.8rem;
+    padding: 0.8rem 0;
     margin: 0 auto;
 }
 
@@ -2429,4 +2452,87 @@ a.category-header-description-more:hover {
     display: none;
     text-decoration: none;
     color: #f0632f!important;
+}
+
+.modifiezVosParamètres{
+    padding:1.5rem 2rem 2rem 2rem;
+}
+
+#modifiezVosParamètres .modal-content,#modifiezVosParamètres .modal-body, #modifiezVosParamètres .form-control, #modifiezVosParamètres button{
+    border-radius: 0;
+}
+.modifiezVosParamètres .form-control-lg{
+    font-size: 15px!important;
+    font-family: NunitoSans-Light, serif;
+    color: #777777;
+}
+
+.modifiezVosParamètres label{
+    font-size: 13px;
+    font-family: NunitoSans-Bold, serif;
+}
+
+.modifiezVosParamètres-select-wrapper form .form-group{
+    margin-top: 30px;
+}
+.modifiezVosParamètres-select-wrapper form .form-group:first-child{
+    margin-top: 0!important;
+}
+
+.modifiezVosParamètres-title{
+    text-align: center;
+    font-size: 18px;
+    font-family: NunitoSans-ExtraBold, serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.modifiezVosParamètres-description{
+    text-align: center;
+    font-size: 13px;
+    font-family: NunitoSans-Regular, serif;
+    color: #777777;
+    padding-bottom: 15px;
+}
+
+.modifiezVosParamètres-btn-save{
+    float: right;
+}
+
+.modifiezVosParamètres-btn-save, .modifiezVosParamètres-btn-close{
+    width: 45%;
+    padding:0.9rem 0;
+    margin-top: 2rem;
+}
+
+select {
+    background: #F0F3FB;
+    border: 1px solid #F0F3FB;
+    width: 100%;
+    padding: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    font-size: 18px;
+    position: absolute;
+    top: 23%;
+    right: 1rem;
+    color: #060606;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+select::-ms-expand {
+    display: none;
 }

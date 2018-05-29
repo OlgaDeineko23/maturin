@@ -181,7 +181,6 @@ $(document).ready(function () {
 
     });
 
-
     // Open login\registration modal with specific tab
     $('.se-connecter-button').on('click', function (e) {
         e.preventDefault();
@@ -206,8 +205,8 @@ $(document).ready(function () {
         if (!$(e.target).is(".product-btn-overview") && !$(e.target).is(".product-btn-like") && !$(e.target).is(".product-btn-add-to-cart")) {
             location.href = location.origin + '/maturin/product.html';
         }
-        ;
     });
+
 // Produt page gallery
     $(".gallery-thumb").on('click', 'a', function (event) {
         event.preventDefault();
