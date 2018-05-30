@@ -1888,6 +1888,11 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     margin-right: 10px;
 }
 
+.category-products-filters-btn img{
+    width: 16px;
+    height: 16px;
+}
+
 .category-header {
     margin: 0 !important;
     width: 100%;

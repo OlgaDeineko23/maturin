@@ -2,12 +2,15 @@ $(document).ready(function () {
     var checkedFilters = $('.category-products').find('#checked-filters');
 // CHECKBOX FILTERS
     $(document).on('click', '.not-mobile input[type=checkbox]', function () {
+        var elementIdModal = '#mobileFilterModal #' + $(this).attr("id");
         if ($(this)[0].checked === true) {
             var newDiv = $(' <div class="category-products-filter-by">' + $(this)[0].value + '<button class="category-products-filter-by-btn-close" value="' + $(this).attr("id") + '">x</button></div>');
             checkedFilters.append(newDiv);
+            $(elementIdModal)[0].checked = true;
         } else {
             var checkboxId = $(this).attr("id");
             $('#checked-filters').find("button[value='" + checkboxId + "']").parent().remove();
+            $(elementIdModal)[0].checked = false;
         }
     });
 // TEXT FILTERS
@@ -36,7 +39,7 @@ $(document).ready(function () {
 
     $(document).on('click', '#mobileFilterModal .cancel-filter', function () {
         $.each(filtersIDArrayCheckbox, function( index, value ) {
-            var elementId = '#' + value.id;
+            var elementId = '.not-mobile #' + value.id;
             var elementIdModal = '#mobileFilterModal #' + value.id;
             switch (value.checked) {
                 case true:
@@ -57,16 +60,19 @@ $(document).ready(function () {
     $(document).on('click', '#mobileFilterModal .apply-filter', function () {
         if(filtersIDArrayText.length > 0){
             $.each(filtersIDArrayText, function( index, value ) {
-                var elementId = '#' + value.id;
+                var elementId = '.not-mobile #' + value.id;
+                var elementIdModal = '#mobileFilterModal #' + value.id;
                 switch (value.activeClass) {
                     case true:
                         $('#checked-filters').find("button[value='" + value.id + "']").parent().remove();
                         $(elementId).removeClass('active');
+                        $(elementIdModal).removeClass('active');
                         break;
                     case false:
                         var newDiv = $(' <div class="category-products-filter-by">' + value.value + '<button class="category-products-filter-by-btn-close" value="' + value.id + '">x</button></div>');
                             checkedFilters.append(newDiv);
                         $(elementId).addClass('active');
+                        $(elementIdModal).addClass('active');
                         break;
                 }
             });
@@ -74,14 +80,16 @@ $(document).ready(function () {
         }
         if(filtersIDArrayCheckbox.length > 0){
             $.each(filtersIDArrayCheckbox, function( index, value ) {
-                var elementId = '#' + value.id;
+                var elementId = '.not-mobile #' + value.id;
                 switch (value.checked) {
                     case true:
                         var newDiv = $(' <div class="category-products-filter-by">' + value.value + '<button class="category-products-filter-by-btn-close" value="' + value.id + '">x</button></div>');
                         checkedFilters.append(newDiv);
+                        $(elementId)[0].checked = true;
                         break;
                     case false:
                         $('#checked-filters').find("button[value='" + value.id + "']").parent().remove();
+                        $(elementId)[0].checked = false;
                         break;
                 }
             });
@@ -93,7 +101,7 @@ $(document).ready(function () {
 // MOBILE TEXT FILTERS
 
     $(document).on('click', '.category-products-filter-by-btn-close', function () {
-        var filterId = '#' + $(this)[0].value;
+        var filterId = '.not-mobile #' + $(this)[0].value;
         var filterIdMobile = '#mobileFilterModal #' + $(this)[0].value;
         var parentText = $(this).parent()[0].innerText.replace('x', '');
         $(filterId)[0].checked = false;
@@ -101,6 +109,10 @@ $(document).ready(function () {
         $(this).parent().remove();
         if($(filterId).hasClass('active')){
             $(filterId).removeClass('active');
+        }
+
+        if($(filterIdMobile).hasClass('active')){
+            $(filterIdMobile).removeClass('active');
         }
     });
 
