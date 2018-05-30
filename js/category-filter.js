@@ -94,8 +94,10 @@ $(document).ready(function () {
 
     $(document).on('click', '.category-products-filter-by-btn-close', function () {
         var filterId = '#' + $(this)[0].value;
+        var filterIdMobile = '#mobileFilterModal #' + $(this)[0].value;
         var parentText = $(this).parent()[0].innerText.replace('x', '');
         $(filterId)[0].checked = false;
+        $(filterIdMobile)[0].checked = false;
         $(this).parent().remove();
         if($(filterId).hasClass('active')){
             $(filterId).removeClass('active');
