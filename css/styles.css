@@ -310,11 +310,13 @@ section {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    margin: 0 1px;
 }
 
 .nav-divider{
     border-right: 0.5px solid white;
     height: 12px;
+    width: 1px;
 }
 
 .header-menu-top .nav-link {
@@ -1263,11 +1265,12 @@ div.quest-ce-que-maturin {
 }
 
 .nav-footer-block {
-    text-align: right;
+    text-align: center;
+    line-height: 1.9;
 }
 
 .nav-footer-block li {
-    padding: 0.1rem !important;
+    padding:0 0.5rem !important;
     cursor: pointer;
 }
 .nav-footer-block-wrapper li{
@@ -1278,18 +1281,19 @@ div.quest-ce-que-maturin {
     border-right: none;
 }
 
+.nav-footer-bottom li a {
+    position: relative !important;
+}
 .nav-footer-main li {
     min-height: 30px;
 }
 
-.nav-footer-bottom li a {
-    position: relative !important;
-}
-
 .nav-footer-block-wrapper{
     border: 1px solid #e0dfde;
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
     margin: 0 auto;
+    max-width: 100%;
+    width: 200px;
 }
 
 .copyright{
