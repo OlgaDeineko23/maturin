@@ -137,6 +137,10 @@ button:focus, input:focus, .slide:focus,.slick-slide:focus, .slick-active:focus,
     margin-left: 30px;
 }
 
+.d-480-none{
+    display: block;
+}
+
 .position-absolute-bottom{
     position: absolute;
     bottom: 0;
@@ -1612,6 +1616,12 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     padding: 0;
 }
 
+#mobileFilterModal.modal-fullscreen .modal-content {
+    margin-top:0px;
+    height:100vh !important;
+    padding-bottom: 10px;
+}
+
 .modal-fullscreen .modal-content {
     margin-top: 50px;
     height: calc(100vh - 50px) !important;
@@ -1864,8 +1874,23 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     vertical-align: baseline;
 }
 
+.category-products-filters-btn{
+    margin-right: 15px;
+    background: white;
+    border: 1px solid #c1c1c1;
+}
+
+.category-products-filters-btn:hover{
+    background: buttonface;
+}
+
+.category-products-filters-btn span{
+    margin-right: 10px;
+}
+
 .category-header {
     margin: 0 !important;
+    width: 100%;
 }
 
 .category-header-top {
@@ -1926,14 +1951,14 @@ a.category-header-description-more:hover {
 .category-products-filter-by:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 50px!important;
+    margin-left: 25px!important;
 }
 
 .category-products-filter-by {
     display: inline-table;
     padding: 0.1rem 0.8rem;
     border: 1px solid #cdcdcd;
-    margin: 0 0.4rem 0.2rem 0.4rem;
+    margin: 0 0 0.2rem 1rem;
     font-size: 15px;
 }
 

@@ -257,16 +257,20 @@ $(document).ready(function () {
     // Change header slider image on mobile screen
     if ($(window).width() < 480) {
         $(".header-slider-bg").attr("src", "./images/header/img1-min.png");
+        $(".category-header-top-img").attr("src", "./images/header/header2-min.png");
     } else {
         $(".header-slider-bg").attr("src", "./images/header/img1.png");
+        $(".category-header-top-img").attr("src", "./images/header/header2.png");
     }
 
 
     $(window).resize(function () {
         if ($(window).width() < 480) {
             $(".header-slider-bg").attr("src", "./images/header/img1-min.png");
+            $(".category-header-top-img").attr("src", "./images/header/header2-min.png");
         } else {
             $(".header-slider-bg").attr("src", "./images/header/img1.png");
+            $(".category-header-top-img").attr("src", "./images/header/header2.png");
         }
     });
 

@@ -23,7 +23,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <!--Header-->
+            <!-- Header-->
             <header>
                 <div class="row d-none d-xl-block  d-lg-block">
                     <!-- Menu top-->
@@ -75,42 +75,23 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown underline-effect-wrapper">
-                                <a class="nav-link dropdown-toggle underline-effect underline-effect-h2 underline-effect-white"
-                                   data-toggle="dropdown" href="#" role="button"
-                                   aria-haspopup="true"
-                                   aria-expanded="false">QC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <div class="dropdown-menu">
-                                    <div class="dropdown-item underline-effect-wrapper-l2">
-                                        <a class="underline-effect-l2 underline-effect-h1 underline-effect-gray"
-                                           href="#">Action</a>
-                                    </div>
-                                    <div class="dropdown-item underline-effect-wrapper-l2">
-                                        <a class="underline-effect-l2 underline-effect-h1 underline-effect-gray"
-                                           href="#">Another action</a>
-                                    </div>
-                                    <div class="dropdown-item underline-effect-wrapper-l2">
-                                        <a class="underline-effect-l2 underline-effect-h1 underline-effect-gray"
-                                           href="#">Something else here</a>
-                                    </div>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="dropdown-item underline-effect-wrapper-l2">
-                                        <a class="underline-effect-l2  underline-effect-h1 underline-effect-gray"
-                                           href="#">Separated link</a>
-                                    </div>
-                                </div>
+                            <li class="nav-item nav-modify-parameter m-l-30">
+                                <a class="nav-link modify-parameter-region" data-toggle="modal"
+                                   data-target="#modifiezVosParamètres">QC</a>
                             </li>
-                            <li class="nav-item dropdown underline-effect-wrapper">
-                                <a class="nav-link dropdown-toggle underline-effect underline-effect-h2 underline-effect-white"
-                                   data-toggle="dropdown" href="#" role="button"
-                                   aria-haspopup="true"
-                                   aria-expanded="false">CAD$ <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="nav-divider-wrappper">
+                                <div class="nav-divider"></div>
+                            </div>
+                            <li class="nav-item nav-modify-parameter">
+                                <a class="nav-link modify-parameter-currency" data-toggle="modal"
+                                   data-target="#modifiezVosParamètres">$(CAD)</a>
                             </li>
-                            <li class="nav-item dropdown underline-effect-wrapper">
-                                <a class="nav-link dropdown-toggle underline-effect underline-effect-h2 underline-effect-white"
-                                   data-toggle="dropdown" href="#" role="button"
-                                   aria-haspopup="true"
-                                   aria-expanded="false">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="nav-divider-wrappper">
+                                <div class="nav-divider"></div>
+                            </div>
+                            <li class="nav-item nav-modify-parameter">
+                                <a class="nav-link modify-parameter-lang" data-toggle="modal"
+                                   data-target="#modifiezVosParamètres">Français </a>
                             </li>
                         </ul>
                     </nav>
@@ -436,7 +417,7 @@
                             </button>
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a class="nav-link d-sm-block d-none" href="#">Vendre</a>
+                                    <a class="nav-link d-480-none" href="#">Vendre</a>
                                 </li>
                                 <li class="nav-item d-login">
                                     <button type="button" class="button-transparent se-connecter-button"
@@ -3648,13 +3629,14 @@
                         <img class="category-header-top-img full-width" src="images/header/header2.png"/>
                         <h5 class="category-header-top-caption"><span>TOUTE RAISON SONT BONNE À BOIRE</span></h5>
                     </div>
-                    <div class="category-header-breadcrumbs"><a href="#">Accueil</a> <i class="fa fa-angle-double-right"
-                                                                                        aria-hidden="true"></i>
+                    <div class="category-header-breadcrumbs d-none d-xl-block  d-lg-block d-md-block"><a href="#">Accueil</a>
+                        <i class="fa fa-angle-double-right"
+                           aria-hidden="true"></i>
                         <a href="#">À
                             boire </a><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="#">Boissons
                             alcooliséés</a>
                     </div>
-                    <div class="category-header-description text-center">
+                    <div class="category-header-description text-center d-none d-xl-block  d-lg-block d-md-block">
                         <p class="category-header-description-text text-overflow">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sodales nisi, vel gravida
                             libero.
@@ -3704,18 +3686,31 @@
                 <section class="category-products">
                     <!--Category section filters-->
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-10" id="checked-filters">
+                        <div class="d-none d-xl-block  d-lg-block d-md-block col-xl-2 col-lg-2 col-md-2 col-2"></div>
+                        <div class="d-xl-none  d-lg-none d-md-none d-sm-block col-sm-6 col-6">
+                            <div class="category-products-result">104 PRODUITS</div>
+                        </div>
+                        <div class="d-xl-none  d-lg-none d-md-none d-sm-block col-sm-6 col-6">
+                            <button type="button" class="button category-products-filters-btn pull-right"
+                                    data-toggle="modal"
+                                    data-target="#mobileFilterModal"><span><img
+                                    src="./images/icons/filter-icon.png"
+                                    alt=""></span>Filters
+                            </button>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12" id="checked-filters">
                             <!--<div class="category-products-filter-by">filter<button class="category-products-filter-by-btn-close">x</button></div>-->
-                            <div class="category-products-result pull-right">RÉSULTATS: 104 PRODUITS</div>
+                            <div class="category-products-result pull-right d-none d-xl-block  d-lg-block d-md-block">
+                                RÉSULTATS: 104 PRODUITS
+                            </div>
                         </div>
                     </div>
                     <!--Category section filters-->
 
                     <!--Category section products-->
                     <div class="row">
-                        <div class="col-2 pull-left">
-                            <div class="category-products-filters">
+                        <div class="d-none d-xl-block  d-lg-block d-md-block col-xl-2 col-lg-2 col-md-2 pull-left">
+                            <div class="category-products-filters not-mobile">
                                 <p class="category-products-filters-title">TOUT</p>
                                 <div class="category-product-filter first">
                                     <div class="category-product-filter-title">BOISSONS ALCOOLISÉES</div>
@@ -3860,7 +3855,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-10">
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
                             <div class="masonry-layout">
                                 <div class="masonry-layout__panel">
                                     <div class="masonry-layout__panel-content">
@@ -4680,18 +4675,17 @@
                             <div class="col-xl col-lg col-md-12 col-12 no-padding d-f">
                                 <ul class="nav-footer-block nav-footer-inline nav-footer-main nav-footer-bottom">
                                     <span class="nav-footer-block-wrapper">
-                                        <li class="underline-effect-wrapper">
-                                            <a class="underline-effect underline-effect-h1 underline-effect-gray"
-                                               href="#">QC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <li class="modify-parameter">
+                                            <a class="modify-parameter-region" data-toggle="modal"
+                                               data-target="#modifiezVosParamètres">QC</a>
                                         </li>
-                                        <li class="underline-effect-wrapper">
-                                            <a class="underline-effect underline-effect-h1 underline-effect-gray"
-                                               href="#">CAD$ <i class="fa fa-angle-down"
-                                                                aria-hidden="true"></i></a>
+                                        <li class="modify-parameter">
+                                            <a class="modify-parameter-currency" data-toggle="modal"
+                                               data-target="#modifiezVosParamètres">$(CAD)</a>
                                         </li>
-                                        <li class="underline-effect-wrapper">
-                                            <a class="underline-effect underline-effect-h1 underline-effect-gray"
-                                               href="#">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <li class="modify-parameter">
+                                            <a class="modify-parameter-lang" data-toggle="modal"
+                                               data-target="#modifiezVosParamètres">Français </a>
                                         </li>
                                     </span>
                                 </ul>
@@ -4718,17 +4712,16 @@
                             <div class="col-12 no-padding d-m">
                                 <ul class="nav-footer-block nav-footer-inline nav-footer-main nav-footer-bottom">
                                     <span class="nav-footer-block-wrapper">
-                                        <li class="underline-effect-wrapper">
-                                            <a class="underline-effect underline-effect-h1 underline-effect-gray"
-                                               href="#">QC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <li class="modify-parameter">
+                                            <a class="modify-parameter-region" data-toggle="modal"
+                                               data-target="#modifiezVosParamètres">QC</a>
                                         </li>
-                                        <li class="underline-effect-wrapper">
-                                            <a class="underline-effect underline-effect-h1 underline-effect-gray"
-                                               href="#">CAD$ <i class="fa fa-angle-down"
-                                                                aria-hidden="true"></i></a></li>
-                                        <li class="underline-effect-wrapper">
-                                            <a class="underline-effect underline-effect-h1 underline-effect-gray"
-                                               href="#">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <li class="modify-parameter">
+                                            <a class="modify-parameter-currency" data-toggle="modal"
+                                               data-target="#modifiezVosParamètres">$(CAD)</a></li>
+                                        <li class="modify-parameter">
+                                            <a class="modify-parameter-lang" data-toggle="modal"
+                                               data-target="#modifiezVosParamètres">Français</a>
                                         </li>
                                     </span>
                                 </ul>
@@ -4971,6 +4964,276 @@
                 </div>
             </div>
             <!-- Product Modal -->
+
+            <!--Modifiez vos paramètres-->
+            <div class="modal fade" id="modifiezVosParamètres" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="modifiezVosParamètres">
+                                            <div class="modifiezVosParamètres-title">Modifiez vos paramètres</div>
+                                            <div class="modifiezVosParamètres-description">Paramétrez votre région, la
+                                                devise et votre langue
+                                                que vous utilisez.
+                                            </div>
+                                            <div class="modifiezVosParamètres-select-wrapper">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="regionSelect">Région</label>
+                                                        <div class="select-wrapper">
+                                                            <select name="region" class="form-control form-control-lg"
+                                                                    id="regionSelect">
+                                                                <option value="Lidsa">Lorem ipsum dolor sit amet
+                                                                    (Lidsa)
+                                                                </option>
+                                                                <option value="Ca">Consectetur adipiscing elit (Ca)
+                                                                </option>
+                                                                <option value="Vsl">Vivamus sagittis lacus (Vsl)
+                                                                </option>
+                                                                <option value="Qc" selected>Québec (Qc)</option>
+                                                                <option value="Pavm">Placerat ac vitae metus (Pavm)
+                                                                </option>
+                                                                <option value="Pf">Praesent faucibus magna sit amet
+                                                                    (Pf)
+                                                                </option>
+                                                                <option value="Sd">Sollicitudin dignissim (Sd)</option>
+                                                                <option value="Pd">Pellentesque dictum leo non ex (Pd)
+                                                                </option>
+                                                                <option value="Fn">Fringillaullamcorper nisi varius.
+                                                                    (Fn)
+                                                                </option>
+                                                                <option value="Ve">Vestibulum euismod diam in (Ve)
+                                                                </option>
+                                                                <option value="Lf">Lorem feugiat, (Lf)</option>
+                                                                <option value="Sl">Sed laoreet (Sl)</option>
+                                                                <option value="Fv">Felis volutpat. (Fv)</option>
+                                                                <option value="Li">Lorem ipsum dolor sit amet (li)
+                                                                </option>
+                                                                <option value="Cae">Consectetur adipiscing elit (Cae)
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="currencySelect">Devise</label>
+                                                        <div class="select-wrapper">
+                                                            <select name="currency" class="form-control form-control-lg"
+                                                                    id="currencySelect">
+                                                                <option value="$(CAD)" selected>$ Dollar canadien
+                                                                    (CAD)
+                                                                </option>
+                                                                <option value="$(USD)">$ United States Dollar (USD)
+                                                                </option>
+                                                                <option value="€(EUR)">€ Euro (EUR)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="langSelect">Langue</label>
+                                                        <div class="select-wrapper">
+                                                            <select name="lang" class="form-control form-control-lg"
+                                                                    id="langSelect">
+                                                                <option value="Français" selected>Français</option>
+                                                                <option value="English">English</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" data-dismiss="modal" aria-label="Close"
+                                                            class="btn button-black modifiezVosParamètres-btn-close">
+                                                        CANCEL
+                                                    </button>
+                                                    <button type="submit"
+                                                            class="btn button-orange modifiezVosParamètres-btn-save">
+                                                        SAVE
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Modifiez vos paramètres-->
+
+            <!--MOBILE CATEGORY FILTERS-->
+            <div class="modal fade modal-fullscreen" id="mobileFilterModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                    <button class="button button-black pull-left cancel-filter">Cancel</button>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-center">
+                                    <p class="category-products-filters-title">TOUT</p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                    <button type="button" class="button button-white pull-right apply-filter">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="category-products-filters">
+                                            <div class="category-product-filter first">
+                                                <div class="category-product-filter-title">BOISSONS ALCOOLISÉES</div>
+                                                <div class="category-product-filter-default">
+                                                    <ul>
+                                                        <li class="underline-effect-wrapper">
+                                                            <a class="underline-effect underline-effect-h1 underline-effect-gray text-filter"
+                                                               id="tf-1">Vin</a></li>
+                                                        <li class="underline-effect-wrapper">
+                                                            <a class="underline-effect underline-effect-h1 underline-effect-gray text-filter"
+                                                               id="tf-2">Bière</a></li>
+                                                        <li class="underline-effect-wrapper">
+                                                            <a class="underline-effect underline-effect-h1 underline-effect-gray text-filter"
+                                                               id="tf-3">Cidre</a></li>
+                                                        <li class="underline-effect-wrapper">
+                                                            <a class="underline-effect underline-effect-h1 underline-effect-gray text-filter"
+                                                               id="tf-4">Mousseaux</a></li>
+                                                        <li class="underline-effect-wrapper">
+                                                            <a class="underline-effect underline-effect-h1 underline-effect-gray text-filter"
+                                                               id="tf-5">Spiritueux</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="category-product-filter">
+                                                <div class="category-product-filter-title">PRIX</div>
+                                                <div class="category-product-filter-checkbox">
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb1" type="checkbox" name="checkbox"
+                                                                                       value="Moin de 10$"><i></i>Moin de
+                                                            10$</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb2" type="checkbox" name="checkbox"
+                                                                                       value="10$-25$"
+                                                        ><i></i>10$-25$</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb3" type="checkbox"
+                                                                                       name="checkbox" value="25$-50$"><i></i>25$-50$</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb4" type="checkbox" name="checkbox"
+                                                                                       value="Plus de 50$"><i></i>
+                                                            Plus de 50$</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="category-product-filter">
+                                                <div class="category-product-filter-title">PARTICULARITÉ</div>
+                                                <div class="category-product-filter-checkbox">
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb5" type="checkbox" name="checkbox"
+                                                                                       value="Lorem"><i></i>Lorem</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb6" type="checkbox" name="checkbox"
+                                                                                       value="ipsum"><i></i>ipsum</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb7" type="checkbox" name="checkbox"
+                                                                                       value="dolor"><i></i>dolor</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb8" type="checkbox" name="checkbox"
+                                                                                       value="si amet"><i></i>
+                                                            si amet</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="category-product-filter">
+                                                <div class="category-product-filter-title">FORMAT</div>
+                                                <div class="category-product-filter-checkbox">
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb9" type="checkbox" name="checkbox"
+                                                                                       value="Lorem"><i></i>Lorem</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb10" type="checkbox" name="checkbox"
+                                                                                       value="ipsum"><i></i>ipsum</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb11" type="checkbox" name="checkbox"
+                                                                                       value="dolor"><i></i>dolor</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb12" type="checkbox" name="checkbox"
+                                                                                       value="si amet"><i></i>
+                                                            si amet</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="category-product-filter">
+                                                <div class="category-product-filter-title">RÉGION</div>
+                                                <div class="category-product-filter-checkbox">
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb13" type="checkbox" name="checkbox"
+                                                                                       value="Lorem"><i></i>Lorem</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb14" type="checkbox" name="checkbox"
+                                                                                       value="ipsum"><i></i>ipsum</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb15" type="checkbox" name="checkbox"
+                                                                                       value="dolor"><i></i>dolor</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb16" type="checkbox" name="checkbox"
+                                                                                       value="si amet"><i></i>
+                                                            si amet</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb17" type="checkbox" name="checkbox"
+                                                                                       value="Lorem"><i></i>Lorem</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb18" type="checkbox" name="checkbox"
+                                                                                       value="ipsum"><i></i>ipsum</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb19" type="checkbox" name="checkbox"
+                                                                                       value="dolor"><i></i>dolor</label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="checkbox"><input id="cb20" type="checkbox" name="checkbox"
+                                                                                       value="si amet"><i></i>
+                                                            si amet</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="category-product-filter">
+                                                <div class="category-product-filter-title underline-effect-wrapper">
+                                                    <a class="underline-effect underline-effect-h1 underline-effect-black" href="#">NOUVEAUTÉS</a>
+                                                </div>
+                                            </div>
+                                            <div class="category-product-filter soldes">
+                                                <div class="category-product-filter-title underline-effect-wrapper">
+                                                    <a class="underline-effect underline-effect-h1 underline-effect-orange"
+                                                       href="#">SOLDES <img
+                                                            src="./images/icons/sold-icon.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MOBILE CATEGORY FILTERS-->
+
         </div>
     </div>
 </div>
@@ -4988,5 +5251,6 @@
 <script type="text/javascript" src="./js/category-filter.js"></script>
 <script type="text/javascript" src="./js/scroll-down.js"></script>
 <script type="text/javascript" src="./js/show-more.js"></script>
+<script type="text/javascript" src="./js/region-currency-lang-select.js"></script>
 </body>
 </html>
