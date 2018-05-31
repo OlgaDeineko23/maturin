@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <!--<link href="./css/product.css" rel="stylesheet" type="text/css" media="all">-->
     <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
     <link href="./css/responsive.css" rel="stylesheet" type="text/css" media="all">
@@ -3623,7 +3624,7 @@
     <!-- Header-->
 
     <!-- Product -->
-    <div class="category category-breadcrums">
+    <div class="category category-breadcrums d-none d-xl-block  d-lg-block d-md-block">
         <div class="row">
             <div class="category-header-breadcrumbs"><a href="#"> Accueil</a>
                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
@@ -3638,7 +3639,7 @@
     <div class="product" id="product">
         <div class="product-info">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 d-none d-xl-block  d-lg-block d-md-block">
                     <div class="gallery">
                         <ul class="gallery-thumb">
                             <li><a href="#product-thumbnail1"><img src="./images/produtc-i-1.jpg"
@@ -3655,7 +3656,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="product-board">
                         <p class="section-title section-title-left product-big-title">NOM DU PRODUIT</p>
                         <p class="product-subtitle">Nom de la compagnie</p>
@@ -3691,6 +3692,17 @@
                         </div>
                         <p class="product-price">9,95 CA$</p>
                         <p class="product-values">7 en inventaire</p>
+                        <div class="owl-carousel owl-theme product-image-wrapper">
+                            <div class="item">
+                                <img src="./images/produtc-i-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./images/product-i-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./images/product-i-3.jpg" alt="">
+                            </div>
+                        </div>
                         <div class="product-quantity">
                             <p class="product-quantity-title">Quantité</p>
                             <div class="product-quantity-value">
@@ -3713,31 +3725,31 @@
                         </div>
                         <ul class="product-property">
                             <li class="product-property-item">
-                                <h5 class="product-property-title">Description</h5>
+                                <h5 class="product-property-title">Description <span class="product-property-icon"><img src="./images/icons/open-menu.svg" alt=""></span></h5>
                                 <p class="product-property-description">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Integer eleifend vitae magna ut tincidunt. Pellentesque tempor
                                     auctor sem ut aliquet. Suspendisse volutpat neque et sagittis sodales.</p>
                             </li>
                             <li class="product-property-item">
-                                <h5 class="product-property-title">PROVENANCE</h5>
+                                <h5 class="product-property-title">PROVENANCE <span class="product-property-icon"><img src="./images/icons/open-menu.svg" alt=""></span></h5>
                                 <p class="product-property-description">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Integer eleifend vitae magna ut tincidunt. Pellentesque tempor
                                     auctor sem ut aliquet. Suspendisse volutpat neque et sagittis sodales.</p>
                             </li>
                             <li class="product-property-item">
-                                <h5 class="product-property-title">CONSEIL</h5>
+                                <h5 class="product-property-title">CONSEIL <span class="product-property-icon"><img src="./images/icons/open-menu.svg" alt=""></span></h5>
                                 <p class="product-property-description">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Integer eleifend vitae magna ut tincidunt. Pellentesque tempor
                                     auctor sem ut aliquet. Suspendisse volutpat neque et sagittis sodales.</p>
                             </li>
                             <li class="product-property-item">
-                                <h5 class="product-property-title">LIVRAISON</h5>
+                                <h5 class="product-property-title">LIVRAISON <span class="product-property-icon"><img src="./images/icons/open-menu.svg" alt=""></span></h5>
                                 <p class="product-property-description">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Integer eleifend vitae magna ut tincidunt. Pellentesque tempor
                                     auctor sem ut aliquet. Suspendisse volutpat neque et sagittis sodales.</p>
                             </li>
                             <li class="product-property-item">
-                                <h5 class="product-property-title">RECETTE</h5>
+                                <h5 class="product-property-title">RECETTE <span class="product-property-icon"><img src="./images/icons/open-menu.svg" alt=""></span></h5>
                                 <p class="product-property-description">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Integer eleifend vitae magna ut tincidunt. Pellentesque tempor
                                     auctor sem ut aliquet. Suspendisse volutpat neque et sagittis sodales.</p>
@@ -3924,6 +3936,9 @@
                                         neque.</p>
                                 </div>
                             </article>
+                            <div class="product-property-more-wrapper">
+                                <a class="product-property-more-btn more"> + Plus</a>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -3935,8 +3950,8 @@
     <section class="section-3">
         <div class="row">
             <div class="section-title section-title-line">COMPLÉTEZ VOTRE PANIER...</div>
-            <div class="slider produit-en-vedette">
-                <div class="slide">
+            <div class="owl-carousel owl-theme produit-en-vedette">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product1.png">
                         <span class="product-btn">
@@ -3982,7 +3997,7 @@
                         <p class="product-price">22,95 CA$</p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product2.png">
                         <span class="product-btn">
@@ -4028,7 +4043,7 @@
                         <p class="product-price">9,95 CA$</p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product3.png">
                         <span class="product-btn">
@@ -4075,7 +4090,7 @@
                         <p class="product-price">8,00/100 g CA$</p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product4.png">
                         <span class="product-btn">
@@ -4121,7 +4136,7 @@
                         <p class="product-price">5,95/paquet de 6 CA$</p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product1.png">
                         <span class="product-btn">
@@ -4167,7 +4182,7 @@
                         <p class="product-price">22,95 CA$</p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product2.png">
                         <span class="product-btn">
@@ -4213,7 +4228,7 @@
                         <p class="product-price">9,95 CA$</p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product3.png">
                         <span class="product-btn">
@@ -4260,7 +4275,7 @@
                         <p class="product-price">8,00/100 g CA$</p>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="item">
                     <div class="product-group">
                         <img class="product-image" src="./images/product4.png">
                         <span class="product-btn">
@@ -4312,94 +4327,107 @@
     <section class="section-4 no-background">
         <div class="row">
             <div class="section-title section-title-line section-title-small">VOUS AIMERIEZ AUSSI...</div>
-            <div class="slider vous-aimeriez-aussi">
-                <div class="slide">
+            <!--<div class="slider vous-aimeriez-aussi">-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product21.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product22.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product23.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product24.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product25.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product26.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product27.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product28.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product21.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product22.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product23.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product24.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product25.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product26.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product27.png">-->
+                <!--</div>-->
+                <!--<div class="slide">-->
+                    <!--<img src="./images/product28.png">-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="owl-carousel owl-theme vous-aimeriez-aussi">
+                <div class="item">
                     <img src="./images/product21.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product22.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product23.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product24.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product25.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product26.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product27.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product28.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product21.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product22.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product23.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product24.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product25.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product26.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product27.png">
                 </div>
-                <div class="slide">
+                <div class="item">
                     <img src="./images/product28.png">
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section-4-mobile">
-        <div class="section-title section-title-line">PARCOURIR PAR CATÉGORIES</div>
-        <ul class="sous-menu-mobile">
-            <li class="sous-menu-mobile-item">
-                <a href="#">À BOIRE</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="sous-menu-mobile-item">
-                <a href="#">VIANDE ET POISSON</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="sous-menu-mobile-item">
-                <a href="#">PRODUITS LAITIERS</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="sous-menu-mobile-item">
-                <a href="#">BOULANGERIE ET PÂTISSERIE</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="sous-menu-mobile-item">
-                <a href="#">FRUITS & LÉGUMES</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="sous-menu-mobile-item">
-                <a href="#">ÉPICERIE</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="sous-menu-mobile-item">
-                <a href="#">SUCRERIES</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="sous-menu-mobile-item">
-                <a href="#">COSMÉTIQUES</a>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-        </ul>
     </section>
     <!--Main content-->
     <div class="divider m-r-l-10"></div>
@@ -4856,6 +4884,7 @@
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript" src="./js/registration.js"></script>
 <script type="text/javascript" src="./js/region-currency-lang-select.js"></script>
