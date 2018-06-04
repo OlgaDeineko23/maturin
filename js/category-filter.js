@@ -122,13 +122,15 @@ $(document).ready(function () {
         $(this).children('.category-product-filter-hierarchy-l2').show();
         $(this).children('.category-product-filter-hierarchy-back-btn').show();
         $(this).siblings().hide();
+        // console.log($(this).children('.category-product-filter-hierarchy-l2'))
     });
 
     $(document).on('click', '.category-product-filter-hierarchy-l2', function () {
         $(this).children('.category-product-filter-hierarchy-l3').show();
         $(this).children('.category-product-filter-hierarchy-back-btn').show();
-        $(this).addClass('active');
+        $(this).parent().siblings('div.category-product-filter-hierarchy-l2').hide();
         $(this).siblings().find('.category-product-filter-hierarchy-l2').hide();
+        $(this).addClass('active');
     });
 
     $(document).on('click', '.category-product-filter-hierarchy-l3', function () {
