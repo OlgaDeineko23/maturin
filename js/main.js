@@ -13,7 +13,6 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: false,
-        centerMode: true,
         infinite: true,
         arrows: true,
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>",
@@ -23,6 +22,7 @@ $(document).ready(function () {
                 breakpoint: 750,
                 settings: {
                     slidesToShow: 2,
+                    centerMode: true,
                     arrows: false
                 }
             },
@@ -30,6 +30,7 @@ $(document).ready(function () {
                 breakpoint: 570,
                 settings: {
                     slidesToShow: 2,
+                    centerMode: true,
                     arrows: false
                 }
             }
@@ -88,7 +89,6 @@ $(document).ready(function () {
         slidesToScroll: 1,
         focusOnSelect: false,
         infinite: true,
-        centerMode: true,
         arrows: true,
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>",
         nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-chevron-right' aria-hidden='true'></i></button>",
@@ -109,7 +109,8 @@ $(document).ready(function () {
                 breakpoint: 750,
                 settings: {
                     slidesToShow: 3,
-                    arrows: false
+                    arrows: false,
+                    centerMode: true
                 }
             }
         ]
