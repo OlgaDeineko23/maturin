@@ -276,6 +276,7 @@ $(document).ready(function () {
         });
     });
 
+    //ADDED SPACE TO THE HEADER TITLE
     $.fn.mathSpace = function () {
         return $(this).each(function () {
             $(this).children('span').each(function () {
@@ -311,14 +312,7 @@ $(document).ready(function () {
         }
     });
 
-    // $(window).resize(function () {
-    //     if ($(window).width() < 750) {
-    //         $('article:gt(-3)').hide();
-    //     } else {
-    //         $('article:gt(-3)').show();
-    //     }
-    // });
-
+//SHOW/HIDE COMMENTS ON PRODUCT PAGE (MOBILE)
     if ($(window).width() < 750) {
         $('article:gt(-3)').hide();
     }

@@ -116,4 +116,28 @@ $(document).ready(function () {
         }
     });
 
+    //HIERARCHICAL FILTER CATEGORY PAGE
+    $(document).on('click', '.category-product-filter-hierarchy', function () {
+        $(this).addClass('active');
+        $(this).children('.category-product-filter-hierarchy-l2').show();
+        $(this).children('.category-product-filter-hierarchy-back-btn').show();
+        $(this).siblings().hide();
+    });
+
+    $(document).on('click', '.category-product-filter-hierarchy-l2', function () {
+        $(this).children('.category-product-filter-hierarchy-l3').show();
+        $(this).children('.category-product-filter-hierarchy-back-btn').show();
+        $(this).addClass('active');
+        $(this).siblings().find('.category-product-filter-hierarchy-l2').hide();
+    });
+
+    $(document).on('click', '.category-product-filter-hierarchy-l3', function () {
+        $(this).addClass('active');
+        $(this).children('.category-product-filter-hierarchy-l4').show();
+        $(this).children('.category-product-filter-hierarchy-back-btn').show();
+    });
+
+    $(document).on('click', '.category-product-filter-hierarchy-l4', function () {
+        $(this).children().find('.category-product-filter-hierarchy-title').addClass('active');
+    });
 });
