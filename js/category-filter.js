@@ -109,7 +109,6 @@ $(document).ready(function () {
     var filterId = '.not-mobile #' + $(this)[0].value;
     var filterIdMobile = '#mobileFilterModal #' + $(this)[0].value;
     var parentText = $(this).parent()[0].innerText.replace('x', '');
-    console.log($(filterId), $(this))
     if($(filterId)[0].checked){
       $(filterId)[0].checked = false;
       $(filterIdMobile)[0].checked = false;
