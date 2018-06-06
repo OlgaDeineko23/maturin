@@ -1692,8 +1692,29 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     border-bottom: 1px solid #E5E5E5;
 }
 
+#mobileMenuModal .sous-menu-mobile{
+margin-top: 0.8rem;
+}
 #mobileMenuModal .sous-menu-mobile-item i {
     margin-top: 4px;
+}
+
+#mobileMenuModal .modal-body{
+    padding-top: 0!important;
+}
+
+#mobileMenuModal  .modal-header .close {
+    padding: 1rem 0px 1rem 6px!important;
+    line-height: 0.92;
+}
+
+#mobileMenuModal .modal-back-button{
+    padding: 0!important;
+    margin-top: -1.6px;
+}
+
+.sous-submenu-mobile-body-items{
+    display: none;
 }
 
 .sous-menu-mobile-item i {
@@ -1713,7 +1734,7 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 }
 
 .sous-menu-mobile li:not(.caption) {
-    padding-left: 10px;
+    padding: 5px 0 5px 15px;
 }
 
 .sous-menu-mobile li a {
@@ -2082,7 +2103,7 @@ a.category-header-description-more:hover {
     display: inline-table;
     padding: 0.1rem 0.8rem;
     border: 1px solid #cdcdcd;
-    margin: 0 0 0.2rem 1rem;
+    margin: 0 1rem 0.2rem 1rem;
     font-size: 15px;
 }
 
@@ -2131,8 +2152,12 @@ a.category-header-description-more:hover {
     margin-bottom: 0.5rem!important;
 }
 
-.soldes a {
+.soldes a, .soldes label {
     color: #f0632f !important;
+}
+
+.form-check-label{
+    line-height: 1.7;
 }
 
 .checkbox:last-child {

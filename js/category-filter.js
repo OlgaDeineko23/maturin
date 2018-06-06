@@ -19,15 +19,17 @@ $(document).ready(function () {
       var textFeildId = $(this).attr("id");
       $('#checked-filters').find("button[value='" + textFeildId + "']").parent().remove();
       $(this).removeClass('active');
+      $(this).addClass('underline-effect');
     } else {
       var parentsTextArray = [];
       $(this).parents("div[class^='category-product-filter-hierarchy']").each(function () {
         parentsTextArray.push(transformText($(this).find('.category-product-filter-hierarchy-title').first().text()).replace(/\n/g, ''));
         });
-      var textForBtn = parentsTextArray.reverse().join('>>');
+      var textForBtn = parentsTextArray.reverse().join('&nbsp; >> &nbsp;');
       var newDiv = $(' <div class="category-products-filter-by">' + textForBtn + '<button class="category-products-filter-by-btn-close" value="' + $(this).attr("id") + '">x</button></div>');
       checkedFilters.append(newDiv);
       $(this).addClass('active');
+      $(this).removeClass('underline-effect');
     }
   });
 
@@ -39,7 +41,12 @@ $(document).ready(function () {
   });
 // MOBILE TEXT FILTERS
   $(document).on('click', '#mobileFilterModal .text-filter', function () {
-    filtersIDArrayText.push({id: $(this).attr("id"), value: $(this).text(), activeClass: $(this).hasClass('active')});
+    var parentsTextArray = [];
+    $(this).parents("div[class^='category-product-filter-hierarchy']").each(function () {
+      parentsTextArray.push(transformText($(this).find('.category-product-filter-hierarchy-title').first().text()).replace(/\n/g, ''));
+    });
+    var textForBtn = parentsTextArray.reverse().join('&nbsp; >> &nbsp;');
+    filtersIDArrayText.push({id: $(this).attr("id"), value: textForBtn, activeClass: $(this).hasClass('active')});
   });
 
   $(document).on('click', '#mobileFilterModal .cancel-filter', function () {
@@ -71,13 +78,17 @@ $(document).ready(function () {
           case true:
             $('#checked-filters').find("button[value='" + value.id + "']").parent().remove();
             $(elementId).removeClass('active');
+            $(elementId).addClass('underline-effect');
             $(elementIdModal).removeClass('active');
+            $(elementIdModal).addClass('underline-effect');
             break;
           case false:
             var newDiv = $(' <div class="category-products-filter-by">' + value.value + '<button class="category-products-filter-by-btn-close" value="' + value.id + '">x</button></div>');
             checkedFilters.append(newDiv);
             $(elementId).addClass('active');
+            $(elementId).removeClass('underline-effect');
             $(elementIdModal).addClass('active');
+            $(elementIdModal).removeClass('underline-effect');
             break;
         }
       });
@@ -145,9 +156,12 @@ $(document).ready(function () {
       $('#category-header-breadcrumb-l3').hide();
 
     } else if ($(this).parent().parent().hasClass("category-product-filter-hierarchy-l3")){
+      checkedFilters.children('.category-products-filter-by').remove();
       $(this).addClass('active');
       $(this).parent().parent().children('.category-product-filter-hierarchy-l4').show();
       $(this).parent().parent().children('.category-product-filter-hierarchy-back-btn').show();
+      $(this).parent().parent().siblings('.category-product-filter-hierarchy-l3').find('.category-product-filter-hierarchy-title').removeClass('active');
+      $(this).parent().parent().siblings('.category-product-filter-hierarchy-l3').find('.category-product-filter-hierarchy-back-btn').hide();
       $('#category-header-breadcrumb-l3 a').text(transformText($(this).text()));
       $('#category-header-breadcrumb-l3').show();
 
@@ -158,6 +172,7 @@ $(document).ready(function () {
     }
   });
   $(document).on('click', '.category-product-filter-hierarchy-back-btn', function () {
+    checkedFilters.children('.category-products-filter-by').remove();
     if ($(this).parent().hasClass("category-product-filter-hierarchy")){
       $(this).parent().siblings().show();
       $(this).siblings().hide();
