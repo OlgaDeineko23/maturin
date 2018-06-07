@@ -1695,9 +1695,10 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     border-bottom: 1px solid #E5E5E5;
 }
 
-/*#mobileMenuModal .sous-menu-mobile{*/
-/*margin-top: 0.8rem;*/
-/*}*/
+#mobileMenuModal .full-width-divider{
+    margin: .8rem 0;
+}
+
 #mobileMenuModal .sous-menu-mobile-item i {
     margin-top: 4px;
 }
