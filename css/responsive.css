@@ -672,6 +672,7 @@
 
     #checked-filters {
         margin-top: 40px;
+        padding: 0 15px;
     }
 
     .category-products-filters-title {
@@ -781,13 +782,16 @@
 }
 
 @media (max-width: 575px) {
+    .masonry-layout__panel-content{
+        padding: 0;
+    }
 
     .navbar-brand {
         font-size: 24px;
     }
 
     .nav-wrapper .nav li a {
-        line-height: 2;
+        line-height: 2.1;
     }
 
     .navbar-toggler {
@@ -999,6 +1003,7 @@
     .category-products-filter-by {
         font-size: 9px;
         padding: 0.3rem 0.3rem;
+        margin: 0.2rem 0 0.2rem 0.4rem;
     }
 
     .category-products-filter-by-btn-close {
@@ -1034,6 +1039,7 @@
         font-family: NunitoSans-Bold, serif;
         padding: 20px !important;
         margin: 0 !important;
+        width: 100%;
     }
 
     .header-slider-caption-description {
@@ -1120,7 +1126,9 @@
     .navbar-brand {
         margin-right: 5px;
         font-size: 18px;
+        line-height: 1.9;
     }
+
 
     .navbar-toggler {
         height: auto;
@@ -1128,6 +1136,7 @@
 
     .navbar-toggler i {
         font-size: 18px;
+        line-height: 1.9;
     }
 
     .navbar-toggler {
