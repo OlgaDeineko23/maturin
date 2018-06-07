@@ -494,37 +494,42 @@
                             <!-- Menu principale(mobile)  Modal -->
                         </div>
                         <!-- Menu top (mobile)-->
-                        <div class="nav-wrapper d-xl-none d-lg-none d-sm-block text-right">
-                            <button class="btn btn-lg btn-icons btn-icons-cart">
+                      <div class="nav-wrapper d-xl-none d-lg-none d-sm-block text-right">
+                        <button class="btn btn-lg btn-icons btn-icons-cart">
                                 <span class="btn-icons-cart-count">
               99
             </span>
+                        </button>
+                        <button class="btn btn-lg btn-icons btn-icons-list is-login">
+                        </button>
+                        <ul class="nav">
+                          <li class="nav-item d-480-none d-login">
+                            <a class="nav-link" href="#">Vendre</a>
+                          </li>
+                          <li class="nav-item d-480-none is-login">
+                            <a class="nav-link"
+                               href="#">Magasin</a>
+                          </li>
+                          <li class="nav-item d-login">
+                            <button type="button" class="button-transparent se-connecter-button"
+                                    data-toggle="modal"
+                                    data-target="#registrModal">
+                              <a class="nav-link" href="#"> Se connecter </a>
                             </button>
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link d-480-none" href="#">Vendre</a>
-                                </li>
-                                <li class="nav-item d-login">
-                                    <button type="button" class="button-transparent se-connecter-button"
-                                            data-toggle="modal"
-                                            data-target="#registrModal">
-                                        <a class="nav-link" href="#"> Se connecter </a>
-                                    </button>
-                                </li>
-                                <li class="nav-item dropdown is-login">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                       aria-haspopup="true"
-                                       aria-expanded="false">Profil<i class="fa fa-angle-down"
-                                                                      aria-hidden="true"></i></a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Voir le profil</a>
-                                        <a class="dropdown-item" href="#">Achats</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Se dèconnecter</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                          </li>
+                          <li class="nav-item dropdown is-login">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">Profil</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Voir le profil</a>
+                              <a class="dropdown-item" href="#">Achats</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Se dèconnecter</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                         <!-- Menu top (mobile)-->
                     </div>
                     <!-- Search-->
