@@ -1,0 +1,99 @@
+//FULL-SCREEN MODAL
+.modal-fullscreen {
+  padding: 0 !important;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+  height: 100%;
+
+  .modal-dialog {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .modal-content {
+    margin-top: 50px;
+    height: calc(100vh - 50px) !important;
+    border: 0 none;
+    border-radius: 0;
+    width: 99% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-bottom: 50px;
+  }
+
+  .modal-header {
+    padding: 1rem 0 !important;
+    .row {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .modal-body {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .modal-title {
+    text-align: center;
+    font-size: 16px;
+    font-family: NunitoSans-Bold, serif;
+  }
+
+}
+
+//END-FULL-SCREEN MODAL
+
+//SIGN IN/ REGISTRATION MODAL
+//END-SIGN IN/ REGISTRATION MODAL
+
+//MENU PRINCIPALE (MOBILE) MODAL
+
+#mobileMenuModal {
+  .full-width-divider {
+    margin: .8rem 0;
+  }
+
+  .sous-menu-mobile-item i {
+    margin-top: 4px;
+  }
+
+  .modal-body {
+    padding-top: 0 !important;
+  }
+
+  .modal-header .close {
+    padding: 1rem 0 1rem 6px !important;
+    line-height: 0.92;
+  }
+
+  .modal-back-button {
+    padding: 0 !important;
+    margin-top: -1.6px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    display: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+//MENU PRINCIPALE (MOBILE) MODAL
+
+//PRODUCT MODAL
+//END-PRODUCT MODAL
+
+//MODIFIEZ VOS PARAMÈTRES MODAL
+//END-MODIFIEZ VOS PARAMÈTRES MODAL
+
+//MOBILE CATEGORY FILTERS
+//END-MOBILE CATEGORY FILTERS
