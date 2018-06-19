@@ -47,6 +47,144 @@
 //END-FULL-SCREEN MODAL
 
 //SIGN IN/ REGISTRATION MODAL
+
+#registrModal .modal-content {
+  background-color: transparent !important;
+  border: none;
+}
+
+#registrModal .tab-content {
+  background: white;
+}
+
+#registrModal .nav-link {
+  border-radius: 0;
+  text-transform: uppercase;
+  background: #000;
+  color: white;
+  font-size: 15px;
+  font-family: NunitoSans-ExtraBold, serif;
+}
+
+#registrModal .nav-link.active {
+  background: white;
+  color: #000;
+}
+
+#registrModal .tab-pane .row {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#registrModal h5 {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 7%;
+}
+
+.registr-top-text, .registr-bottom-text {
+  text-align: center;
+  color: #777777;
+  font-family: NunitoSans-Regular, serif;
+  font-size: 13px;
+}
+
+.registr-top-text a, .registr-bottom-text a {
+  text-decoration: underline;
+  color: black;
+  font-weight: bolder;
+}
+
+.registr-top-text {
+  padding-top: 35px;
+  padding-bottom: 5px;
+}
+
+.registr-bottom-text {
+  padding-bottom: 15px;
+}
+
+.button-g, .button-fb {
+  padding: 10px;
+  color: #FFF;
+  margin: 0 auto;
+  border-radius: .2rem;
+  margin-bottom: 10px;
+  font-family: NunitoSans-ExtraBold, serif;
+}
+
+.button-fb:hover {
+  background-color: #3f61a3;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.button-fb {
+  background-color: #3B5998;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button-g:hover {
+  background-color: #df5e52;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.button-g {
+  border-color: rgba(0, 0, 0, 0.15);
+  background-color: #e95d5d;
+}
+
+.button-icon {
+  float: left;
+  width: 42px;
+  height: 42px;
+  margin: -10px -10px;
+  border-radius: .2rem;
+}
+
+.fb-icon {
+  line-height: 48px;
+  background: #526ea3;
+}
+
+.fb-icon i {
+  font-size: 20px;
+}
+
+.g-icon {
+  line-height: 40px;
+  background: #e96666;
+}
+
+.g-icon img {
+  width: 20px;
+  height: auto;
+}
+
+.registr-form-control {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.btn-registr-modal-close {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  float: right;
+  background: transparent;
+  border: none;
+  background-image: url(../images/icons/close.svg);;
+  width: 15px;
+  height: 15px;
+  z-index: 1000;
+}
+
+.rester-connecté {
+  margin: -10px -15px !important;
+}
+
 //END-SIGN IN/ REGISTRATION MODAL
 
 //MENU PRINCIPALE (MOBILE) MODAL
@@ -90,10 +228,207 @@
 //MENU PRINCIPALE (MOBILE) MODAL
 
 //PRODUCT MODAL
+#previewModal .modal-body {
+  padding: 2rem;
+}
+
+.modal-product-btn-amount {
+  border-radius: 0;
+  padding: .7rem 0.5rem;
+}
+
+input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.modal-product-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-product-title {
+  font-family: NunitoSans-ExtraBold, serif;
+  font-size: 30px;
+}
+
+.modal-product-subtitle {
+  font-family: NunitoSans-Regular, serif;
+  font-size: 15px;
+  color: #777777;
+}
+
+.modal-product-rating {
+  font-family: NunitoSans-Light, serif;
+  font-size: 15px;
+}
+
+.modal-product-rating i {
+  font-size: 10px;
+}
+
+.modal-product-rating span {
+  font-size: 11px;
+  padding-left: 2px;
+}
+
+.modal-product-rating .rating {
+  color: #777777;
+}
+
+.modal-product-price, .modal-product-amount-title, .modal-product-btn-amount, .modal-product-complete-list {
+  font-family: NunitoSans-Bold, serif;
+  font-size: 15px;
+}
+
+.modal-product-in-stock {
+  font-family: NunitoSans-SemiBold, serif;
+  font-size: 15px;
+  color: #f0632f;
+}
+
+.modal-product-amount {
+  margin-top: 10%;
+}
+
+.modal-product-btn-add-to-cart {
+  height: 100%;
+}
+
+.modal-product-btn-product-list {
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+.modal-product-social-icons {
+  margin-bottom: 10%;
+}
+
+.modal-product-social-icons-title {
+  font-family: NunitoSans-Light, serif;
+  font-size: 14px;
+}
+
+.modal-product-social-icons i {
+  font-size: 18px;
+  padding-left: 2px;
+  color: black !important;
+}
+
+.modal-product-social-icons i:hover {
+  color: #999999 !important;
+}
+
+.modal-product-complete-list a {
+  color: #f0632f;
+}
+
+.modal-product-complete-list:hover a {
+  color: #d6582a;
+  text-decoration: none;
+}
+
+.modal-product-complete-list .modal-product-complete-list-arrow {
+  background-image: url("../images/icons/orange-arrow-right.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 15px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: 3px;
+}
+
+.modal-product-complete-list {
+  width: 100%;
+}
+
+.modal-product-complete-list .modal-product-complete-list-arrow {
+  margin-left: 0;
+  transition: all .2s ease-in-out;
+}
+
+.modal-product-complete-list:hover .modal-product-complete-list-arrow {
+  margin-left: 10px;
+}
+
+.modal-product-social-icon-email {
+  display: inline-flex;
+  background-image: url(../images/icons/email-icon.png);
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-left: 2px;
+  margin-bottom: 0;
+}
+
+.modal-product-social-icon-email:hover {
+  background-image: url(../images/icons/email-icon-hover.png);
+}
 //END-PRODUCT MODAL
 
 //MODIFIEZ VOS PARAMÈTRES MODAL
+.modifiezVosParamètres {
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+
+#modifiezVosParamètres .modal-content, #modifiezVosParamètres .modal-body, #modifiezVosParamètres .form-control, #modifiezVosParamètres button {
+  border-radius: 0;
+}
+
+.modifiezVosParamètres .form-control-lg {
+  font-size: 15px !important;
+  font-family: NunitoSans-Light, serif;
+  color: #777777;
+}
+
+.modifiezVosParamètres label {
+  font-size: 13px;
+  font-family: NunitoSans-Bold, serif;
+}
+
+.modifiezVosParamètres-select-wrapper form .form-group {
+  margin-top: 30px;
+}
+
+.modifiezVosParamètres-select-wrapper form .form-group:first-child {
+  margin-top: 0 !important;
+}
+
+.modifiezVosParamètres-title {
+  text-align: center;
+  font-size: 18px;
+  font-family: NunitoSans-ExtraBold, serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.modifiezVosParamètres-description {
+  text-align: center;
+  font-size: 13px;
+  font-family: NunitoSans-Regular, serif;
+  color: #777777;
+  padding-bottom: 15px;
+}
+
+.modifiezVosParamètres-btn-save {
+  float: right;
+}
+
+.modifiezVosParamètres-btn-save, .modifiezVosParamètres-btn-close {
+  width: 45%;
+  padding: 0.9rem 0;
+  margin-top: 2rem;
+}
 //END-MODIFIEZ VOS PARAMÈTRES MODAL
 
 //MOBILE CATEGORY FILTERS
+#mobileFilterModal.modal-fullscreen .modal-content {
+  margin-top: 0px;
+  height: 100vh !important;
+  padding-bottom: 10px;
+}
 //END-MOBILE CATEGORY FILTERS
