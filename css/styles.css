@@ -485,7 +485,7 @@ a.nav-link {
 
 .header-menu-main .nav {
     display: -webkit-box !important;
-    width: 97.5%;
+    width: 98.4%;
     margin: 0 0 0 auto;
 }
 
@@ -1638,10 +1638,14 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     padding: 0;
 }
 
+#mobileFilterModal{
+    background: white;
+}
+
 #mobileFilterModal.modal-fullscreen .modal-content {
     margin-top: 0px;
     height: 100vh !important;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .modal-fullscreen .modal-content {
@@ -1661,6 +1665,10 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 
 .modal-fullscreen .modal-body {
     overflow-y: scroll;
+    height: 100%;
+    margin-bottom: 80px;
+}
+#mobileFilterModal .modal-body .container{
     height: 100%;
 }
 
@@ -1889,7 +1897,9 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     float: right;
     background: transparent;
     border: none;
-    background-image: url(../images/icons/close.svg);;
+    background-image: url(../images/icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     width: 15px;
     height: 15px;
     z-index: 1000;
@@ -1921,6 +1931,10 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 
 .category-product-filter-title img {
     vertical-align: baseline;
+}
+
+.category-products-filters{
+    height: 100%;
 }
 
 .category-products-filters-btn {
@@ -2121,7 +2135,7 @@ a.category-header-description-more:hover {
 }
 .category-products-filter-by {
     display: inline-table;
-    padding: 0.1rem 0.8rem;
+    padding: 0.2rem 0.8rem;
     border: 1px solid #cdcdcd;
     margin: 7px 0rem 0rem 7px;
     font-size: 15px;
@@ -2133,6 +2147,11 @@ a.category-header-description-more:hover {
     border: none;
     background: transparent;
     color: #999999;
+    padding: 0;
+}
+
+.category-products-filter-by-btn-close img{
+    width: 10px;
 }
 
 .category-products-result {
@@ -2277,8 +2296,8 @@ a.category-header-description-more:hover {
 
 /* PRODUCT PAGE */
 .category-breadcrums {
-    width: 80%;
-    margin: 0 auto;
+    width: 91%;
+    margin: 20px auto 50px auto;
 }
 
 .product {

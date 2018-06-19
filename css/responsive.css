@@ -22,12 +22,25 @@
         margin: 0 0.9%;
     }
 
+    .navbar-brand-wrapper {
+         text-align: left;
+        padding-left: 9%;
+    }
+
     .header-slider-caption-wrapper {
         width: 85%;
     }
 
     .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
         top: 30% !important;
+    }
+
+    #category-header-breadcrumbs {
+        width: 96%;
+    }
+
+    .category-breadcrums {
+        width: 96%;
     }
 
 }
@@ -77,6 +90,7 @@
         margin: 0 0.7%;
     }
 
+
     .header-menu-main .nav-link {
         font-size: 13px !important;
     }
@@ -115,6 +129,18 @@
     .header-menu-main .nav-item {
         margin: 0 0.5%;
     }
+
+    .navbar-brand-wrapper {
+        padding-left: 0;
+    }
+
+    #category-header-breadcrumbs {
+        width: 98%;
+    }
+
+    .category-breadcrums {
+        width: 98%;
+    }
 }
 
 @media (max-width: 1560px) {
@@ -122,6 +148,7 @@
     .header-menu-main .nav-item {
         margin: 0 0.3%;
     }
+
 }
 
 @media (max-width: 1480px) {
@@ -281,6 +308,18 @@
 
     .header-menu-main .nav-item {
         padding: 0.6rem .6rem;
+    }
+
+    .navbar-brand-wrapper {
+        margin-left: -10px;
+    }
+
+    #category-header-breadcrumbs {
+        width: 99%;
+    }
+
+    .category-breadcrums {
+        width: 99%;
     }
 }
 
@@ -459,7 +498,9 @@
     .navbar-brand-wrapper {
         text-align: left !important;
         position: relative;
+        margin-left: 0px;
     }
+
 
     .navbar-brand {
         float: left;
@@ -516,6 +557,10 @@
     .product-quantity-value .button-orange {
         padding: 1px 6px;
     }
+    .category-breadcrums,#category-header-breadcrumbs  {
+        width: 100%;
+        margin: 20px 15px 50px 15px;
+    }
 }
 
 @media (max-width: 847px) {
@@ -562,6 +607,7 @@
     .section-title {
         width: 90%;
         font-size: 24px;
+        line-height: 1.1;
     }
 
     div.quest-ce-que-maturin {
@@ -729,6 +775,9 @@
 
     .product-quantity, .product-board .nav-suivre {
         padding: 0 2rem;
+    }
+    .category-product-filter.first {
+        margin: 1% -15px 7% -15px;
     }
 
 }
@@ -941,7 +990,7 @@
     }
 
     .section-3-copy .section-title {
-        margin-bottom: 0 !important;
+        margin-bottom: 5px !important;
     }
 
     div.producteur-de-la-semaine {
@@ -1001,14 +1050,26 @@
     }
 
     .category-products-filter-by {
-        font-size: 9px;
-        padding: 0.3rem 0.3rem;
+        font-size: 12px;
+        padding: 0.4rem 0.4rem;
         margin: 0.2rem 0 0.2rem 0.4rem;
+        position: relative;
     }
 
     .category-products-filter-by-btn-close {
-        margin-left: 2px;
+        margin-left: 5px;
         font-size: 11px;
+        float: right;
+        padding: 1px 4px 1px 6px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+    }
+
+    .category-products-filter-by-btn-close img{
+        width: 7px;
+        height: auto;
     }
 }
 
@@ -1108,6 +1169,10 @@
 
     .product-property {
         margin: 0 -15px;
+        border-right: none;
+        border-left: none;
+    }
+    .product-property-title{
         border-right: none;
         border-left: none;
     }
