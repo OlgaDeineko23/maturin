@@ -22,13 +22,13 @@
         margin: 0 0.9%;
     }
 
+    .header-slider-caption-wrapper {
+        width: 85%;
+    }
+
     .navbar-brand-wrapper {
          text-align: left;
         padding-left: 9%;
-    }
-
-    .header-slider-caption-wrapper {
-        width: 85%;
     }
 
     .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
@@ -46,8 +46,21 @@
 }
 
 @media (max-width: 1765px) {
+    .header-menu-main .nav-item {
+        margin: 0 0.8%;
+        padding: 0.8rem 1rem;
+    }
+
     .header-slider-caption-wrapper {
         width: 90%;
+    }
+
+    .nav-footer-block-wrapper {
+        padding: 0.5rem 0;
+    }
+
+    .nav-footer-block li {
+        padding: 0 0.5rem !important;
     }
 
     .photo-section-caption-bottom {
@@ -66,19 +79,6 @@
         top: 32% !important;
     }
 
-    .header-menu-main .nav-item {
-        margin: 0 0.8%;
-        padding: 0.8rem 1rem;
-    }
-
-    .nav-footer-block-wrapper {
-        padding: 0.5rem 0;
-    }
-
-    .nav-footer-block li {
-        padding: 0 0.5rem !important;
-    }
-
     .modify-parameter {
         font-size: 13px;
     }
@@ -90,9 +90,12 @@
         margin: 0 0.7%;
     }
 
-
     .header-menu-main .nav-link {
         font-size: 13px !important;
+    }
+
+    .header-slider-caption-description {
+        width: 80%;
     }
 
     .parcourir-par-catégories p {
@@ -101,14 +104,6 @@
 
     div.producteur-de-la-semaine {
         width: 60%;
-    }
-
-    .header-slider-caption-description {
-        width: 80%;
-    }
-
-    .client-maturin-caption {
-        width: 80%;
     }
 
     .producteur-de-la-semaine-wrapper {
@@ -121,6 +116,10 @@
 
     .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
         top: 28% !important;
+    }
+
+    .client-maturin-caption {
+        width: 80%;
     }
 }
 
@@ -152,10 +151,6 @@
 }
 
 @media (max-width: 1480px) {
-    /*CATEGORY PAGE*/
-    .category-header-top-caption {
-        width: 80% !important;
-    }
 
     .header-menu-main .nav-item {
         margin: 0 0.1%;
@@ -188,6 +183,10 @@
     .sous-menu-btn button, .sous-menu-btn-main-menu button {
         width: 300px;
     }
+
+    .category-header-top-caption {
+        width: 80% !important;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -199,12 +198,12 @@
         top: 15% !important;
     }
 
-    .photo-section-caption-top {
-        top: 45%;
+    .nav-footer-block-wrapper {
+        padding: 0.4rem 0;
     }
 
-    .copyright {
-        margin: 0 auto;
+    .photo-section-caption-top {
+        top: 45%;
     }
 
     .photo-section-caption-top, .photo-section-caption-bottom {
@@ -223,16 +222,13 @@
         top: 25% !important;
     }
 
-    .nav-footer-block-wrapper {
-        padding: 0.4rem 0;
+    .copyright {
+        margin: 0 auto;
     }
 
 }
 
 @media (max-width: 1370px) {
-    .nav-footer-block-wrapper li {
-        margin: 0;
-    }
 
     .header-menu-main .nav {
         width: 100%;
@@ -240,18 +236,6 @@
 
     .header-menu-main .nav-item {
         margin: 0;
-    }
-
-    .btn-icons {
-        margin-left: 5%;
-    }
-
-    .client-maturin-caption {
-        width: 90%;
-    }
-
-    .sous-menu {
-        margin-left: 0;
     }
 
     .nav-footer-block-wrapper {
@@ -262,13 +246,25 @@
         padding: 0 0.4rem !important;
     }
 
+    .nav-footer-block-wrapper li {
+        margin: 0;
+    }
+
+    .btn-icons {
+        margin-left: 5%;
+    }
+
+    .sous-menu {
+        margin-left: 0;
+    }
+
+    .client-maturin-caption {
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 1300px) {
-    .parcourir-par-catégories .slick-track {
-        height: 200px;
-    }
-
     .header-menu-main .nav-item {
         margin: 0;
         padding: 0.7rem .8rem;
@@ -277,17 +273,20 @@
     .nav-footer-block li {
         padding: 0 0.3rem !important;
     }
+
+    .parcourir-par-catégories .slick-track {
+        height: 200px;
+    }
 }
 
 @media (max-width: 1260px) {
 
-    .messenger-btn {
-        top: 2rem;
-        right: -100%;
+    .header-menu-main .nav-item {
+        padding: 0.6rem .6rem;
     }
 
-    .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
-        top: 27% !important;
+    .navbar-brand-wrapper {
+        margin-left: -10px;
     }
 
     .btn-icons {
@@ -306,12 +305,13 @@
         width: 260px;
     }
 
-    .header-menu-main .nav-item {
-        padding: 0.6rem .6rem;
+    .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
+        top: 27% !important;
     }
 
-    .navbar-brand-wrapper {
-        margin-left: -10px;
+    .messenger-btn {
+        top: 2rem;
+        right: -100%;
     }
 
     #category-header-breadcrumbs {
@@ -324,6 +324,18 @@
 }
 
 @media (max-width: 1210px) {
+    .header-menu-main .nav-item {
+        padding: 0.6rem .5rem;
+    }
+
+    .nav-footer-block-wrapper {
+        padding: 0.3rem 0;
+    }
+
+    .nav-footer-block li {
+        padding: 0 0.2rem !important;
+    }
+
     .sous-submenu {
         width: 1100px;
     }
@@ -345,25 +357,13 @@
         margin-left: 5px;
     }
 
-    /*CATEGORY PAGE*/
-    .category-header-top-caption {
-        width: 94% !important;
-    }
 
     div.producteur-de-la-semaine {
         width: 80%;
     }
 
-    .header-menu-main .nav-item {
-        padding: 0.6rem .5rem;
-    }
-
-    .nav-footer-block-wrapper {
-        padding: 0.3rem 0;
-    }
-
-    .nav-footer-block li {
-        padding: 0 0.2rem !important;
+    .category-header-top-caption {
+        width: 94% !important;
     }
 
     .category-products .product-btn-add-to-cart {
@@ -383,14 +383,6 @@
         font-size: 11px !important;
     }
 
-    .photo-section-caption-bottom {
-        top: 20%;
-    }
-
-    .nav-footer {
-        width: 90%;
-    }
-
     .header-slider-caption-btn {
         margin-top: 0;
     }
@@ -399,8 +391,28 @@
         top: 10% !important;
     }
 
+    .photo-section-caption-bottom {
+        top: 20%;
+    }
+
+    .nav-footer {
+        width: 90%;
+    }
+
     .sous-submenu {
         width: 990px;
+    }
+    .sous-menu-main-items {
+        width: 240px;
+    }
+
+    .sous-submenu .col-3 {
+        min-width: 240px !important;
+    }
+
+    .sous-menu-btn button, .sous-menu-btn-main-menu button {
+        width: 220px;
+        font-size: 11px;
     }
 
     .btn-icons {
@@ -415,21 +427,27 @@
         top: 25% !important;
     }
 
-    .sous-menu-main-items {
-        width: 240px;
-    }
-
-    .sous-submenu .col-3 {
-        min-width: 240px !important;
-    }
-
-    .sous-menu-btn button, .sous-menu-btn-main-menu button {
-        width: 220px;
-        font-size: 11px;
-    }
 }
 
 @media (max-width: 1040px) {
+    .header-menu-main .nav-item {
+        margin: 0;
+    }
+
+    .header-menu-main .nav-item {
+        padding: 0.3rem;
+    }
+    .nav-footer-block-wrapper {
+        padding: 0.2rem 0;
+    }
+
+    .nav-footer-block li {
+        padding: 0 0.1rem !important;
+    }
+    .sous-submenu {
+        width: 900px;
+    }
+
     .photo-right-section-top {
         height: 60%;
     }
@@ -442,37 +460,16 @@
         height: 40%;
     }
 
-    .sous-submenu {
-        width: 900px;
-    }
-
-    .header-menu-main .nav-item {
-        margin: 0;
-    }
-
-    .header-menu-main .nav-item {
-        padding: 0.3rem;
-    }
-
-    /*CATEGORY PAGE*/
-    .category-header-top-caption span {
-        font-size: 37px;
-    }
-
     div.producteur-de-la-semaine {
         width: 90%;
     }
 
+    .category-header-top-caption span {
+        font-size: 37px;
+    }
+
     .category-header-top-img {
         height: 200px;
-    }
-
-    .nav-footer-block-wrapper {
-        padding: 0.2rem 0;
-    }
-
-    .nav-footer-block li {
-        padding: 0 0.1rem !important;
     }
 
 }
@@ -501,22 +498,13 @@
         margin-left: 0px;
     }
 
-
     .navbar-brand {
         float: left;
     }
 
-    .nav-footer-help {
-        margin-right: 0;
-    }
-
-    .nav-footer-block {
-        max-width: 30%;
-        margin-bottom: 15px;
-    }
-
-    .nav-footer-block a {
-        font-size: 13px;
+    .btn-icons {
+        margin-left: 5px;
+        margin-top: 5px;
     }
 
     .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
@@ -535,9 +523,18 @@
         top: 26% !important;
     }
 
-    .btn-icons {
-        margin-left: 5px;
-        margin-top: 5px;
+
+    .nav-footer-help {
+        margin-right: 0;
+    }
+
+    .nav-footer-block {
+        max-width: 30%;
+        margin-bottom: 15px;
+    }
+
+    .nav-footer-block a {
+        font-size: 13px;
     }
 
     .nav-footer-block li {
@@ -568,20 +565,20 @@
         margin-right: 30px;
     }
 
-    div.producteur-de-la-semaine {
-        width: 100%;
-    }
-
-    .producteur-de-la-semaine-wrapper {
-        width: 96%;
-    }
-
     .parcourir-par-catégories .slick-track {
         height: 205px;
     }
 
     .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev, .produit-en-vedette .slick-next, .produit-a-proximite .slick-next, .parcourir-par-catégories .slick-next {
         top: 21% !important;
+    }
+
+    div.producteur-de-la-semaine {
+        width: 100%;
+    }
+
+    .producteur-de-la-semaine-wrapper {
+        width: 96%;
     }
 
     .masonry-layout {
@@ -592,15 +589,7 @@
 }
 
 @media (max-width: 767px) {
-    .section-2 {
-        display: none;
-    }
-
     section {
-        margin: 3rem auto;
-    }
-
-    div.quest-ce-que-maturin {
         margin: 3rem auto;
     }
 
@@ -610,8 +599,51 @@
         line-height: 1.1;
     }
 
+    .header-slider-caption {
+        top: 2% !important;
+    }
+
+
+    .section-2 {
+        display: none;
+    }
+
+    .producteur-de-la-semaine-caption {
+        padding-top: 20px;
+    }
+
+    .parcourir-par-catégories .slick-track {
+        height: 230px;
+    }
+
+    div.quest-ce-que-maturin {
+        margin: 3rem auto;
+    }
+
     div.quest-ce-que-maturin {
         width: 90%;
+    }
+    .client-maturin-caption {
+        padding-top: 20px;
+    }
+
+    .nos-clients-nous-disent-right {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    .nos-clients-nous-disent-right-wrapper {
+        padding: 5rem;
+    }
+
+    .producteur-de-la-semaine {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .producteur-de-la-semaine .col {
+        margin: 0 auto !important;
     }
 
     .messenger-btn {
@@ -646,27 +678,13 @@
         text-align: left !important;
     }
 
-    .btn-registr-modal-close {
-        display: block;
-    }
-
-    .client-maturin-caption {
-        padding-top: 20px;
-    }
-
-    .nos-clients-nous-disent-right {
-        padding-left: 5px;
-        padding-right: 5px;
-        text-align: center;
-    }
-
-    /*CATEGORY PAGE*/
-    .category-header-top-img {
-        height: 150px;
-    }
 
     .modal-open {
         position: fixed;
+    }
+
+    .btn-registr-modal-close {
+        display: block;
     }
 
     .d-f {
@@ -681,29 +699,9 @@
         position: relative !important;
     }
 
-    .nos-clients-nous-disent-right-wrapper {
-        padding: 5rem;
-    }
 
-    .producteur-de-la-semaine {
-        width: 100% !important;
-        text-align: center;
-    }
-
-    .producteur-de-la-semaine .col {
-        margin: 0 auto !important;
-    }
-
-    .header-slider-caption {
-        top: 2% !important;
-    }
-
-    .producteur-de-la-semaine-caption {
-        padding-top: 20px;
-    }
-
-    .parcourir-par-catégories .slick-track {
-        height: 230px;
+    .category-header-top-img {
+        height: 150px;
     }
 
     .category-products {
@@ -725,6 +723,10 @@
         line-height: 2.5;
         margin: 0;
         font-size: 18px;
+    }
+
+    .category-product-filter.first {
+        margin: 1% -15px 7% -15px;
     }
 
     .category-product-filter .category-product-filter-title {
@@ -776,9 +778,6 @@
     .product-quantity, .product-board .nav-suivre {
         padding: 0 2rem;
     }
-    .category-product-filter.first {
-        margin: 1% -15px 7% -15px;
-    }
 
 }
 
@@ -805,16 +804,16 @@
         font-size: 18px;
     }
 
-    .section-title-line:after, .section-title-line:before {
-        display: none;
-    }
-
     .header-slider .slick-slide img {
         height: 250px;
     }
 
     .header-slider-caption-btn {
         margin-top: 3%;
+    }
+
+    .section-title-line:after, .section-title-line:before {
+        display: none;
     }
 
     .client-maturin-caption {
@@ -831,86 +830,6 @@
 }
 
 @media (max-width: 575px) {
-    .masonry-layout__panel-content{
-        padding: 0;
-    }
-
-    .navbar-brand {
-        font-size: 24px;
-    }
-
-    .nav-wrapper .nav li a {
-        line-height: 2.1;
-    }
-
-    .navbar-toggler {
-        height: 45px;
-    }
-
-    .nav-link {
-        padding: .5rem .5rem;
-    }
-
-    .produit-a-proximite {
-        display: none !important;
-    }
-
-    .produit-a-proximite-mobile {
-        display: block;
-        padding: 0 15px;
-    }
-
-    .produit-a-proximite-mobile .product-group {
-        padding-top: 10px;
-    }
-
-    .produit-en-vedette .product-btn-add-to-cart, .produit-a-proximite-mobile .product-btn-add-to-cart {
-        width: 70% !important;
-    }
-
-    .produit-en-vedette .product-btn-overview, .produit-a-proximite-mobile .product-btn-overview {
-        width: 40%;
-    }
-
-    .nos-clients-nous-disent-right, .nos-clients-nous-disent-left {
-        height: auto !important;
-    }
-
-    .nos-clients-nous-disent-right-profile {
-        margin: 15% auto 5% auto;
-    }
-
-    .nos-clients-nous-disent-right .button {
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    .nos-clients-nous-disent-right-wrapper {
-        padding: 5rem 0.5rem;
-    }
-
-    .nos-clients-nous-disent-right-caption {
-        font-size: 20px;
-    }
-
-    .header-slider-caption-btn {
-        margin-top: 30px;
-    }
-
-    /*CATEGORY PAGE*/
-    .category-header-top-caption span {
-        font-size: 32px;
-    }
-
-    .header-slider .slick-prev, .header-slider .slick-next {
-        width: 35px;
-        height: 60px;
-    }
-
-    .slick-arrow i {
-        font-size: 20px;
-    }
-
     .header-slider-caption-title span {
         text-align: center;
     }
@@ -933,8 +852,33 @@
         text-align: center;
     }
 
-    .parcourir-par-catégories .slick-track {
-        height: 190px;
+    .header-slider .slick-prev, .header-slider .slick-next {
+        width: 35px;
+        height: 60px;
+    }
+
+    .slick-arrow i {
+        font-size: 20px;
+    }
+
+    .header-slider-caption-btn {
+        margin-top: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-wrapper .nav li a {
+        line-height: 2.1;
+    }
+
+    .navbar-toggler {
+        height: 45px;
+    }
+
+    .nav-link {
+        padding: .5rem .5rem;
     }
 
     .nav-wrapper .btn-icons {
@@ -954,11 +898,6 @@
         line-height: 1.6;
         right: -5px;
         font-size: 7px;
-    }
-
-    .pb-15-pt-5-screen-575 {
-        padding-bottom: 15px;
-        padding-top: 5px;
     }
 
     section {
@@ -993,6 +932,67 @@
         margin-bottom: 5px !important;
     }
 
+
+    .produit-a-proximite {
+        display: none !important;
+    }
+
+    .produit-a-proximite-mobile {
+        display: block;
+        padding: 0 15px;
+    }
+
+    .produit-a-proximite-mobile .product-group {
+        padding-top: 10px;
+    }
+
+    .produit-en-vedette .product-title {
+        font-size: 13px;
+    }
+
+    .produit-en-vedette .product-subtitle {
+        font-size: 11px;
+    }
+
+    .produit-en-vedette .product-price {
+        font-size: 11px;
+    }
+
+
+    .produit-en-vedette .product-btn-add-to-cart, .produit-a-proximite-mobile .product-btn-add-to-cart {
+        width: 70% !important;
+    }
+
+    .produit-en-vedette .product-btn-overview, .produit-a-proximite-mobile .product-btn-overview {
+        width: 40%;
+    }
+
+    .parcourir-par-catégories .slick-track {
+        height: 190px;
+    }
+
+
+    .nos-clients-nous-disent-right, .nos-clients-nous-disent-left {
+        height: auto !important;
+    }
+
+    .nos-clients-nous-disent-right-profile {
+        margin: 15% auto 5% auto;
+    }
+
+    .nos-clients-nous-disent-right .button {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .nos-clients-nous-disent-right-wrapper {
+        padding: 5rem 0.5rem;
+    }
+
+    .nos-clients-nous-disent-right-caption {
+        font-size: 20px;
+    }
+
     div.producteur-de-la-semaine {
         margin: 0rem auto 50px auto
     }
@@ -1004,6 +1004,13 @@
     .button-en-voir-plus {
         margin: 3rem auto auto auto;
     }
+
+
+    .pb-15-pt-5-screen-575 {
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
 
     #registrModal .tab-pane .row {
         padding-bottom: 10px;
@@ -1032,22 +1039,20 @@
         padding: 0;
     }
 
+    .masonry-layout__panel-content{
+        padding: 0;
+    }
+
+    .category-header-top-caption span {
+        font-size: 32px;
+    }
+
+
     .category-products .product-btn-add-to-cart {
         padding: 0.5rem 0;
         font-size: 12px;
     }
 
-    .produit-en-vedette .product-title {
-        font-size: 13px;
-    }
-
-    .produit-en-vedette .product-subtitle {
-        font-size: 11px;
-    }
-
-    .produit-en-vedette .product-price {
-        font-size: 11px;
-    }
 
     .category-products-filter-by {
         font-size: 12px;
@@ -1074,6 +1079,29 @@
 }
 
 @media (max-width: 480px) {
+
+    .header-slider-caption-description {
+        font-size: 13px;
+    }
+
+    .header-slider-caption-btn {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .header-slider-caption-title span {
+        font-size: 28px;
+    }
+
+    .header-slider-caption-title {
+        line-height: 0.9;
+    }
+
+
+    .nav-footer-block {
+        max-width: 85%;
+    }
+
     .section-4 {
         display: none;
     }
@@ -1103,15 +1131,6 @@
         width: 100%;
     }
 
-    .header-slider-caption-description {
-        font-size: 13px;
-    }
-
-    .header-slider-caption-btn {
-        font-size: 12px;
-        width: 50%;
-    }
-
     .produit-en-vedette .product-btn-add-to-cart, .produit-a-proximite-mobile .product-btn-add-to-cart {
         font-size: 8px;
         padding: 0.5rem 0.2rem;
@@ -1121,21 +1140,9 @@
         font-size: 10px;
     }
 
-    .nav-footer-block {
-        max-width: 85%;
-    }
-
     div.producteur-de-la-semaine img {
         width: 100%;
         height: auto;
-    }
-
-    .header-slider-caption-title span {
-        font-size: 28px;
-    }
-
-    .header-slider-caption-title {
-        line-height: 0.9;
     }
 
     .nos-clients-nous-disent-left {
@@ -1212,6 +1219,10 @@
         padding: .5rem 0.5rem;
     }
 
+    .header-slider-caption-title {
+        width: 100% !important;
+    }
+
     .header-slider-caption-btn {
         margin-top: 35px;
         width: 60%;
@@ -1219,10 +1230,6 @@
 
     .nos-clients-nous-disent-left {
         height: 280px !important;
-    }
-
-    .header-slider-caption-title {
-        width: 100% !important;
     }
 
     .produit-en-vedette .slick-prev, .produit-a-proximite .slick-prev, .parcourir-par-catégories .slick-prev, .produit-en-vedette .slick-next, .produit-a-proximite .slick-next, .parcourir-par-catégories .slick-next {
