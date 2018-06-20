@@ -371,6 +371,10 @@ a.nav-link {
     height: 51px;
 }
 
+.navbar-toggler a, .navbar-toggler a:hover, .navbar-toggler a:focus{
+    color: black;
+}
+
 .nav-wrapper {
     text-align: right;
     display: inline;
@@ -899,7 +903,6 @@ a.sous-menu-main-item-title, a.sous-menu-main-item-title:hover, a.sous-menu-main
     bottom: 25px;
     right: 0;
     left: 0 !important;
-    display: block !important;
     margin: 0 auto;
     max-width: 100%;
     max-height: 40%;
@@ -1016,6 +1019,7 @@ a.sous-menu-main-item-title, a.sous-menu-main-item-title:hover, a.sous-menu-main
 .section-4-mobile .sous-menu-mobile-item {
     width: 96%;
     margin: 0 auto;
+    padding: 20px 0 20px 15px;
 }
 
 .section-4-mobile .section-title {
@@ -1690,6 +1694,10 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     line-height: 1;
     text-shadow: 0 1px 0 #fff;
     opacity: .5;
+    /*display: none;*/
+}
+
+.modal-back-button-wrapper{
     display: none;
 }
 
@@ -1704,6 +1712,10 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
 
 #mobileMenuModal .full-width-divider{
     margin: .8rem 0;
+}
+
+#mobileMenuModal .modal-title{
+    text-align: left;
 }
 
 #mobileMenuModal .sous-menu-mobile-item i {
@@ -2868,4 +2880,8 @@ select::-ms-expand {
 
 .select-options li[rel="hide"] {
     display: none;
+}
+
+.modal-open .mm-slideout{
+    z-index: unset;
 }

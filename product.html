@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link href="./css/styles.css" rel="stylesheet" type="text/css" media="all">
     <link href="./css/responsive.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./css/jquery.mmenu.css" rel="stylesheet" type="text/css" media="all">
     <script src="https://use.fontawesome.com/874ad7ad81.js"></script>
 
     <!-- Add the slick-theme.css if you want default styling -->
@@ -106,391 +107,11 @@
                     <div class="col-xl col-lg-2 col-md-12 col-sm-12 col-12 padding-right-10-screen-380 pb-15-pt-5-screen-575">
                         <div class=" navbar-brand-wrapper">
                             <a class="navbar-brand goToHomePage"><b>MATURIN</b></a>
-                            <!-- Menu principale(mobile) toggler -->
-                            <button class="navbar-toggler d-xl-none d-lg-none d-sm-block" type="button"
-                                    data-toggle="modal"
-                                    data-target="#mobileMenuModal">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </button>
-                            <!-- Menu principale (mobile) toggler -->
-                            <!-- Menu principale (mobile) Modal -->
-                          <div class="modal fade modal-fullscreen d-xl-none d-lg-none" id="mobileMenuModal"
-                               tabindex="-1"
-                               role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <div class="row">
-                                    <div class="col-sm-1 col-1">
-                                      <button type="button" class="modal-back-button">
-                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                      </button>
-                                    </div>
-                                    <div class="col-sm-9 col-9">
-                                      <h5 class="modal-title" id="exampleModalLabel">PARCOURIR PAR
-                                        CATÉGORIES</h5>
-                                    </div>
-                                    <div class="col-sm-1 col-1">
-                                      <button type="button" class="close" data-dismiss="modal"
-                                              aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="modal-body">
-                                  <ul class="sous-menu-mobile">
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">À boire
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">TOUS LES PRODUITS À
-                                          BOIRE
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">Viande et poisson
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">VIANDE ET POISSON
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">Produits laitiers
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">PRODUITS LAITIERS
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">Boulangerie et pâtisserie
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">BOULANGERIE ET PÂTISSERIE
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">Fruits & légumes
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">FRUITS & LÉGUMES
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">Épicerie
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">ÉPICERIE
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">Sucreries
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">SUCRERIES
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                    <li class="sous-menu-mobile-item">
-                                      <a class="sous-submenu-toggle">Cosmétiques
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                      </a>
-                                      <div class="sous-submenu-mobile-container d-none">
-                                        <div class="sous-submenu-mobile-title">COSMÉTIQUES
-                                        </div>
-                                        <ul class="sous-submenu-mobile-body">
-                                          <li class="caption"><a href="#">Vin</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Vin2 blanc</a></li>
-                                              <li><a href="#">Vin rouge</a></li>
-                                              <li><a href="#">Vin rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Bière</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Bière blonde</a></li>
-                                              <li><a href="#">Bière blanche</a></li>
-                                              <li><a href="#">Bière rousse</a></li>
-                                              <li><a href="#">Bière IPA</a></li>
-                                            </ul></li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Cidre</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Cidre rosé</a></li>
-                                              <li><a href="#">Cidre blanc</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Mousseaux</a>
-                                            <ul class="sous-submenu-mobile-body-items">
-                                              <li><a href="#">Mousseau blanc</a></li>
-                                              <li><a href="#">Mousseau rosé</a></li>
-                                            </ul>
-                                          </li>
-                                          <div class="full-width-divider"></div>
-                                          <li class="caption"><a href="#">Spiritueux</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                            <!-- Menu principale(mobile)  Modal -->
+                          <!-- Menu principale(mobile) toggler -->
+                          <button class="navbar-toggler d-xl-none d-lg-none d-sm-block" type="button">
+                            <a href="#menu"><span><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+                          </button>
+                          <!-- Menu principale (mobile) toggler -->
                         </div>
                         <!-- Menu top (mobile)-->
                       <div class="nav-wrapper d-xl-none d-lg-none d-sm-block text-right">
@@ -4939,6 +4560,269 @@
         </div>
     </div>
 </div>
+
+<!-- Menu principale (mobile)-->
+<nav id="menu">
+  <ul>
+    <li><span>À boire</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+    <li><span>Viande et poisson</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+    <li><span>Produits laitiers</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+    <li><span>Boulangerie et pâtisserie</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+    <li><span>Fruits & légumes</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+    <li><span>Épicerie</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+    <li><span>Sucreries</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+    <li><span>Cosmétiques</span>
+      <ul>
+        <li><span>Vin</span>
+          <ul>
+            <li><a href="#">Vin2 blanc</a></li>
+            <li><a href="#">Vin rouge</a></li>
+            <li><a href="#">Vin rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Bière</span>
+          <ul>
+            <li><a href="#">Bière blonde</a></li>
+            <li><a href="#">Bière blanche</a></li>
+            <li><a href="#">Bière rousse</a></li>
+            <li><a href="#">Bière IPA</a></li>
+          </ul>
+        </li>
+        <li><span>Cidre</span>
+          <ul>
+            <li><a href="#">Cidre rosé</a></li>
+            <li><a href="#">Cidre blanc</a></li>
+          </ul>
+        </li>
+        <li><span>Mousseaux</span>
+          <ul>
+            <li><a href="#">Mousseau blanc</a></li>
+            <li><a href="#">Mousseau rosé</a></li>
+          </ul>
+        </li>
+        <li><span>Spiritueux</span></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<!-- Menu principale(mobile)-->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -4950,6 +4834,12 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/jquery.mmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('nav#menu').mmenu();
+    });
+</script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript" src="./js/registration.js"></script>
 <script type="text/javascript" src="./js/region-currency-lang-select.js"></script>

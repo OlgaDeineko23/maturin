@@ -21,13 +21,12 @@ $(document).ready(function () {
       {
         breakpoint: 750,
         settings: {
-          slidesToShow: 2,
-          centerMode: true,
+          slidesToShow: 3,
           arrows: false
         }
       },
       {
-        breakpoint: 570,
+        breakpoint: 480,
         settings: {
           slidesToShow: 2,
           centerMode: true,
@@ -106,7 +105,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 750,
+        breakpoint: 480,
         settings: {
           slidesToShow: 3,
           arrows: false,
@@ -137,7 +136,6 @@ $(document).ready(function () {
       $('.owl-theme .owl-nav .owl-prev').css('opacity', '1');
       $('.owl-theme .owl-nav .owl-next').css('opacity', '0');
     }
-    console.log('event : ', event.relatedTarget['_drag']['direction']);
   });
 
 
@@ -179,45 +177,6 @@ $(document).ready(function () {
     $(this).parent().find('.default').addClass("active");
   });
 
-  // Mobile sous menu
-  var mobileMenuModal = $('#mobileMenuModal');
-  var defaultmobileMenuModalTitle = mobileMenuModal.find('.modal-title').text();
-  var mobileMenuModalBackButton = mobileMenuModal.find('.modal-back-button')[0];
-
-  $(document).on('click', '.sous-menu-mobile-item', function () {
-    // mobileMenuModal.find('.modal-title').text($(this).find('.sous-submenu-mobile-title').text());
-    var sousSubmenuMobileTitle = $(this).find('.sous-submenu-mobile-title').text();
-    mobileMenuModal.find('.modal-title').fadeOut(300, function () {
-      $(this).text(sousSubmenuMobileTitle).fadeIn(300);
-    });
-
-    mobileMenuModalBackButton.style.display = 'block';
-    var defaultParentHTML = $(this).parent().html();
-    var defaultParent = $(this).parent();
-    // $(this).parent()[0].innerHTML = $(this).find('.sous-submenu-mobile-body')[0].innerHTML;
-    var sousSubmenuMobileBody = $(this).find('.sous-submenu-mobile-body').html();
-    $(this).parent().fadeOut(300, function () {
-      $(this).html(sousSubmenuMobileBody).fadeIn(300);
-    });
-
-
-    $('.modal-back-button').on('click', function () {
-      mobileMenuModalBackButton.style.display = 'none';
-      mobileMenuModal.find('.modal-title').fadeOut(300, function () {
-        $(this).text(defaultmobileMenuModalTitle).fadeIn(300);
-      });
-
-      defaultParent.fadeOut(300, function () {
-        $(this).html(defaultParentHTML).fadeIn(300);
-      });
-    });
-
-  });
-  $(document).on('click', '#mobileMenuModal .caption', function () {
-    $(this).children('.sous-submenu-mobile-body-items').toggle('slow');
-    $(this).siblings().children('.sous-submenu-mobile-body-items').hide('slow');
-    // console.log($(this).children('.sous-submenu-mobile-body-items'))
-  });
 
   // Open login\registration modal with specific tab
   $('.se-connecter-button').on('click', function (e) {

@@ -70,8 +70,9 @@ $(document).ready(function () {
   });
 
   $(document).on('click', '#mobileFilterModal .apply-filter', function () {
-    if (filtersIDArrayText.length > 0) {
-      $.each(filtersIDArrayText, function (index, value) {
+    var uniquefiltersIDArrayText = unique(filtersIDArrayText);
+    if (uniquefiltersIDArrayText.length > 0) {
+      $.each(uniquefiltersIDArrayText, function (index, value) {
         var elementId = '.not-mobile #' + value.id;
         var elementIdModal = '#mobileFilterModal #' + value.id;
         switch (value.activeClass) {
@@ -203,3 +204,10 @@ $(document).ready(function () {
     return s;
   }
 });
+
+
+function unique(myArr, prop) {
+    return myArr.filter((obj, pos, arr) => {
+        return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
+});
+}
