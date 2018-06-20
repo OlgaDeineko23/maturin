@@ -4,7 +4,7 @@ $(document).ready(function () {
   $(document).on('click', '.not-mobile input[type=checkbox]', function () {
     var elementIdModal = '#mobileFilterModal #' + $(this).attr("id");
     if ($(this)[0].checked === true) {
-      var newDiv = $(' <div class="category-products-filter-by">' + $(this)[0].value + '<button class="category-products-filter-by-btn-close" value="' + $(this).attr("id") + '"><img src="./images/icons/close.svg" alt=""></button></div>');
+      var newDiv = $(' <div class="category-products-filter-by">' + '<span>'+$(this)[0].value+'</span>' + '<button class="category-products-filter-by-btn-close" value="' + $(this).attr("id") + '"><img src="./images/icons/close.svg" alt=""></button></div>');
       checkedFilters.append(newDiv);
       $(elementIdModal)[0].checked = true;
     } else {
@@ -26,7 +26,7 @@ $(document).ready(function () {
         parentsTextArray.push(transformText($(this).find('.category-product-filter-hierarchy-title').first().text()).replace(/\n/g, ''));
         });
       var textForBtn = parentsTextArray.reverse().join('&nbsp; >> &nbsp;');
-      var newDiv = $(' <div class="category-products-filter-by">' + textForBtn + '<button class="category-products-filter-by-btn-close" value="' + $(this).attr("id") + '"><img src="./images/icons/close.svg" alt=""></button></div>');
+      var newDiv = $(' <div class="category-products-filter-by">' + '<span>'+textForBtn+'</span>' + '<button class="category-products-filter-by-btn-close" value="' + $(this).attr("id") + '"><img src="./images/icons/close.svg" alt=""></button></div>');
       checkedFilters.append(newDiv);
       $(this).addClass('active');
       $(this).removeClass('underline-effect');
@@ -84,7 +84,7 @@ $(document).ready(function () {
             $(elementIdModal).addClass('underline-effect');
             break;
           case false:
-            var newDiv = $(' <div class="category-products-filter-by">' + value.value + '<button class="category-products-filter-by-btn-close" value="' + value.id + '"><img src="./images/icons/close.svg" alt=""></button></div>');
+            var newDiv = $(' <div class="category-products-filter-by">' + '<span>'+value.value+'</span>' + '<button class="category-products-filter-by-btn-close" value="' + value.id + '"><img src="./images/icons/close.svg" alt=""></button></div>');
             checkedFilters.append(newDiv);
             $(elementId).addClass('active');
             $(elementId).removeClass('underline-effect');
@@ -100,7 +100,7 @@ $(document).ready(function () {
         var elementId = '.not-mobile #' + value.id;
         switch (value.checked) {
           case true:
-            var newDiv = $(' <div class="category-products-filter-by">' + value.value + '<button class="category-products-filter-by-btn-close" value="' + value.id + '"><img src="./images/icons/close.svg" alt=""></button></div>');
+            var newDiv = $(' <div class="category-products-filter-by">' +'<span>'+ value.value+'</span>' + '<button class="category-products-filter-by-btn-close" value="' + value.id + '"><img src="./images/icons/close.svg" alt=""></button></div>');
             checkedFilters.append(newDiv);
             $(elementId)[0].checked = true;
             break;
