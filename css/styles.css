@@ -1953,6 +1953,10 @@ input[type=number].modal-product-btn-amount::-webkit-inner-spin-button {
     margin: 2rem auto !important;
 }
 
+.category-search{
+    margin-bottom: 20px;
+}
+
 .category-product-filter-title, .product-title, .product-title a, .product-title a:hover, .product-title:focus, .product-price, .product-rating span, .category-products-result, .category-product-filter-title a, .category-product-filter-title a:hover, .category-product-filter-title a:active {
     color: black;
 }
