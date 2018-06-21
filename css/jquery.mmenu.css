@@ -510,7 +510,7 @@
     background: rgba(3, 2, 1, 0);
     display: none;
     width: 100%;
-    height: 8%;
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -518,10 +518,13 @@
 }
 
 .mm-page__blocker span {
-    position: relative;
-    right: 0;
-    left: 91%;
-    top: 105%;
+    position: absolute;
+    /*position: relative;*/
+    /*right: 0;*/
+    /*left: 91%;*/
+    /*top: 105%; */
+    right: 20px;
+    top: 55px;
     margin: 0 auto;
     font-size: 25px;
     color: rgba(0, 0, 0, .5);

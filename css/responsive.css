@@ -371,6 +371,10 @@
         padding: 0.5rem 0.3rem;
         bottom: 10px;
     }
+
+    .product-price .product-price-before-sale, .product-price .product-price-sale-percentage{
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -425,6 +429,10 @@
 
     .parcourir-par-catégories .slick-prev, .parcourir-par-catégories .slick-next {
         top: 25% !important;
+    }
+
+    .product-price .product-price-before-sale, .product-price .product-price-sale-percentage {
+        font-size: 9px;
     }
 
 }
@@ -735,6 +743,10 @@
 
     .category-product-filter-checkbox, .category-product-filter-default {
         font-size: 16px;
+    }
+
+    .product-price .product-price-before-sale, .product-price .product-price-sale-percentage {
+        font-size: 13px;
     }
 
     .checkbox {
@@ -1063,19 +1075,19 @@
 
     .category-products-filter-by-btn-close {
         margin-left: 5px;
-        font-size: 11px;
-        float: right;
-        padding: 1px 4px 1px 6px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 5px;
+        /*font-size: 11px;*/
+        /*float: right;*/
+        /*padding: 1px 4px 1px 6px;*/
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*bottom: 0;*/
+        /*right: 5px;*/
     }
 
-    .category-products-filter-by-btn-close img{
-        width: 7px;
-        height: auto;
-    }
+    /*.category-products-filter-by-btn-close img{*/
+        /*width: 7px;*/
+        /*height: auto;*/
+    /*}*/
 
     .divider{
         width: 98%;
@@ -1139,12 +1151,12 @@
     }
 
     .produit-en-vedette .slick-track {
-        right: 16%;
+        right: 40px;
         left: auto!important;
     }
 
     .vous-aimeriez-aussi .slick-track {
-        right: 9%;
+        right: 30px;
         left: auto!important;
     }
     .produit-en-vedette .product-btn-add-to-cart, .produit-a-proximite-mobile .product-btn-add-to-cart {
@@ -1175,6 +1187,14 @@
 
     .category-header-top-caption span {
         font-size: 30px;
+    }
+
+    .category-product-filter-hierarchy-back-btn{
+        line-height: 2.4;
+    }
+
+    .category-products-filter-by span {
+        padding-right: 12px;
     }
 
     .product-quantity .button-orange {

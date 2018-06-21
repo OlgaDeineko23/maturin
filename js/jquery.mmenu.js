@@ -560,6 +560,8 @@
             });
             var r = !1;
             i.$body.off(s.touchstart + "-" + n).on(s.touchstart + "-" + n, "." + e.panels + "> ." + e.panel, function (o) {
+              $('.mm-page__blocker span').animate({opacity: "0"}, 200);
+              $('.mm-page__blocker span').animate({opacity: "1"}, 200);
                 i.$html.hasClass(e.wrapper + "_opened") && (r || (r = !0, 0 === o.currentTarget.scrollTop ? o.currentTarget.scrollTop = 1 : o.currentTarget.scrollHeight === o.currentTarget.scrollTop + o.currentTarget.offsetHeight && (o.currentTarget.scrollTop -= 1), r = !1))
             }).off(s.touchmove + "-" + n).on(s.touchmove + "-" + n, "." + e.panels + "> ." + e.panel, function (t) {
                 i.$html.hasClass(e.wrapper + "_opened") && o(this)[0].scrollHeight > o(this).innerHeight() && t.stopPropagation()

@@ -3395,6 +3395,45 @@
         <!--Category section header-->
 
         <section class="category-products">
+          <div class="row">
+            <div class="d-none d-xl-block  d-lg-block d-md-block col-xl-2 col-lg-2 col-md-2 col-2"></div>
+            <div class="d-none d-xl-block  d-lg-block d-md-block col-xl-3 col-lg-3 col-md-3 col-3"></div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+              <div class="row no-gutters">
+                <div class="col text-right">
+                  <input class="form-control form-control-lg border-secondary border-right-0 rounded-0 search-input"
+                         type="search" placeholder="Rechercher...">
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-lg btn-outline-secondary border-left-0 rounded-0 rounded-right search-btn"
+                          type="button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 no-padding-right select-label">
+              <span>Trier par:</span>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5">
+              <div class="select-wrapper">
+                <select name="order" class="form-control form-control-lg"
+                        id="orderSelect">
+                  <option value="plus">plus pertinents
+                  </option>
+                  <option value="nouveaux">nouveaux produits
+                  </option>
+                  <option value="bas">prix le plus bas
+                  </option>
+                  <option value="haut" selected>prix le plus haut</option>
+                  <option value="mieux">mieux cotes
+                  </option>
+                  <option value="promotions">promotions
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
           <!--Category section filters-->
           <div class="row">
             <div class="d-none d-xl-block  d-lg-block d-md-block col-xl-2 col-lg-2 col-md-2 col-2"></div>
@@ -5648,6 +5687,7 @@
                     </div>
                   </div>
                 </div>
+                <div class="category-divider"></div>
                 <div class="category-product-filter">
                   <div class="category-product-filter-title">PRIX</div>
                   <div class="category-product-filter-checkbox">
@@ -6002,7 +6042,7 @@
                         </ul>
                         <span>(12)</span>
                       </div>
-                      <div class="product-price">9,95 CA$</div>
+                      <div class="product-price">9,95 CA$ <span class="product-price-before-sale">11,95 CA$</span><span class="product-price-sale-percentage">(-15%)</span></div>
                     </div>
                   </div>
                 </div>
